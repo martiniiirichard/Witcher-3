@@ -1,0 +1,18 @@
+# Local game and mod payloads: do not commit copyrighted game files or Nexus archives.
+game-root/
+downloads/
+staging/
+backups/
+tools/
+*.zip
+*.7z
+*.rar
+*.exe
+*.dll
+
+# Runtime noise
+*.log
+*.tmp
+*.bak
+desktop.ini
+Thumbs.db

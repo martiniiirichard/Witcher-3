@@ -1,0 +1,42 @@
+{
+  "game": {
+    "name": "The Witcher 3: Wild Hunt - Game of the Year Edition",
+    "store": "GOG",
+    "installRoot": "C:\\Program Files (x86)\\GOG Galaxy\\Games\\The Witcher 3 Wild Hunt GOTY",
+    "detectedExecutableVersion": "4.0.0.103190",
+    "preferredRuntime": "dx12"
+  },
+  "mods": [
+    {
+      "name": "Community Patch - Shared Imports",
+      "nexusUrl": "https://www.nexusmods.com/witcher3/mods/2110",
+      "version": "v0.6",
+      "required": true,
+      "installOrder": 1,
+      "notes": "Required by W3EE Redux Next-Gen builds. Installs modSharedImports under mods."
+    },
+    {
+      "name": "W3EE Redux",
+      "nexusUrl": "https://www.nexusmods.com/witcher3/mods/5802",
+      "version": "1.46",
+      "fileChoice": "Redux for W3EE (NextGen)",
+      "required": true,
+      "installOrder": 2,
+      "notes": "Full Next-Gen build includes traditional EE add-ons: More Quick Slots, Friendly HUD, All Quest Objectives on Map, and Immersive Camera."
+    }
+  ],
+  "postInstallConfig": {
+    "documentsInputSettings": "%USERPROFILE%\\Documents\\The Witcher 3\\input.settings",
+    "dx12FileList": "bin\\config\\r4game\\user_config_matrix\\pc\\dx12filelist.txt",
+    "dx11FileList": "bin\\config\\r4game\\user_config_matrix\\pc\\dx11filelist.txt",
+    "menuEntries": [
+      "ImmCamMenu.xml;",
+      "LFE.xml;",
+      "modFHUDConfig.xml;",
+      "modMoreQuickSlots.xml;",
+      "ReduxGaunterMode.xml;",
+      "W3EnhancedEdition.xml;"
+    ],
+    "loadOrderNote": "If using Script Merger or mods.settings, modReduxW3EE must have priority over modW3EE."
+  }
+}
