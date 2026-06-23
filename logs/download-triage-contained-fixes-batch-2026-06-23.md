@@ -39,6 +39,8 @@ Static verification passed after install:
 - Installed batch contains `0` `.xml` menu files.
 - No Script Merger run was required for this batch.
 
+User launch smoke test passed after install.
+
 ## Deferred
 
 Deferred for later:
