@@ -9,8 +9,10 @@ Changes:
 - `WPI.xml`
   - Changed the top-level group label from localized `Mods.wpi_name` to `Pocket Items`.
 - `modRandomEncountersReworked.xml`
-  - Changed the top-level `RERmain` group label from localized `Mods.rer_name.rer_main_settings` to `Encounters`.
+  - Restored the original localized `RERmain` group label after the direct XML title change did not affect the visible left-nav menu label.
+- `dx11filelist.txt` and `dx12filelist.txt`
+  - Moved `modRandomEncountersReworked.xml;` after `FastTravelPack.xml;` so the long RER label wraps at the bottom of the visible cluster instead of overlapping the following menu entry.
 
 Notes:
-- These are menu display-label changes only.
+- These are menu display/order changes only.
 - No gameplay scripts or mod settings were changed.
