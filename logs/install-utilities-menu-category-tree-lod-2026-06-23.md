@@ -29,6 +29,11 @@ Source:
 
 These tool folders are ignored by Git and were not committed.
 
+Desktop shortcut update:
+
+- `C:\Users\marti\OneDrive\Desktop\Witcher 3 Script Merger.lnk` now points to `tools\sm-fae-0.9.7\WitcherScriptMerger.exe`.
+- The older `tools\script-merger-0.6.5` install remains available as a fallback.
+
 ## Mods Installed
 
 Installed to the game `mods` folder:
