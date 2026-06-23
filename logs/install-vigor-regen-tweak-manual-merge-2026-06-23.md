@@ -46,6 +46,8 @@ Risk notes:
 - Balance risk is intentional: vigor regeneration now depends more strongly on movement/guard/standing state.
 - Future W3EE Redux updates may overwrite this manual merge.
 
+Runtime verification:
+- Launch compile test passed after manual merge.
+
 Pending verification:
-- Launch compile test.
 - Optional in-game stamina/vigor behavior smoke test.
