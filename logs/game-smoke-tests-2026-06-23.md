@@ -104,3 +104,39 @@ Next action:
 
 - Improve the automation so it explicitly confirms console visibility before sending commands.
 - Then rerun the weather and Live Bestiary checks from in-game state rather than treating this attempt as a full visual QA pass.
+
+## Console Command Test From Loaded World
+
+Change under test:
+
+- Validate debug console access after the user manually loaded into a usable in-world save.
+
+Evidence:
+
+- `C:\Users\marti\AppData\Local\Temp\witcher3-console-world-test-20260623-132538\01-before-console.png`
+- `C:\Users\marti\AppData\Local\Temp\witcher3-console-world-test-20260623-132538\02-after-backtick.png`
+- `C:\Users\marti\AppData\Local\Temp\witcher3-console-world-test-20260623-132538\03-after-showpins.png`
+- `C:\Users\marti\AppData\Local\Temp\witcher3-console-world-test-20260623-132538\05-after-settime-noon.png`
+
+Commands tested:
+
+- `ShowPins(1)`
+- `settime(1,12,0,0)`
+
+Observed:
+
+- Backtick/tilde key opens the debug console from a loaded world state.
+- The console prompt appears on the left side of the screen as `>`.
+- Clipboard paste plus Enter successfully submits commands.
+- Submitted command history was visible in green text for `ShowPins(1)` and `settime(1,12,0,0)`.
+- `P` is not needed for console testing; in this run it typed into the already-open console after the previous command surface remained active.
+- Game was left running for the user after the test.
+
+Result:
+
+- Pass.
+
+Next action:
+
+- Use backtick as the standard console key for future tests.
+- For weather validation, load an outdoor save, open console with backtick, run `changeweather(...)`, close console with Escape, and screenshot after a short wait.
