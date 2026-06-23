@@ -43,6 +43,8 @@ Risk notes:
 - Visual/performance risk exists because the stack already has Skellige Winter Weather, New Clouds 3.0, and New Toussaint Clouds.
 - In-game verification should focus on Skellige mountain/coast visibility, cloud density, FPS, and whether fog/cloud effects look excessive with winter weather enabled.
 
+Runtime verification:
+- Launch compile test passed after install.
+
 Pending verification:
-- Launch compile test.
 - Skellige visual smoke test.
