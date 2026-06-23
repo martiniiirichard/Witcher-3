@@ -16,7 +16,7 @@ The downloaded file is not the main UI sound effects redesign package. It is an 
 
 The main UI sound redesign asset archive was not found in Downloads during this pass.
 
-## Attempt
+## First Attempt
 
 Temporarily copied the tweaked `sound.ws` over the active installed file:
 
@@ -41,7 +41,7 @@ It still included the W3EE sound-threat hooks:
 - `useSoundValue`
 - `sound_threat_settings.csv`
 
-## Rollback
+## First Rollback
 
 The Codex smoke process exited during the compile window, so the optional tweak was rolled back to the previously working Less Is More script from:
 
@@ -58,11 +58,45 @@ The user later reported the game loaded, confirming the restored known-good Less
 
 ## Outcome
 
-No active 6421 changes remain.
+This first attempt left no active 6421 changes.
+
+## Applied On Request
+
+The user later explicitly asked to apply 6421. The same optional tweak was applied again, this time intentionally kept after a clean smoke test.
+
+Active file replaced:
+
+`Mods\modLessIsMore\content\scripts\engine\sound.ws`
+
+Current active timing:
+
+```witcherscript
+default lim_playDuration = 240.0;
+default lim_muteDuration = 360.0;
+```
+
+This means:
+
+- 4 minutes music on
+- 6 minutes music off
+
+The script still includes W3EE sound-threat hooks:
+
+- `useSoundValue`
+- `sound_threat_settings.csv`
+
+Backup for the final applied state:
+
+`C:\Program Files (x86)\GOG Galaxy\Games\The Witcher 3 Wild Hunt GOTY\_codex_backups\less-is-more-tweaked-6421-applied-20260623-175040`
+
+Verification:
+
+- DX12 compile smoke passed: `witcher3.exe` stayed alive after 45 seconds.
+- Test process was closed after verification.
 
 Safe current state:
 
 - Keep `modLessIsMore` from mod 3684 installed.
-- Do not install `modLessIsMore_Tweaked` from 6421 unless explicitly choosing the 4-min-on / 6-min-off timing and retesting with the exact compiler popup if it fails.
+- Its active `sound.ws` now uses the 6421 tweaked timing.
 
 Need the main UI sound redesign archive before assessing the actual 6421 UI sound replacement.
