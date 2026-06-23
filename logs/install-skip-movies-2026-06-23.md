@@ -41,6 +41,8 @@ Static verification:
 - Only `modSkipMovies` currently owns `mainRecapMoviesMenu.ws` and `mainStartupMoviesMenu.ws`.
 - No Script Merger run was required based on current script ownership.
 
-## Pending
+## Launch Test
 
-Needs launch compile/smoke test. Expected user-visible benefit is faster startup and load-game testing flow.
+User confirmed both storybook and movie skipping are fixed after install.
+
+Expected ongoing benefit is faster startup and load-game testing flow.
