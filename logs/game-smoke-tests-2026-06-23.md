@@ -140,3 +140,45 @@ Next action:
 
 - Use backtick as the standard console key for future tests.
 - For weather validation, load an outdoor save, open console with backtick, run `changeweather(...)`, close console with Escape, and screenshot after a short wait.
+
+## Weather And Map Validation From Loaded World
+
+Change under test:
+
+- Validate current weather/lighting stack and map behavior after user loaded into an outdoor Novigrad save.
+
+Evidence:
+
+- `C:\Users\marti\AppData\Local\Temp\witcher3-weather-bestiary-test-20260623-133625`
+- `C:\Users\marti\AppData\Local\Temp\witcher3-console-toggle-test-20260623-133944`
+- `C:\Users\marti\AppData\Local\Temp\witcher3-resume-command-test-20260623-134230`
+- `C:\Users\marti\AppData\Local\Temp\witcher3-map-sanity-20260623-134525`
+
+Commands tested:
+
+- `settime(1,12,0,0)`
+- `gotoNovigrad`
+- `changeweather(WT_Clear)`
+- `changeweather(WT_Rain_Storm)`
+- `changeweather(WT_Heavy_Clouds_Dark)`
+- `activateAllGlossaryBeastiary`
+
+Observed:
+
+- Initial attempt exposed an automation issue: pressing `Escape` after console commands opened the pause menu and blocked later screenshots.
+- Corrected workflow is to use backtick/tilde to both open and close the debug console.
+- If the pause menu is already open, click `Resume` directly before running commands.
+- `changeweather(WT_Clear)` visibly brightened the Novigrad scene.
+- `changeweather(WT_Rain_Storm)` submitted without crash; rain/atmosphere remained visually coherent in the sheltered street view.
+- World map opened with `M`, displayed Novigrad markers correctly, and closed back to gameplay.
+- No crash or script error occurred during the command and map passes.
+- Game was left running for the user.
+
+Result:
+
+- Pass with notes.
+
+Next action:
+
+- For more precise weather QA, move Geralt to an exposed outdoor area instead of a sheltered Novigrad doorway, then test storm/rain/clear again with longer waits.
+- Live Bestiary still needs a direct menu/rendering check; `activateAllGlossaryBeastiary` only validates command submission, not monster model display.
