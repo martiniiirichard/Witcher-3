@@ -22,7 +22,15 @@ The eyes-only file was not installed because the current stack already uses `mod
 
 - `modYenFace`
 
-Installed the regular non-scar face variant linked by file ID `62071`.
+Initially installed the regular non-scar face variant linked by file ID `62071`.
+
+The user later chose the scar variant, so `modYenFace` was replaced with:
+
+- `C:\Users\marti\Downloads\Face 80 percent of color saturation - Scar-4820-1-1-1740743135.zip`
+
+The original non-scar folder was preserved at:
+
+- `C:\Program Files (x86)\GOG Galaxy\Games\The Witcher 3 Wild Hunt GOTY\Mods\DISABLED_modYenFace_nonScar_backup_by_codex_20260623-152602`
 
 `mods.settings` backup:
 
@@ -46,7 +54,6 @@ Static verification:
 
 Not installed:
 
-- Scar face variant, because it replaces the same `modYenFace` folder.
 - Eyes-only variant, because Modular Eyes is already the preferred eye stack.
 
 ## Pending
