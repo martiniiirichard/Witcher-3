@@ -57,6 +57,10 @@ Bestiary and glossary:
 
 - `activateAllGlossaryBeastiary`
 
+Visual/HDRP checks:
+
+- `HDRPtest()` spawns the HDRP test apple/vegetable stand for repeatable texture comparison.
+
 ## Result Categories
 
 - Pass: game loads and the targeted feature behaves plausibly.
