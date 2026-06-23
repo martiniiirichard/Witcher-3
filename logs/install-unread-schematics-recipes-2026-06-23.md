@@ -50,9 +50,11 @@ Static verification:
   - `modUnreadSchematicsAndRecipes`
 - `modUnreadSchematicsAndRecipes` has the highest priority of those owners and contains the Better Icons/W3EE base scripts plus unread-marker hooks.
 
-## Pending
+## Launch Test
 
-Needs a game launch compile test. If it fails, likely areas to inspect:
+User launch compile test passed after install.
+
+If a future regression appears, likely areas to inspect:
 
 - `@wrapMethod(W3PlayerWitcher)` signatures in `UnreadSchematicsAndRecipes.ws`.
 - Any Script Merger output for `alchemyMenu.ws` or `craftingMenu.ws`.
