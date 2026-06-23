@@ -40,6 +40,8 @@ Static verification:
   `content\scripts\local\smartLamp.ws`
 - The shipped `itemEntity.ws` from Smart Magic Lamp is disabled in the installed mod folder.
 
+Runtime verification:
+- Launch compile test passed after the manual merge.
+
 Pending verification:
-- Launch compile test.
 - In-game lamp smoke test in a scene where the magic lamp is usable.
