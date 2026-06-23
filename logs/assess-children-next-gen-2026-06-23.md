@@ -9,21 +9,49 @@
 
 The linked file is for `Children - Next Gen`, an NPC appearance/model/texture mod.
 
-Download state is incomplete:
+Initial download state was incomplete, but the archive later completed and was reassessed:
 
-- `C:\Users\marti\Downloads\They cant be saved-8829-1-1707043306.zip` exists but is `0` bytes.
-- `C:\Users\marti\Downloads\They cant be saved-8829-1-1707043306.ZWfoF2sn.zip.part` exists as a partial download.
+- `C:\Users\marti\Downloads\They cant be saved-8829-1-1707043306.zip`
+
+Completed archive contents:
+
+- `modDhusChildrenNG\content\blob0.bundle`
+- `modDhusChildrenNG\content\collision.cache.tmp`
+- `modDhusChildrenNG\content\metadata.store`
+- `modDhusChildrenNG\content\texture.cache`
+
+It contains:
+
+- `0` `.ws` script files
+- `0` `.xml` menu files
+- `1` `texture.cache`
 
 ## Decision
 
-Not installed.
+Installed.
 
-The archive cannot be safely inspected or installed until the download is complete.
+This is a clean asset-only child NPC visual mod and no current child-specific appearance mod was found installed.
+
+Installed:
+
+- `modDhusChildrenNG`
+
+`mods.settings` backup:
+
+- `C:\Games\The Witcher 3\mods.settings.codex-backup-children-next-gen-20260623-152034`
+
+Priority:
+
+- `modDhusChildrenNG`: `163`
 
 ## Notes
 
-Potential overlap areas after a complete download:
+Potential overlap areas:
 
 - NPC appearance/model mods.
 - Existing body/model mods.
-- Non-mergeable bundled asset conflicts rather than script conflicts, unless the completed archive includes scripts.
+- Non-mergeable bundled asset conflicts rather than script conflicts.
+
+Pending:
+
+- Visual smoke testing around child NPCs in populated areas.
