@@ -12,11 +12,14 @@ When Codex says "hands off", do not click or type until Codex reports back. Witc
    - `tools\direct-launchers\Witcher3DirectDX12.exe`
 2. Capture a baseline screenshot after the game window appears.
 3. Skip any update/cinematic prompt if present.
-4. Load into a save or start the current test scenario.
-5. Run targeted console commands.
-6. Capture screenshots after each important command or menu state.
-7. Close the game cleanly or stop the process if it is stuck.
-8. Record the result in `logs\game-smoke-tests-YYYY-MM-DD.md`.
+4. For route/location-specific tests, open the offline map utility first:
+   - `C:\Users\marti\OneDrive\Desktop\Witcher 3 Interactive Map.lnk`
+5. Use the map to choose the target region, nearby marker, and fallback route before teleporting or enabling all pins.
+6. Load into a save or start the current test scenario.
+7. Run targeted console commands.
+8. Capture screenshots after each important command or menu state.
+9. Close the game cleanly or stop the process if it is stuck.
+10. Record the result in `logs\game-smoke-tests-YYYY-MM-DD.md`.
 
 ## Useful Console Commands
 
@@ -69,8 +72,8 @@ For each meaningful run, log:
 - Mod or change being tested.
 - Launcher used.
 - Save or location tested.
+- Offline map route/marker used, when relevant.
 - Commands used.
 - Screenshots captured.
 - Pass/fail result.
 - Any suspected root cause and next action.
-
