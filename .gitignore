@@ -4,6 +4,7 @@ downloads/
 staging/
 backups/
 tools/
+tmp/
 *.zip
 *.7z
 *.rar

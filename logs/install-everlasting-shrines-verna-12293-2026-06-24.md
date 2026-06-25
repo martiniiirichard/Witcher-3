@@ -19,10 +19,12 @@ Added settings entry:
 ```ini
 [modVernaShrine_Everlasting]
 Enabled=1
-Priority=229
+Priority=228
 ```
 
-This is intentionally higher than `modexpansionzero` so the everlasting Verna shrine effect wins over Time of the Sword and Axe.
+This is intentionally higher priority than `modexpansionzero` in this stack's ordering model, where lower numeric priority wins. It lets the everlasting Verna shrine effect win over Time of the Sword and Axe.
+
+Note: this entry was initially added as priority 229, then corrected to 228 after verifying that `modexpansionzero` was priority 229 and was otherwise winning the `local\effects\vitalityRaise.ws` conflict.
 
 ## Files
 
