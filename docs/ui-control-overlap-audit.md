@@ -77,3 +77,27 @@ The next useful cleanup is not deleting Friendly HUD, Immersive Cam, More Quick 
 2. Document AMM and Live Bestiary as intentional compatibility pairs.
 3. Only revisit Menu Organizer if the mod menu itself breaks again.
 4. Avoid adding standalone Friendly HUD, Immersive Cam, More Quick Slots, or AQOOM folders on top of W3EE; that would create real duplication.
+
+## Reviewed Pair Decisions
+
+These are the explicit keep/remove decisions for the current UI and utility stack.
+
+| Item | Decision | Evidence | Risk if changed |
+| --- | --- | --- | --- |
+| `modE3HUD` + `mod0_E3HUD_W3EER_NG` | Keep as a pair. | `modE3HUD` is the large asset/cache/string layer with no scripts; `mod0_E3HUD_W3EER_NG` is the smaller W3EE/E3 script compatibility layer. | Removing only one side can leave either missing visual assets or incompatible HUD scripts. Only remove both if intentionally abandoning E3 HUD. |
+| `modE3HUDColorLoad` | Optional cosmetic. Keep unless the look is unwanted. | Small bundle-only payload; no active script surface. | Low script risk. Removal should mainly affect loading screen/color presentation. |
+| `modAMM` + `mod00AMMW3EEReduxNG139b` | Keep as a pair while AMM is desired. | `modAMM` is the base Appearance Menu Mod layer; `mod00AMMW3EEReduxNG139b` is a narrow W3EE Redux compatibility script patch. | Keeping AMM without the patch risks returning player script conflicts. Removing AMM loses appearance customization and dependent AMM content. |
+| `modLiveBestiary` | Keep if the Live Bestiary feature is desired. | The data table and bundle remain active, while the original bestiary script is disabled so the E3/W3EE-compatible path can win. | Removing it should reduce script pressure, but it likely removes the Live Bestiary data/content contribution. |
+| `modMenuOrganizerNG_IMM_MrCK` | Keep as infrastructure. | It owns menu organization scripts and strings for the current crowded mod menu stack. We previously had a Menu Organizer XML install error that needed correction. | Casual removal can make the options menu harder to reason about or break menu registration again. |
+
+Strong rule: do not treat "a menu exists" as proof of a standalone duplicate. In this install, Friendly HUD, Immersive Cam, More Quick Slots, and AQOOM-style behavior are W3EE-owned unless a separate active mod folder proves otherwise.
+
+## Cleanup Queue
+
+Only these are realistic cleanup candidates from this group:
+
+1. `modE3HUDColorLoad`, if the loading screen/color look is unwanted.
+2. AMM and its W3EE Redux patch, only if appearance customization is no longer wanted.
+3. Live Bestiary, only if the feature is not worth its data/content footprint.
+
+The E3 HUD pair and Menu Organizer should not be removed as "cleanup"; they are structural choices. Changing either one is a deliberate UI-stack redesign and needs a launch test plus menu inspection afterward.
