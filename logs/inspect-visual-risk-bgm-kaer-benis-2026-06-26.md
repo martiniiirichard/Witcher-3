@@ -148,3 +148,38 @@ Interpretation:
 
 - Full high-priority Benis install would visibly change everyday Toussaint weather away from the current Filterless Toussaint look.
 - Low-priority Benis install might preserve current Filterless/Realistic Weather overlapping winners while still adding unique q704/q702/rain/interior/cutscene profiles, but `bob.w2w` means that is still a world-level visual change and should be tested deliberately.
+
+## Benis Low-Priority Install
+
+Decision: installed at low priority to let existing Toussaint/weather winners keep exact-file conflicts.
+
+Installed:
+
+- `C:\Program Files (x86)\GOG Galaxy\Games\The Witcher 3 Wild Hunt GOTY\Mods\modtoussaintw4New`
+
+Load order:
+
+```ini
+[modtoussaintw4New]
+Enabled=1
+Priority=124
+```
+
+Reason:
+
+- `mod_FilterlessToussaint` remains higher at priority `137`.
+- `modRealisticWeather4` remains higher at priority `138`.
+- This should allow Benis unique files to contribute while its exact overlaps with Filterless/Realistic Weather lose.
+
+Backup:
+
+- `backups\benis-toussaint-low-priority-20260626-*\mods.settings.before`
+
+Verification:
+
+- Script Merger not required: `0` script files.
+- DX12 launch smoke passed. `witcher3.exe` stayed alive after 55 seconds.
+
+Residual risk:
+
+- Needs visual checks in Toussaint. Best test set: Beauclair daylight, Beauclair night, rain/fog, Toussaint interiors, q702 wight area, and q704 fairy-tale/Dettlaff scenes.
