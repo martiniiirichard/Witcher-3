@@ -17,7 +17,7 @@ Purpose: track mods that may be redundant, low-value, or already superseded. Thi
 | Candidate | Evidence | Risk if removed | Recommendation |
 | --- | --- | --- | --- |
 | `modE3HUD` vs `mod0_E3HUD_W3EER_NG` | Both active. `modE3HUD` is large asset/string bundle; `mod0_E3HUD_W3EER_NG` contains W3EE/E3 HUD scripts and compatibility work. | Removing the wrong one may break HUD assets or scripts. | Do not delete now. Treat as a paired stack until we prove which folder provides assets versus compatibility scripts. |
-| Standalone Friendly HUD / More Quick Slots / Immersive Cam style behavior | W3EE scripts contain Friendly HUD, Quick Slots, Immersive Cam, and AQOOM hooks. W3EE Redux has a light version specifically for users who do not want bundled add-ons. | Removing external menu/config pieces may break W3EE-integrated UI paths if they provide XML, assets, or compatibility patches. | Review folder-by-folder before removal. Prefer W3EE-compatible versions only. |
+| Standalone Friendly HUD / More Quick Slots / Immersive Cam / AQOOM style behavior | Follow-up audit found no active standalone folders named `modMoreQuickSlots`, `modFHUD`, `modFriendlyHUD`, `modImmersiveCam`, or `modAQOOM`. Active menus are W3EE-integrated XML: `modMoreQuickSlots.xml`, `modFHUDConfig.xml`, and `ImmCamMenu.xml`. | Deleting the menu XML would break W3EE-integrated add-on configuration. Adding standalone versions later would create real duplication. | Do not remove these W3EE-owned menus. Avoid adding standalone copies on top of W3EE. See `docs/ui-control-overlap-audit.md`. |
 | `modkaer_morhen_extended` plus disabled backup of the same mod | Active folder exists, and a disabled backup folder of the same size also exists. | Active folder may be the selected working version after prior testing; disabled folder is backup clutter but not compiled. | Candidate for later archive cleanup only, not gameplay removal. Confirm commit/log history first. |
 | `modshrinesofverna` + `modVernaShrine_Everlasting` | We previously had duplicate class/function conflicts. Current `modshrinesofverna` has local scripts disabled so Everlasting can win parts of the implementation. | Removing either may remove content or compatibility split. | Keep for now. Documented as a manually split compatibility pair. |
 | `modHDReworkedProject`, `modHDReworkedProject2`, `modHDReworkedProject3`, `modHDReworkedProject4`, `mod00000HDReworkedProject`, `mod000000aHDRP_BiA` | Multiple HDRP folders are active. Some are likely official parts/patches/load-order layers, not duplicates. | Removing a part may degrade textures or undo BiA/HDRP compatibility. | Do not treat as redundant until checked against HDRP install instructions/file manifests. |
@@ -34,6 +34,7 @@ These are not good removal candidates right now:
 - `modRandomEncountersReworked`: matches the exploration-pressure goal.
 - `modBrothersInArms`: primary bugfix/restoration owner.
 - `modW3EE`, `modReduxW3EE`, `modW3EELocalization*`: core stack.
+- W3EE-owned add-on menus: `ImmCamMenu.xml`, `modFHUDConfig.xml`, `modMoreQuickSlots.xml`.
 
 ## Next Redundancy Audit
 
