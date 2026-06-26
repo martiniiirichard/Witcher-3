@@ -7,6 +7,8 @@ Purpose: one living reference for mod-menu settings we have reviewed, what we pi
 Generated inventory:
 
 - `docs/mod-menu-option-inventory.csv`
+- `docs/mod-settings-recommendations.csv`
+- `docs/mod-settings-recommendations-guide.md`
 - Current inventory size: 3,670 menu rows
 - Mod option rows: 2,672
 - System option rows: 998
