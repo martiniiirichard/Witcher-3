@@ -5,12 +5,15 @@ Date started: 2026-06-26
 Companion artifact:
 
 - `docs/mod-settings-recommendations.csv`
+- `docs/w3ee-settings-deep-pass.md`
+- `docs/mod-redundancy-candidates.md`
 
 Scope:
 
 - Covers every active mod-menu row from `docs/mod-menu-option-inventory.csv`.
 - Current row count: 2,672 mod settings.
 - This is an advisory layer only. It does not change live game settings.
+- The CSV is the broad first-pass inventory. Dedicated deep-pass docs supersede broad CSV wording for their specific mod/menu.
 
 ## How To Read The CSV
 

@@ -9,6 +9,8 @@ Generated inventory:
 - `docs/mod-menu-option-inventory.csv`
 - `docs/mod-settings-recommendations.csv`
 - `docs/mod-settings-recommendations-guide.md`
+- `docs/w3ee-settings-deep-pass.md`
+- `docs/mod-redundancy-candidates.md`
 - Current inventory size: 3,670 menu rows
 - Mod option rows: 2,672
 - System option rows: 998
