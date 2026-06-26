@@ -105,3 +105,46 @@ Strong next move if revisited:
 
 - Compare it visually against the current stack in Beauclair day, Beauclair night, rain, fog, Toussaint interiors, and q704/fairy tale scenes.
 - Only install if we intentionally choose Benis as the Toussaint lighting winner, then place it after Filterless Toussaint/Realistic Weather or remove the redundant Toussaint pieces it supersedes.
+
+## Benis Follow-Up Diff
+
+Compared against the current active Toussaint/weather winners:
+
+- `weather_bob.csv`: real text changes, not just a repack.
+- `sunny_bob_v7.env`: large binary profile change versus Filterless Toussaint.
+  - Benis length: `181229`
+  - Filterless length: `198751`
+  - Shared bytes different: about `67.76%`
+- `fog_tm_pois.env`: tiny binary profile change versus Realistic Weather.
+  - Same file length: `94381`
+  - Shared bytes different: about `0.02%`
+
+Weather table behavior:
+
+- Filterless Toussaint makes normal Toussaint weather mostly one mid-cloud look:
+  - `WT_Clear`: `0.0`
+  - `WT_Light_Clouds`: `0.0`
+  - `WT_Mid_Clouds`: `0.85`
+  - `WT_Fog`: `0.08`
+- Benis spreads probability back across multiple daytime/fog states:
+  - `WT_Clear`: `0.4`
+  - `WT_Light_Clouds`: `0.3`
+  - `WT_Mid_Clouds`: `0.4`
+  - `WT_Fog`: `0.1`
+  - adds `WT_Fog2`: `0.1`
+
+Payload concentration:
+
+- `21` files: q704 fairy-tale / Dettlaff quest lighting.
+- `6` files: sunny/daylight profiles.
+- `3` files: fog profiles.
+- `2` files: q702 wight quest lighting.
+- `2` files: rain profiles.
+- `2` files: Toussaint interior cubemaps.
+- `1` file: Blood and Wine world definition, `bob.w2w`.
+- `1` file: Toussaint weather probability/effect table, `weather_bob.csv`.
+
+Interpretation:
+
+- Full high-priority Benis install would visibly change everyday Toussaint weather away from the current Filterless Toussaint look.
+- Low-priority Benis install might preserve current Filterless/Realistic Weather overlapping winners while still adding unique q704/q702/rain/interior/cutscene profiles, but `bob.w2w` means that is still a world-level visual change and should be tested deliberately.
