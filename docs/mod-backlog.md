@@ -36,6 +36,10 @@ Source collection reviewed: https://www.nexusmods.com/games/witcher3/collections
 | [Rational Crafting](https://www.nexusmods.com/witcher3/mods/10389) | Ships a full `craftingMenu.ws` override in a current W3EE/Better Icons/Unread Schematics/Expansion Zero hot zone. See `logs/assess-rational-crafting-10389-2026-06-27.md`. |
 | [Advanced Icons for Witcher Gear](https://www.nexusmods.com/witcher3/mods/11339) | Looks cosmetic but replaces Blood and Wine item definition XML already owned by W3EE/BiA/scabbard/manticore layers. See `logs/assess-advanced-icons-witcher-gear-11339-2026-06-27.md`. |
 
+## Deferred / Buggy Worklist
+
+See `docs/deferred-mod-worklist.md` for current partial installs, repaired installs, and do-not-retry-raw items.
+
 ## Deferred Unless Specifically Wanted
 
 | Mod / Group | Source | Reason To Defer |
