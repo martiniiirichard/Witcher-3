@@ -21,6 +21,7 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Alchemy Primer 8081 | Porting project, not a normal install. It collides with W3EE, Better Icons, E3 HUD, Nobs Reflex, Quest Item Equipment, and Alcohol Factory. |
 | Rational Crafting 10389 | Full `craftingMenu.ws` override in a current hot zone. |
 | Advanced Icons for Witcher Gear 11339 | Cosmetic goal, but payload replaces B&W item XML already owned by W3EE/BiA/scabbard layers. |
+| Balanced Alcohol Prices 10295 | Rechecked after loader-pressure finding. It owns full `def_item_edibles.xml` / `items_plus` edibles; low priority is no-op, high priority would override current Food Rebalance/Lighter Bombs/economy decisions. Keep disabled. |
 | Improved Fist Fights 3703 | Full `r4Player.ws` and item XML changes; W3EE already intentionally changes fist-fight health behavior. |
 | Sort Everything / Minor Tweaks | Useful but touches inventory, journal, bestiary, alchemy, and crafting hot-zone scripts. Needs manual compatibility patch. |
 | Interface Animations 7353 | Script fixes were possible, but active DLC caused hard DX12 crash. Needs dedicated DLC/content crash pass. |
