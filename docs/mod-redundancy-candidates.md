@@ -66,3 +66,70 @@ These are active, low-risk flavor/polish additions. User preference is to keep t
 - `modBaratheon`
 
 Do not remove these as generic cleanup without another approval pass.
+
+## Shadowed Bundle Audit - 2026-06-27
+
+Rule verified from prior logs: lower numeric `mods.settings` priority wins in this stack.
+
+This pass used `tools/tmp/bundle-conflict-index-20260625/enabled-bundle-assets.csv`, so it covers the active bundle index from that audit date. Treat the result as strong evidence for older installed mods, but refresh the bundle index before a large cleanup batch.
+
+### Strong Removal Candidates
+
+These appear to be active but functionally shadowed by other active mods. Do not remove without approval, but these are good cleanup candidates.
+
+| Candidate | Evidence | Recommendation |
+| --- | --- | --- |
+| `modAtmosphericNights` | One bundled asset: `fx\demos_and_temp_fx\darkness_upon_us.env`. It loses to `modDarkerNights` priority `237`; `modAtmosphericNights` is priority `238`. | Archived after user approval on 2026-06-27. |
+| `modNoEnemyDotsAndNoHerbs` | One bundled SWF: `gameplay\gui_new\swf\hud\hud_minimap2.redswf`. It loses to `modE3HUD` priority `12`; no active scripts or menu XML found in the folder. | Archive unless we intentionally leave E3 HUD and redesign minimap behavior. |
+| `modNG_modUndiesVanillaFix` | Its two underwear mesh assets lose to `modNG_modNudeUndies_M_MFla_B` priority `207`; this folder is priority `211`. | Archived after user approval on 2026-06-27. |
+| `modNewVaginas` | Its 18 common female body texture assets lose to `modWitcher3RFGUnshaved` priority `57`; `modNewVaginas` is priority `58`. User preference is the unshaved RFG variant. | Archived after user approval on 2026-06-27. |
+| `modFoodRebalanceRedux` | Its three bundled item/ability XML assets lose to `mod0000_W3EER_FoodRebalance_BiA_Patch` and `modlighterbombsW3eeRedux`. | Do not archive as a simple no-effect mod yet. The W3EE/BiA patch appears to carry the intended harsher status-effect behavior, but `modlighterbombsW3eeRedux` currently wins `def_item_edibles.xml` and changes many food/drink prices, categories, qualities, and bomb-casing weight. Needs a balance decision. |
+
+### Not Removal Candidates Despite Shadowed Assets
+
+| Item | Why It Looked Redundant | Why To Keep |
+| --- | --- | --- |
+| `mod__hoods` | Its inventory SWF loses to E3 HUD. | Hoods' items/scripts still matter; the SWF loss was already accepted to preserve E3/W3EE inventory UI. |
+| `modLiveBestiary` | Its original bestiary SWF loses to E3 HUD. | This is intentional; Live Bestiary contributes data/content while E3/W3EE-compatible UI behavior wins. |
+| `modEvents` | Its bundled world/content rows are shadowed by BiA/Boat Races in the old index. | It still has active scripts: `events_journal.ws` and `events_modMenu.ws`. Keep unless the Events feature is unwanted. |
+| `modNaturalTorchlight` | Its torch entity asset loses to `modTrueFires`. | Natural Torchlight script logic was manually grafted into `mod0000_MergedFiles`, and its menu XML is registered. Keep unless we intentionally remove that merged behavior. |
+| `modAMM` | One horse entity asset loses to BiA. | AMM has active scripts/assets and the W3EE Redux compatibility patch. Keep while AMM is desired. |
+
+### E3 HUD Ownership Notes
+
+`modE3HUD` and `mod0_E3HUD_W3EER_NG` are not simple duplicates. They are the selected HUD stack:
+
+- `modE3HUD` provides the base E3-style HUD assets and wins a few standalone panels.
+- `mod0_E3HUD_W3EER_NG` wins most W3EE-sensitive panels and is the compatibility layer for the current W3EE Redux setup.
+- `modE3HUDColorLoad` only wins loading-screen SWFs over the base E3 HUD layer.
+
+The E3 stack competes with W3EE vanilla UI assets, Hoods inventory UI, Live Bestiary's original bestiary SWF, Extra Skill Slots' character SWF, and `modNoEnemyDotsAndNoHerbs`' minimap SWF. That does not make the E3 stack redundant; it means it is the active UI owner. Do not remove either `modE3HUD` or `mod0_E3HUD_W3EER_NG` unless we intentionally redesign the full UI stack.
+
+### Food Rebalance Notes
+
+Current active priority winners:
+
+- `gameplay/abilities/effects.xml`: `mod0000_W3EER_FoodRebalance_BiA_Patch` wins over `modFoodRebalanceRedux`, W3EE, and BiA.
+- `gameplay/items/def_item_cooking_recipes.xml`: `mod0000_W3EER_FoodRebalance_BiA_Patch` wins over `modFoodRebalanceRedux`.
+- `gameplay/items/def_item_edibles.xml`: `modlighterbombsW3eeRedux` wins over both the W3EE/BiA Food Rebalance patch and base Food Rebalance.
+
+For a difficult, balanced economy, the concerning overlap is `modlighterbombsW3eeRedux`. It owns the entire edibles file, not just bomb weights. It lowers or changes many food/drink prices and quality tiers while also making bomb casings lighter.
+
+Resolution applied on 2026-06-27:
+
+- Added custom compatibility mod `mod000000_W3EER_FoodRebalance_LighterBombsCompat`.
+- It contains the W3EE/BiA Food Rebalance `def_item_edibles.xml` with only `Bomb casing` and `Bomb casing_Stash` weight changed from `0.7` to `0.2`.
+- Set compatibility mod to `Enabled=1`, `Priority=6`.
+- Set original `modlighterbombsW3eeRedux` to `Enabled=0`, `Priority=7`.
+
+This preserves the intended bomb-use incentive without letting the older Lighter Bombs edibles file soften the broader food/drink economy.
+
+Do not remove `modFoodRebalanceRedux` until we confirm whether the compatibility patch fully depends on its DLC/bundle presence or merely supersedes it. The safer near-term candidate is not removal; it is a controlled priority/manual-merge pass for `modlighterbombsW3eeRedux`.
+
+### Needs Decision: Remove Or Re-Prioritize
+
+| Candidate | Evidence | Decision Needed |
+| --- | --- | --- |
+| `modDynamicWitcherSchematics` | Its four bundled recipe assets lose to `modleadOre`, `mod000_Patch_BIA-W3EER`, and `modW3EE`. No active scripts. | If we want Dynamic Witcher Schematics behavior, this may need a deliberate compatibility/priority pass. If not, it is likely a no-effect active folder and can be archived. |
+| `mod0BiA_ASL_Compatibility` | Its two map/hub assets lose to `modAdditionalStashLocations` in the old index. | Recheck with a fresh bundle index before removal. It was installed intentionally as a BiA compatibility patch, but current priority may mean the base ASL assets win instead. |
+| `modRRTCHARDX12eyes` | Companion eyes fix for `modRTCHARDX12`; current priority is `182` vs parent `183`, so the eyes fix should win under lower-number-wins rules. | Keep for now. Only revisit if visual inspection shows eye artifacts or a fresh index contradicts this. |
