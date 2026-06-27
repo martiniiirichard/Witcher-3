@@ -17,6 +17,7 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Selected Bomb for Monster Nests 7592 | Installed. | Tiny annotation wrapper over `CMonsterNestEntity.PlayerHasBombActivator()`. DX12 smoke passed. See `logs/install-selected-bomb-for-monster-nests-7592-2026-06-27.md`. |
 | Fix Loot Sound 8316 | Already grafted. | Do not install raw. The useful Buckthorn/herb sound behavior is already patched into W3EE/Better Icons/container paths. See `logs/assess-small-fix-batch-2026-06-27.md`. |
 | Fix sound of rotfiend exploding 11267 | Already grafted. | Do not install raw. The useful `SetSuppressHitSounds(true)` line is already patched into W3EE's active rotfiend explosion task. See `logs/assess-small-fix-batch-2026-06-27.md`. |
+| Fix sounds of sword hits when adding effects 11267 | Already grafted. | Do not install raw. The active W3EE `actor.ws` contains the intended Codex 11267 sound behavior. See `logs/assess-script-hotfix-downloads-2026-06-27.md`. |
 
 ## Do Not Retry Raw
 
@@ -32,6 +33,9 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Palace Extended 11004 | No scripts, but content/DLC install caused no-window launch failure. Only revisit after freeing loader budget. |
 | Broad Kaer Morhen world stacks | Exact world-layer conflicts and prior startup/content failures. Keep the current simpler line unless we do REDkit/world-layer work. |
 | No Stair Rolling 7774 | Full `explorationStateLand.ws` replacement. Diff only offered an older slope threshold while removing W3EE's falling-damage option gate. W3EE remains the better owner. |
+| Life Steal Fix 5104 | Full `r4Player.ws` replacement. Too broad for W3EE/AMM/current player-state stack. |
+| Superior Black Blood redesign 10416 | Full `damageManagerProcessor.ws` plus potion effect replacement. Too broad for W3EE/Nobs Reflex/current toxicity and damage stack. |
+| Skellige Ice Breath Compatibility 4138 | Older Ice Breath script. Current Ice Breath Next Gen script already includes Skellige Winter Weather support plus newer dialogue/cutscene handling. |
 
 ## Partial / Special Active States
 
