@@ -22,7 +22,7 @@ Purpose: track mods that may be redundant, low-value, or already superseded. Thi
 | `modshrinesofverna` + `modVernaShrine_Everlasting` | We previously had duplicate class/function conflicts. Current `modshrinesofverna` has local scripts disabled so Everlasting can win parts of the implementation. | Removing either may remove content or compatibility split. | Keep for now. Documented as a manually split compatibility pair. |
 | `modHDReworkedProject`, `modHDReworkedProject2`, `modHDReworkedProject3`, `modHDReworkedProject4`, `mod00000HDReworkedProject`, `mod000000aHDRP_BiA` | Multiple HDRP folders are active. Some are likely official parts/patches/load-order layers, not duplicates. | Removing a part may degrade textures or undo BiA/HDRP compatibility. | Do not treat as redundant until checked against HDRP install instructions/file manifests. |
 | `modWitcher3RFGUnshaved` plus disabled RFG folder | Active unshaved variant and disabled alternate exist. | Disabled folder should not compile; active folder is the chosen visual preference. | Keep active unshaved variant. Disabled alternate can be archived later if we clean backups. |
-| Low-value disabled folders from prior cleanup | Several `DISABLED_*low-value-cleanup*` folders remain. | No gameplay risk while disabled, but clutter makes audits noisier. | Candidate for later archive move outside `mods`, only with approval. |
+| Low-value disabled folders from prior cleanup | Several `DISABLED_*low-value-cleanup*` folders remained. | No gameplay risk while disabled, but clutter makes audits noisier. | Archived on 2026-06-26. See `logs/archive-disabled-redundant-mod-folders-2026-06-26.md`. |
 
 ## Already Low Confidence For Removal
 
@@ -42,3 +42,27 @@ These are not good removal candidates right now:
 2. Check whether any active UI/control folder is only an old standalone copy now superseded by W3EE Redux.
 3. Review active duplicate/paired content mods with disabled backups.
 4. Only then propose a removal batch for user approval.
+
+## Cleanup Completed
+
+2026-06-26:
+
+- Archived disabled/superseded/failed-test folders out of active `Mods` and `DLC` scan paths.
+- Archived the disabled standard `modWitcher3RFG` folder; the selected active variant remains `modWitcher3RFGUnshaved`.
+- Archived normal-named folders that were already `Enabled=0` in `mods.settings`, including the disabled Kaer Morhen test layers and `modLessIsMore`.
+- Verified there are no enabled `mods.settings` entries missing physical active folders after cleanup.
+- Archived `modW3QE` reduced shell and `modHDRPTestApple` test utility. See `logs/archive-redundant-active-shells-w3qe-hdrptestapple-2026-06-26.md`.
+- Archived `modNoMissableTrophies`, `dlcNoMissableTrophies`, and `dlcNoMissableMutagens` after user approval. See `logs/archive-no-missable-trophies-2026-06-26.md`.
+
+## Future Trim Only If Needed
+
+These are active, low-risk flavor/polish additions. User preference is to keep them for now because they are nice additions, but they are reasonable future removal candidates if loader budget, visual clutter, or debugging pressure requires a leaner stack:
+
+- `modAdditionalArmorStandsNoUni`
+- `modMorgueLightsFix`
+- `modLampOnPlayersBoat_NoCityLight`
+- `modZ_GrammarOfThePath`
+- Brothel/Addicted appearance variants: `modViola`, `modSuzy`, `modNarcissa1`, `modBertha1`, `modTouCourt1`
+- `modBaratheon`
+
+Do not remove these as generic cleanup without another approval pass.
