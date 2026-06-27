@@ -130,6 +130,16 @@ Do not remove `modFoodRebalanceRedux` until we confirm whether the compatibility
 
 | Candidate | Evidence | Decision Needed |
 | --- | --- | --- |
-| `modDynamicWitcherSchematics` | Its four bundled recipe assets lose to `modleadOre`, `mod000_Patch_BIA-W3EER`, and `modW3EE`. No active scripts. | If we want Dynamic Witcher Schematics behavior, this may need a deliberate compatibility/priority pass. If not, it is likely a no-effect active folder and can be archived. |
-| `mod0BiA_ASL_Compatibility` | Its two map/hub assets lose to `modAdditionalStashLocations` in the old index. | Recheck with a fresh bundle index before removal. It was installed intentionally as a BiA compatibility patch, but current priority may mean the base ASL assets win instead. |
 | `modRRTCHARDX12eyes` | Companion eyes fix for `modRTCHARDX12`; current priority is `182` vs parent `183`, so the eyes fix should win under lower-number-wins rules. | Keep for now. Only revisit if visual inspection shows eye artifacts or a fresh index contradicts this. |
+
+### Resolved: Archived
+
+| Candidate | Resolution | Evidence |
+| --- | --- | --- |
+| `modDynamicWitcherSchematics` | Archived on 2026-06-27 and disabled in `mods.settings`. | It contains only two bundled content files. After unpacking, all four recipe XML paths were shadowed by lower-priority winners: `modleadOre`, `mod000_Patch_BIA-W3EER`, or `modW3EE`. Named recipe item blocks were identical to the winners except `DWSTestItem`, a hidden/no-drop/no-show test item. No scripts, DLC folder, menu XML, or input bindings were present. |
+
+### Resolved: Keep
+
+| Candidate | Resolution | Evidence |
+| --- | --- | --- |
+| `mod0BiA_ASL_Compatibility` | Keep with `modAdditionalStashLocations`. | Fresh bundle unpack showed the compatibility patch wins the overlapping `bob.w2em` and `novigrad.w2em` hub files at priority `10`; base ASL stays later at priority `226` and still contributes Skellige hub data plus two stash level files. The two overlapping patch files differ from base ASL by hash and size, so the patch is not a duplicate no-effect folder. |
