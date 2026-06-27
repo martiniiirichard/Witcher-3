@@ -35,6 +35,8 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | QuickLoad 332 | Full `playerInput.ws` replacement plus input/menu config. Current Menu Organizer already exposes quickload-style infrastructure, and `playerInput.ws` is a hot file in this stack. |
 | Loot In Water 9221 | Full `btTaskDeath.ws` replacement plus local annotation. Useful idea, but death/loot behavior is a W3EE/BiA hot zone; needs manual compatibility review before install. |
 | Cinematic Fast Travel 12042 | Local script bundle with camera/player/combat fast-travel hooks. Nice-to-have, but overlaps Fast Travel Pack and player/camera state behavior. Revisit only as a dedicated feature pass. |
+| Improved Horse Controls 7229 | W3EE version still replaces full horse `exploration.ws`. Revisit only if mounted controls feel bad enough to justify a horse-state merge pass. |
+| Crossbow Rework 8078 | Combat/item rebalance plus local script. Potentially interesting, but W3EE already owns combat balance; evaluate only in a deliberate ranged-combat pass. |
 | Interface Animations 7353 | Script fixes were possible, but active DLC caused hard DX12 crash. Needs dedicated DLC/content crash pass. |
 | Palace Extended 11004 | No scripts, but content/DLC install caused no-window launch failure. Only revisit after freeing loader budget. |
 | Broad Kaer Morhen world stacks | Exact world-layer conflicts and prior startup/content failures. Keep the current simpler line unless we do REDkit/world-layer work. |
