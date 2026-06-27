@@ -80,7 +80,7 @@ These appear to be active but functionally shadowed by other active mods. Do not
 | Candidate | Evidence | Recommendation |
 | --- | --- | --- |
 | `modAtmosphericNights` | One bundled asset: `fx\demos_and_temp_fx\darkness_upon_us.env`. It loses to `modDarkerNights` priority `237`; `modAtmosphericNights` is priority `238`. | Archived after user approval on 2026-06-27. |
-| `modNoEnemyDotsAndNoHerbs` | One bundled SWF: `gameplay\gui_new\swf\hud\hud_minimap2.redswf`. It loses to `modE3HUD` priority `12`; no active scripts or menu XML found in the folder. | Archive unless we intentionally leave E3 HUD and redesign minimap behavior. |
+| `modNoEnemyDotsAndNoHerbs` | One bundled SWF: `gameplay\gui_new\swf\hud\hud_minimap2.redswf`. It loses to `modE3HUD` priority `12`; no active scripts or menu XML found in the folder. | Archived on 2026-06-27 because E3 HUD is the chosen HUD owner. |
 | `modNG_modUndiesVanillaFix` | Its two underwear mesh assets lose to `modNG_modNudeUndies_M_MFla_B` priority `207`; this folder is priority `211`. | Archived after user approval on 2026-06-27. |
 | `modNewVaginas` | Its 18 common female body texture assets lose to `modWitcher3RFGUnshaved` priority `57`; `modNewVaginas` is priority `58`. User preference is the unshaved RFG variant. | Archived after user approval on 2026-06-27. |
 | `modFoodRebalanceRedux` | Its three bundled item/ability XML assets lose to `mod0000_W3EER_FoodRebalance_BiA_Patch` and `modlighterbombsW3eeRedux`. | Do not archive as a simple no-effect mod yet. The W3EE/BiA patch appears to carry the intended harsher status-effect behavior, but `modlighterbombsW3eeRedux` currently wins `def_item_edibles.xml` and changes many food/drink prices, categories, qualities, and bomb-casing weight. Needs a balance decision. |
@@ -130,7 +130,7 @@ Do not remove `modFoodRebalanceRedux` until we confirm whether the compatibility
 
 | Candidate | Evidence | Decision Needed |
 | --- | --- | --- |
-| `modRRTCHARDX12eyes` | Companion eyes fix for `modRTCHARDX12`; current priority is `182` vs parent `183`, so the eyes fix should win under lower-number-wins rules. | Keep for now. Only revisit if visual inspection shows eye artifacts or a fresh index contradicts this. |
+| `modRRTCHARDX12eyes` | Companion eyes fix for `modRTCHARDX12`; current priority is `182` vs parent `183`, so the eyes fix wins under lower-number-wins rules. Fresh unpack showed it overrides two parent eye material files with different hashes. | Keep. This is an active companion patch, not a redundancy candidate. |
 
 ### Resolved: Archived
 
