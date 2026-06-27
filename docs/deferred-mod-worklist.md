@@ -44,7 +44,6 @@ These need download/inspection first:
 
 | Mod | Link | Expected Risk |
 | --- | --- | --- |
-| Viper Venomous Silver Sword Schematic Restored | https://www.nexusmods.com/witcher3/mods/7442 | Small restoration candidate. Check W3EE/BiA item XML ownership. |
 | Roach Gwent Card for Everyone | https://www.nexusmods.com/witcher3/mods/10898 | Small Gwent unlock candidate. Check Gwent Redux ownership. |
 | Blood Trails | https://www.nexusmods.com/witcher3/mods/8065 | Strong immersion fit. Check VFX/blood/combat effect paths before install. |
 
