@@ -13,6 +13,7 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Area | Status | Notes |
 | --- | --- | --- |
 | Vivaldi Investments 12215 | Fixed installed DLC payload. | Active mod was present, but DLC `blob0.bundle` and `metadata.store` were zero bytes. Repaired from archive and DX12 smoke passed. See `logs/repair-vivaldi-investments-dlc-2026-06-27.md`. |
+| Useful Place of Power Map Pin 11300 | Installed. | Tiny script-only map pin helper. DX12 smoke passed. See `logs/install-useful-place-of-power-map-pin-11300-2026-06-27.md`. |
 
 ## Do Not Retry Raw
 
