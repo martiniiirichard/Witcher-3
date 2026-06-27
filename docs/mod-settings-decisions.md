@@ -93,27 +93,52 @@ Sources used:
 - GitHub: [Aelto/tw3-random-encounters-reworked](https://github.com/Aelto/tw3-random-encounters-reworked) documents contracts, bounties, ecosystem behavior, trophies, and a complete mod menu.
 - RER Bible: [Summary](https://aelto.github.io/tw3-random-encounters-reworked/rer-bible/) is the setting reference to use when reviewing the 762-option menu.
 
-### Current Recommendation
+### Approved Profile: Low-Frequency Horror
 
-| Setting area | Recommendation | Why |
+Intent: RER should create rare, memorable wilderness danger, not MMO-style monster multiplication. Countryside ambushes should feel like 3-4 serious incidents across roughly 20 hours of play. Cities should be almost quiet, closer to one rare incident across that same span, and should skew human/social rather than monster-pack chaos.
+
+| Setting area | Approved direction | Why |
 | --- | --- | --- |
 | Mod enabled | On. | It supports exploration pressure and replayable world activity. |
-| Main difficulty | Keep current/default unless live testing shows encounter bloat. | W3EE already makes fights dangerous. RER should add uncertainty and texture, not become the main combat difficulty slider. |
-| Level scaling | Prefer automatic. | Keeps RER aligned with the current run instead of forcing static level math that may fight W3EE progression. |
-| External factors impact | Keep modest/default. | Sounds, corpses, and ecosystem behavior should matter, but not constantly dogpile the player. |
-| Day/night frequency | Keep default first. | We want pressure while exploring, but the map should still breathe. Tune only after timed travel tests. |
+| Main difficulty | Keep RER from owning difficulty; W3EE owns combat lethality. | RER should control cadence, geography, and surprise, not replace W3EE balance. |
+| Level scaling | Keep automatic/current. | Keeps RER aligned with the current run without fighting W3EE progression. |
+| External factors impact | Modest. | Weather, corpses, swamps, and sound should matter, but should not constantly dogpile the player. |
+| Day frequency | Very rare: low `3600`, high `6000`. | Daytime travel should mostly breathe. |
+| Night frequency | Rare but dangerous: low `1200`, high `2400`. | Night should feel meaningfully worse without becoming constant harassment. |
+| Additional delay per player level | `0`. | Avoid hidden level-based cadence drift. |
+| Ecosystem frequency multiplier | `0`. | Script inspection shows this is the clean neutral/lowest-risk way to stop ecosystem-driven monster multiplication. |
+| Min spawn distance | `100`. | Avoid enemies popping too close to Geralt. |
+| Spawn diameter | `160`. | Keeps spawn placement varied but not chaotic. |
+| Static encounter small chance | `25`. | Allows occasional world texture without clutter. |
+| Static encounter large chance | `5`. | Very strong monsters should be rare. |
+| Foottracks ratio | `25`. | Enough clue/trail flavor without excessive tracking noise. |
 | Cancel spawns near quest markers | On. | Completionist run needs quest safety more than maximum chaos. |
-| Big city spawns | Off. | Cities are social/economic hubs; random combat there risks immersion and quest/menu disruption. |
-| Encounter loot | On, but monitor economy. | Hunting should pay, but if it becomes a farming loop, lower rewards before lowering encounter quality. |
-| Only known bestiary creatures | On for immersion. | Geralt's knowledge and bestiary progression should matter. This also reduces early-game monster nonsense. |
-| Hide next notifications | On if currently enabled. | Keeps the world less mechanical; rely on clues, tracks, and encounters. |
-| Action camera scenes | Off unless explicitly desired. | We already have camera/UI complexity. Avoid cinematic interrupts until the gameplay layer is stable. |
+| Big city spawns | Off. | Novigrad and cities are social/economic hubs; random combat there risks immersion and quest/menu disruption. |
+| Settlement delay multiplier | `5`. | Helps keep villages/cities quiet even when region constraints allow something nearby. |
+| Enemy count multiplier | `1`. | No grouped-mob inflation. Danger should come from individual threat quality, not pack spam. |
+| Fill creature group event | `0`, combat fill disabled. | This is the main "monster multiplication" behavior and should be off. |
+| Event cooldown | `300`. | Events should be rare. |
+| Fight-noise event | `0`. | Prevents ordinary combat from summoning more enemies. |
+| Necrophage/body events | Very low: blood `1`, bodies `2`. | Corpse/blood reactions are flavorful, but should not become a chain-spawn system. |
+| Swamp event | Low: `4`. | Velen swamps should be scary, but not noisy. |
+| Meditation ambush | Low: `3`. | Resting should have risk, not constant interruption. |
+| Higher vampires | Disabled via encounter weights. | Higher vampires are not random ambush material. Toussaint vampire pressure should come from lesser vampires only. |
+| Toussaint vampire logic | Keep lesser vampire types possible but rare and countryside-biased. | Bruxae/Fleders/Garkains make sense in Toussaint; higher vampires do not. |
+| Velen threat logic | Rare big beasts and cursed/necrophage threats. | Velen should feel dangerous through fiends, chorts, hags, leshens, foglets, wraiths, and necrophage pressure. |
+| Skellige threat logic | Rare predators, trolls, sirens/harpies, berserkers. | Skellige should stay dangerous through region-appropriate threats. |
+| Encounter loot | On, but low reward flow. | Encounters should matter, but not become a farming economy. |
+| Container refill | `0`. | No repeatable passive loot faucet. |
+| Only known bestiary creatures | On. | Geralt's knowledge and bestiary progression should matter. |
+| Hide next notifications | On. | Keeps the world less mechanical; rely on clues, tracks, and encounters. |
+| Action camera scenes | Off. | Avoid cinematic interrupts and camera-stack complexity. |
+| Tutorials | Off after learning the system. | Reduces menu/tutorial noise after the profile is understood. |
 
 Redundancy watchlist:
 
 - RER can generate money, trophies, loot, and contracts. If economy gets too generous, tune RER rewards before weakening the reputation/currency systems.
 - RER difficulty and W3EE difficulty are not interchangeable. Prefer W3EE for enemy lethality and RER for encounter cadence, creature mix, and wilderness pressure.
 - Quest safety settings should stay conservative because the run is completionist.
+- Region limitation: RER groups `no_mans_land` and `novigrad` together for some region constraints. Use big-city suppression, settlement delay, and creature weights to make Novigrad quiet while keeping Velen dangerous.
 
 ## Immersive Cam
 
