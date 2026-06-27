@@ -14,6 +14,9 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | --- | --- | --- |
 | Vivaldi Investments 12215 | Fixed installed DLC payload. | Active mod was present, but DLC `blob0.bundle` and `metadata.store` were zero bytes. Repaired from archive and DX12 smoke passed. See `logs/repair-vivaldi-investments-dlc-2026-06-27.md`. |
 | Useful Place of Power Map Pin 11300 | Installed. | Tiny script-only map pin helper. DX12 smoke passed. See `logs/install-useful-place-of-power-map-pin-11300-2026-06-27.md`. |
+| Selected Bomb for Monster Nests 7592 | Installed. | Tiny annotation wrapper over `CMonsterNestEntity.PlayerHasBombActivator()`. DX12 smoke passed. See `logs/install-selected-bomb-for-monster-nests-7592-2026-06-27.md`. |
+| Fix Loot Sound 8316 | Already grafted. | Do not install raw. The useful Buckthorn/herb sound behavior is already patched into W3EE/Better Icons/container paths. See `logs/assess-small-fix-batch-2026-06-27.md`. |
+| Fix sound of rotfiend exploding 11267 | Already grafted. | Do not install raw. The useful `SetSuppressHitSounds(true)` line is already patched into W3EE's active rotfiend explosion task. See `logs/assess-small-fix-batch-2026-06-27.md`. |
 
 ## Do Not Retry Raw
 
@@ -28,6 +31,7 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Interface Animations 7353 | Script fixes were possible, but active DLC caused hard DX12 crash. Needs dedicated DLC/content crash pass. |
 | Palace Extended 11004 | No scripts, but content/DLC install caused no-window launch failure. Only revisit after freeing loader budget. |
 | Broad Kaer Morhen world stacks | Exact world-layer conflicts and prior startup/content failures. Keep the current simpler line unless we do REDkit/world-layer work. |
+| No Stair Rolling 7774 | Full `explorationStateLand.ws` replacement. Diff only offered an older slope threshold while removing W3EE's falling-damage option gate. W3EE remains the better owner. |
 
 ## Partial / Special Active States
 
