@@ -31,6 +31,10 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Sort Everything / Minor Tweaks | Useful but touches inventory, journal, bestiary, alchemy, and crafting hot-zone scripts. Needs manual compatibility patch. |
 | Immersive Sound 1921 | Full old script replacements including `r4Player.ws`, focus, boat, illusion, and place-of-power scripts. Too broad for this W3EE stack. |
 | Music Overhaul Project Redux 5222 | Local download is a zero-byte/corrupt archive. Re-download before any future assessment. Current active music behavior is owned by `modLessmusic`. |
+| Smooth Camera Motion 7155 | Full `game\player\player.ws` replacement. Current camera behavior is already governed by W3EE/Immersive Cam settings; only revisit for a specific camera complaint. |
+| QuickLoad 332 | Full `playerInput.ws` replacement plus input/menu config. Current Menu Organizer already exposes quickload-style infrastructure, and `playerInput.ws` is a hot file in this stack. |
+| Loot In Water 9221 | Full `btTaskDeath.ws` replacement plus local annotation. Useful idea, but death/loot behavior is a W3EE/BiA hot zone; needs manual compatibility review before install. |
+| Cinematic Fast Travel 12042 | Local script bundle with camera/player/combat fast-travel hooks. Nice-to-have, but overlaps Fast Travel Pack and player/camera state behavior. Revisit only as a dedicated feature pass. |
 | Interface Animations 7353 | Script fixes were possible, but active DLC caused hard DX12 crash. Needs dedicated DLC/content crash pass. |
 | Palace Extended 11004 | No scripts, but content/DLC install caused no-window launch failure. Only revisit after freeing loader budget. |
 | Broad Kaer Morhen world stacks | Exact world-layer conflicts and prior startup/content failures. Keep the current simpler line unless we do REDkit/world-layer work. |
