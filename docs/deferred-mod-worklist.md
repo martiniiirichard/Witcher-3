@@ -33,8 +33,10 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Palace Extended 11004 | No scripts, but content/DLC install caused no-window launch failure. Only revisit after freeing loader budget. |
 | Broad Kaer Morhen world stacks | Exact world-layer conflicts and prior startup/content failures. Keep the current simpler line unless we do REDkit/world-layer work. |
 | No Stair Rolling 7774 | Full `explorationStateLand.ws` replacement. Diff only offered an older slope threshold while removing W3EE's falling-damage option gate. W3EE remains the better owner. |
+| Bomb Aiming 9017 | Full `petard.ws` and `playerAiming.ws` replacements. These are W3EE combat/throwable hot files, so raw install is too risky. Reconsider only as a manual diff/graft if bomb aiming feels bad in play. |
 | Life Steal Fix 5104 | Full `r4Player.ws` replacement. Too broad for W3EE/AMM/current player-state stack. |
 | Superior Black Blood redesign 10416 | Full `damageManagerProcessor.ws` plus potion effect replacement. Too broad for W3EE/Nobs Reflex/current toxicity and damage stack. |
+| Resistance to bleeding in necrophages and vampires 10416 | Full `baseEffect.ws` replacement. This is a core W3EE effect-system hot file; skip raw install unless we do a targeted manual compatibility pass. |
 | Skellige Ice Breath Compatibility 4138 | Older Ice Breath script. Current Ice Breath Next Gen script already includes Skellige Winter Weather support plus newer dialogue/cutscene handling. |
 
 ## Partial / Special Active States

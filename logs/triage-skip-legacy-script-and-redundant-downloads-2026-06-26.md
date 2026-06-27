@@ -75,6 +75,34 @@ Reason:
 - High collision risk with W3EE's mutagen/toxicity/character-menu stack.
 - Functionally redundant for this build: W3EE Redux and the current W3EE-compatible skill/mutagen stack already own the modern mutagen lane. Do not install this raw unless we intentionally build a compatibility fork.
 
+### Mutagen Tab Alchemy 8780
+
+Archive:
+
+- `C:\Users\marti\Downloads\0. Mutagen Tab Alchemy - Next Gen-8780-4-1-1767028435.zip`
+
+Decision: skip.
+
+Reason:
+
+- Ships `game\gameplay\alchemy\alchemyTypes.ws`, a W3EE-owned hot file.
+- Adds a local mutagen-tab menu hook into the same alchemy/mutagen lane already owned by W3EE Redux and current W3EE-compatible menu work.
+- Functionally overlaps the Yellow Mutagens class of change. Do not install raw unless we intentionally build a W3EE compatibility fork.
+
+### Fix NG Enhanced Swords Bugfix 10449
+
+Archive:
+
+- `C:\Users\marti\Downloads\modFixNGESwordsBugfix (Next-Gen)-10449-1-0-1-1739536711.zip`
+
+Decision: skip raw install.
+
+Reason:
+
+- Prior launch error: `Overwrite function 'W3PlayerWitcher::FixNGESwords' must overwrite an existing function`.
+- That means the mod expects a function that is not present in the current W3EE/W3EE Redux player script stack.
+- Do not reinstall raw. Reconsider only if we deliberately inspect the intended missing behavior and graft it into the active W3EE player script by hand.
+
 ### Darker Nights Patch 3151
 
 Archive:
