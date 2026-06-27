@@ -29,6 +29,8 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Balanced Alcohol Prices 10295 | Rechecked after loader-pressure finding. It owns full `def_item_edibles.xml` / `items_plus` edibles; low priority is no-op, high priority would override current Food Rebalance/Lighter Bombs/economy decisions. Keep disabled. |
 | Improved Fist Fights 3703 | Full `r4Player.ws` and item XML changes; W3EE already intentionally changes fist-fight health behavior. |
 | Sort Everything / Minor Tweaks | Useful but touches inventory, journal, bestiary, alchemy, and crafting hot-zone scripts. Needs manual compatibility patch. |
+| Immersive Sound 1921 | Full old script replacements including `r4Player.ws`, focus, boat, illusion, and place-of-power scripts. Too broad for this W3EE stack. |
+| Music Overhaul Project Redux 5222 | Local download is a zero-byte/corrupt archive. Re-download before any future assessment. Current active music behavior is owned by `modLessmusic`. |
 | Interface Animations 7353 | Script fixes were possible, but active DLC caused hard DX12 crash. Needs dedicated DLC/content crash pass. |
 | Palace Extended 11004 | No scripts, but content/DLC install caused no-window launch failure. Only revisit after freeing loader budget. |
 | Broad Kaer Morhen world stacks | Exact world-layer conflicts and prior startup/content failures. Keep the current simpler line unless we do REDkit/world-layer work. |
