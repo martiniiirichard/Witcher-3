@@ -29,6 +29,13 @@ Source collection reviewed: https://www.nexusmods.com/games/witcher3/collections
 | [Vampires Have No Shadows](https://www.nexusmods.com/witcher3/mods/1749) | z5tjm8, djkovrik, Immersion | Strong lore/immersion idea. | Check if it touches broad entity/material bundles. | Backlog |
 | [Professional Witcher Belt and Items](https://www.nexusmods.com/witcher3/mods/5911) | z5tjm8, Bjorn18, Immersion | Visual immersion candidate if it does not fight AMM/equipment visuals. | Appearance stack is already dense. Inspect file paths first. | Backlog |
 
+## Reviewed And Deferred
+
+| Mod | Reason |
+| --- | --- |
+| [Rational Crafting](https://www.nexusmods.com/witcher3/mods/10389) | Ships a full `craftingMenu.ws` override in a current W3EE/Better Icons/Unread Schematics/Expansion Zero hot zone. See `logs/assess-rational-crafting-10389-2026-06-27.md`. |
+| [Advanced Icons for Witcher Gear](https://www.nexusmods.com/witcher3/mods/11339) | Looks cosmetic but replaces Blood and Wine item definition XML already owned by W3EE/BiA/scabbard/manticore layers. See `logs/assess-advanced-icons-witcher-gear-11339-2026-06-27.md`. |
+
 ## Deferred Unless Specifically Wanted
 
 | Mod / Group | Source | Reason To Defer |
