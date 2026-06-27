@@ -83,7 +83,7 @@ These appear to be active but functionally shadowed by other active mods. Do not
 | `modNoEnemyDotsAndNoHerbs` | One bundled SWF: `gameplay\gui_new\swf\hud\hud_minimap2.redswf`. It loses to `modE3HUD` priority `12`; no active scripts or menu XML found in the folder. | Archived on 2026-06-27 because E3 HUD is the chosen HUD owner. |
 | `modNG_modUndiesVanillaFix` | Its two underwear mesh assets lose to `modNG_modNudeUndies_M_MFla_B` priority `207`; this folder is priority `211`. | Archived after user approval on 2026-06-27. |
 | `modNewVaginas` | Its 18 common female body texture assets lose to `modWitcher3RFGUnshaved` priority `57`; `modNewVaginas` is priority `58`. User preference is the unshaved RFG variant. | Archived after user approval on 2026-06-27. |
-| `modFoodRebalanceRedux` | Its three bundled item/ability XML assets lose to `mod0000_W3EER_FoodRebalance_BiA_Patch` and `modlighterbombsW3eeRedux`. | Do not archive as a simple no-effect mod yet. The W3EE/BiA patch appears to carry the intended harsher status-effect behavior, but `modlighterbombsW3eeRedux` currently wins `def_item_edibles.xml` and changes many food/drink prices, categories, qualities, and bomb-casing weight. Needs a balance decision. |
+| `modFoodRebalanceRedux` | Its three bundled item/ability XML assets lose to `mod0000_W3EER_FoodRebalance_BiA_Patch` and `mod000000_W3EER_FoodRebalance_LighterBombsCompat`. | Archived on 2026-06-27 after verifying the W3EE/BiA patch and custom lighter-bombs compatibility mod supersede its active runtime files. |
 
 ### Not Removal Candidates Despite Shadowed Assets
 
@@ -124,7 +124,13 @@ Resolution applied on 2026-06-27:
 
 This preserves the intended bomb-use incentive without letting the older Lighter Bombs edibles file soften the broader food/drink economy.
 
-Do not remove `modFoodRebalanceRedux` until we confirm whether the compatibility patch fully depends on its DLC/bundle presence or merely supersedes it. The safer near-term candidate is not removal; it is a controlled priority/manual-merge pass for `modlighterbombsW3eeRedux`.
+`modFoodRebalanceRedux` was archived on 2026-06-27 after confirming it is content-only and its three bundled XML files are fully superseded:
+
+- `effects.xml`: `mod0000_W3EER_FoodRebalance_BiA_Patch` wins.
+- `def_item_cooking_recipes.xml`: `mod0000_W3EER_FoodRebalance_BiA_Patch` wins.
+- `def_item_edibles.xml`: `mod000000_W3EER_FoodRebalance_LighterBombsCompat` wins.
+
+The W3EE/BiA patch intentionally replaces base Food Rebalance bleeding entries with its own compatibility entries, and the recipe/edibles named item sets are covered by the active winners.
 
 ### Needs Decision: Remove Or Re-Prioritize
 
