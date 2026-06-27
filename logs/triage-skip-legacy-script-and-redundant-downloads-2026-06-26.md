@@ -73,6 +73,7 @@ Reason:
   - `game\gui\menus\characterMenu.ws`
   - `game\player\playerWitcher.ws`
 - High collision risk with W3EE's mutagen/toxicity/character-menu stack.
+- Functionally redundant for this build: W3EE Redux and the current W3EE-compatible skill/mutagen stack already own the modern mutagen lane. Do not install this raw unless we intentionally build a compatibility fork.
 
 ### Darker Nights Patch 3151
 
