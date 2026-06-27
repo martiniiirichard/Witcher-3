@@ -183,3 +183,35 @@ Verification:
 Residual risk:
 
 - Needs visual checks in Toussaint. Best test set: Beauclair daylight, Beauclair night, rain/fog, Toussaint interiors, q702 wight area, and q704 fairy-tale/Dettlaff scenes.
+
+## Kaer Morhen Armory Rubble Current Reinstall
+
+Date: 2026-06-27
+
+Finding:
+
+- The earlier inspection/install remained valid, but the live `Mods\modKMArmoryRubbleRemoved` folder and `mods.settings` entry were no longer present during the current easiest-to-hardest pass.
+
+Action:
+
+- Reinstalled `modKMArmoryRubbleRemoved` from the already-inspected archive.
+- Added it back to both active `mods.settings` files:
+
+```ini
+[modKMArmoryRubbleRemoved]
+Enabled=1
+Priority=268
+```
+
+Verification:
+
+- Script Merger not required: content-only payload.
+- DX12 launch smoke passed. `witcher3.exe` opened a responsive `The Witcher 3` window after 45 seconds and was then closed.
+
+Backup:
+
+- `C:\Program Files (x86)\GOG Galaxy\Games\The Witcher 3 Wild Hunt GOTY\backups\km-armory-rubble-removed-reinstall-20260627-143110`
+
+Residual risk:
+
+- Still needs an in-world Kaer Morhen visual check around the armory/arsenal and Avallach chamber.
