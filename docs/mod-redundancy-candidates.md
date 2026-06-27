@@ -138,6 +138,20 @@ The W3EE/BiA patch intentionally replaces base Food Rebalance bleeding entries w
 | --- | --- | --- |
 | `modRRTCHARDX12eyes` | Companion eyes fix for `modRTCHARDX12`; current priority is `182` vs parent `183`, so the eyes fix wins under lower-number-wins rules. Fresh unpack showed it overrides two parent eye material files with different hashes. | Keep. This is an active companion patch, not a redundancy candidate. |
 
+## Weather / Visual Stack Audit - 2026-06-27
+
+See `logs/audit-weather-visual-stack-2026-06-27.md`.
+
+No safe removal candidate was found in the active weather/visual stack. Current read:
+
+- Keep `modDenseRainfall` + `modRealisticRainV3`; they affect different rain layers.
+- Keep `mod_FilterlessToussaint`, `modRealisticWeather4`, `modtoussaintw4New`, and `modNewToussaintClouds1_3` for now; this is an intentional Toussaint visual stack, not a simple duplicate.
+- Keep `modDarkerNights`, `modNoArtificialPlayerLight`, and `modNaturalTorchlight`; they affect different night/light-source layers.
+- Keep `modTrueFires` + `modATrueFiresHDReworkedProjectCompatibility` + Natural Torchlight's merged behavior.
+- Keep HDRP, Better Grass AO, Environment Overhaul, HD Tree Billboards, RTCHARDX12, and RT Water Reflection script-only fix.
+
+Rule going forward: new weather, lighting, cloud, rain, or Toussaint mods need exact-path inspection before install. These are visual-owner decisions, not routine backlog installs.
+
 ### Resolved: Archived
 
 | Candidate | Resolution | Evidence |
