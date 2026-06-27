@@ -89,9 +89,9 @@ These appear to be active but functionally shadowed by other active mods. Do not
 
 | Item | Why It Looked Redundant | Why To Keep |
 | --- | --- | --- |
-| `mod__hoods` | Its inventory SWF loses to E3 HUD. | Hoods' items/scripts still matter; the SWF loss was already accepted to preserve E3/W3EE inventory UI. |
+| `mod__hoods` | Its inventory SWF loses to E3 HUD. Fresh 2026-06-27 audit confirmed `dlc__hoods`, Hoods keybind file, and active local scripts remain installed, with prior W3EE compatibility edits for dyeing and paperdoll animation. | Keep. Hoods' items/scripts/DLC still matter; the SWF loss was already accepted to preserve E3/W3EE inventory UI. |
 | `modLiveBestiary` | Its original bestiary SWF loses to E3 HUD. | This is intentional; Live Bestiary contributes data/content while E3/W3EE-compatible UI behavior wins. |
-| `modEvents` | Its bundled world/content rows are shadowed by BiA/Boat Races in the old index. | It still has active scripts: `events_journal.ws` and `events_modMenu.ws`. Keep unless the Events feature is unwanted. |
+| `modEvents` | Its bundled world/content rows are shadowed by BiA/Boat Races in the old index. Fresh 2026-06-27 audit confirmed it still has `dlcEvents`, registered `Events.xml`, active fact/journal scripts, and only the duplicate BiA-supplied descriptor script is disabled. | Keep unless the Events feature is unwanted. This is a script/menu/DLC feature layer, not a dead bundle folder. |
 | `modNaturalTorchlight` | Its torch entity asset loses to `modTrueFires`. | Natural Torchlight script logic was manually grafted into `mod0000_MergedFiles`, and its menu XML is registered. Keep unless we intentionally remove that merged behavior. |
 | `modAMM` | One horse entity asset loses to BiA. | AMM has active scripts/assets and the W3EE Redux compatibility patch. Keep while AMM is desired. |
 
