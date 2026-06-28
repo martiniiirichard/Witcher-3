@@ -171,3 +171,11 @@ Rule going forward: new weather, lighting, cloud, rain, or Toussaint mods need e
 | `modmanticor` | Keep. | Its broad `temp.ws` intentionally loses to W3EE; useful payload is bundled/XML content. |
 | `mod00ReputationSystem_W3EE_REDUX` | Keep. | Scripts lose to `mod00FlorenEconomySystem_W3EE_REDUX` by design; Floren Economy is the high-priority economy/reputation umbrella. |
 | String/cache-only active mods | Keep. | Fresh pass found no stale active shell among no-script/no-bundle folders. HD Tree Billboards, TWCG Random OST, HD Ursine Concept, SNC W3EE Redux, Mods Menu Category, MenuStrings, Grammar of the Path, and W3EE localization folders all have legitimate string/cache/localization payloads. See `logs/audit-string-cache-shell-mods-2026-06-27.md`. |
+
+### Feature Shadow Pass - 2026-06-27
+
+| Mod | Result | Evidence |
+| --- | --- | --- |
+| `modNPCTargetingPriorityAndAxiiFixes` | Keep. | Helper functions and mod-specific call sites are present in the active W3EE/Nobs/MergedFiles winners. |
+| `modAllGearEnchantingBasedOnSockets` | Keep after fix. | Found one missing active component: W3EE still required 3 sockets and only swords/armor. Grafted the 1-slot threshold and boots/gloves/pants filter into the active W3EE component. DX12 smoke passed. |
+| `modFriendlyMeditation` | Keep, but likely partial. | Config/menu/input pieces exist and the config object is grafted into merged `playerWitcher.ws`, but meditation-state/camera/input behavior still mostly loses to W3EE/E3/Nobs. Needs in-game behavior test before any deeper port. |
