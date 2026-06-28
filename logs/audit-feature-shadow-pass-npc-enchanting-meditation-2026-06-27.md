@@ -55,16 +55,17 @@ Backup:
 Validation:
 
 - DX12 launch smoke passed; `witcher3.exe` stayed running and responding for 45 seconds.
+- User in-game validation passed on 2026-06-28.
 
-Remaining check:
+Result:
 
-- At the runewright/enchanting menu, verify boots, gloves, pants, and 1-2 socket gear appear and only valid enchantments can be applied.
+- Keep. The feature is now represented in the active W3EE/Better Icons enchanting path.
 
 ## Friendly Meditation
 
 Mod: `modFriendlyMeditation`
 
-Status: keep, but likely partial.
+Status: keep.
 
 Evidence:
 
@@ -81,9 +82,10 @@ Evidence:
 
 Decision: do not blindly reprioritize Friendly Meditation. A deeper port is possible, but it would touch meditation states, camera behavior, input handling, and W3EE prep-meditation behavior.
 
-Recommended test before deeper port:
+Validation:
 
-- Open the Friendly Meditation menu.
-- Try fast-forwarding meditation with the bound input.
-- Check whether the custom camera and campfire options do anything.
-- If only the menu appears but behavior is missing, schedule a dedicated Friendly Meditation graft pass.
+- User in-game behavior check passed on 2026-06-28.
+
+Result:
+
+- Keep current state. No deeper port needed unless a specific missing Friendly Meditation behavior shows up later.

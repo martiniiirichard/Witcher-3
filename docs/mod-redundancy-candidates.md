@@ -166,9 +166,9 @@ Rule going forward: new weather, lighting, cloud, rain, or Toussaint mods need e
 | --- | --- | --- |
 | `mod0BiA_ASL_Compatibility` | Keep with `modAdditionalStashLocations`. | Fresh bundle unpack showed the compatibility patch wins the overlapping `bob.w2em` and `novigrad.w2em` hub files at priority `10`; base ASL stays later at priority `226` and still contributes Skellige hub data plus two stash level files. The two overlapping patch files differ from base ASL by hash and size, so the patch is not a duplicate no-effect folder. |
 | `modLessmusic` | Keep after priority correction. | Audit found it was enabled but losing `engine\sound.ws` to W3EE. Moved to priority `21` so it now wins the sound script while preserving W3EE sound-threat hooks. DX12 launch smoke passed. See `logs/audit-script-shadow-redundancy-pass-2026-06-27.md`. |
-| `modBasicCookingRecipes` | Keep. | Its two alchemy scripts intentionally lose to W3EE, while `dlcBasicCookingRecipes` contributes recipe/vendor/loot data. |
-| `modAllGearEnchantingBasedOnSockets` | Keep for now. | Main behavior was manually grafted into active Better Icons/W3EE enchanting logic; its remaining loose component loses to W3EE. Do not archive without a runewright behavior test. |
-| `modmanticor` | Keep. | Its broad `temp.ws` intentionally loses to W3EE; useful payload is bundled/XML content. |
+| `modBasicCookingRecipes` | Keep, future cleanup candidate. | Its two alchemy scripts intentionally lose to W3EE, while `dlcBasicCookingRecipes` contributes recipe/vendor/loot data. Possible future test: verify recipes remain available with only the DLC active, then consider archiving the script shell. |
+| `modAllGearEnchantingBasedOnSockets` | Keep. | Main behavior was manually grafted into active Better Icons/W3EE enchanting logic; W3EE component was patched for 1-slot gear plus boots/gloves/pants. User in-game validation passed on 2026-06-28. |
+| `modmanticor` | Keep. | Its broad `temp.ws` intentionally loses to W3EE; active payload is bundled/DLC/string content, including world, crafting, quest/entity, and level assets. |
 | `mod00ReputationSystem_W3EE_REDUX` | Keep. | Scripts lose to `mod00FlorenEconomySystem_W3EE_REDUX` by design; Floren Economy is the high-priority economy/reputation umbrella. |
 | String/cache-only active mods | Keep. | Fresh pass found no stale active shell among no-script/no-bundle folders. HD Tree Billboards, TWCG Random OST, HD Ursine Concept, SNC W3EE Redux, Mods Menu Category, MenuStrings, Grammar of the Path, and W3EE localization folders all have legitimate string/cache/localization payloads. See `logs/audit-string-cache-shell-mods-2026-06-27.md`. |
 
@@ -177,5 +177,8 @@ Rule going forward: new weather, lighting, cloud, rain, or Toussaint mods need e
 | Mod | Result | Evidence |
 | --- | --- | --- |
 | `modNPCTargetingPriorityAndAxiiFixes` | Keep. | Helper functions and mod-specific call sites are present in the active W3EE/Nobs/MergedFiles winners. |
-| `modAllGearEnchantingBasedOnSockets` | Keep after fix. | Found one missing active component: W3EE still required 3 sockets and only swords/armor. Grafted the 1-slot threshold and boots/gloves/pants filter into the active W3EE component. DX12 smoke passed. |
-| `modFriendlyMeditation` | Keep, but likely partial. | Config/menu/input pieces exist and the config object is grafted into merged `playerWitcher.ws`, but meditation-state/camera/input behavior still mostly loses to W3EE/E3/Nobs. Needs in-game behavior test before any deeper port. |
+| `modAllGearEnchantingBasedOnSockets` | Keep after fix. | Found one missing active component: W3EE still required 3 sockets and only swords/armor. Grafted the 1-slot threshold and boots/gloves/pants filter into the active W3EE component. DX12 smoke passed; user in-game validation passed on 2026-06-28. |
+| `modFriendlyMeditation` | Keep. | Config/menu/input pieces exist and the config object is grafted into merged `playerWitcher.ws`. User in-game behavior check passed on 2026-06-28, so no deeper port is needed unless a specific missing behavior appears. |
+| `modIcyOcean` | Keep. | Unique `W3Effect_IcyOcean` script is active, and active W3EE/Nobs effect type/manager scripts already contain the required `EET_IcyOcean` grafts. |
+| `modBasicCookingRecipes` | Keep, future cleanup candidate. | The DLC bundle is the value payload. Loose alchemy scripts lose to W3EE by design, and W3EE already supports edible/cooking recipe categories. Only consider archiving the script shell after in-game recipe verification. |
+| `modmanticor` | Keep. | Loose `temp.ws` loses to W3EE by design; bundle index shows active Manticore world/journal/crafting/entity/level payload. |
