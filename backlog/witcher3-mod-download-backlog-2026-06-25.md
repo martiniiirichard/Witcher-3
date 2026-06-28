@@ -104,7 +104,7 @@ Source: https://www.nexusmods.com/witcher3/mods/816
 
 Source: https://www.nexusmods.com/witcher3/mods/938
 
-- [deferred] Colored Map Markers - Next Gen-938-1-50-1779902790.zip | downloaded `2026-06-23 13:10:38` | 1.65 MB | note: Map marker/UI compatibility downloads deferred until deliberate map marker pass.
+- [installed-standard-or-script-merged] Colored Map Markers - Next Gen-938-1-50-1779902790.zip | downloaded `2026-06-23 13:10:38` | 1.65 MB | note: Installed main bundle-only modColoredMapMarkers at priority 14; no scripts or menu XML. See logs/install-colored-map-markers-938-2026-06-27.md.
 
 ### Nexus mod 1021
 
@@ -1078,7 +1078,7 @@ Source: https://www.nexusmods.com/witcher3/mods/8174
 
 Source: https://www.nexusmods.com/witcher3/mods/8206
 
-- [deferred] Colored Map Markers Compatibility Patch (SGUI)-8206-1-1-1779984470.zip | downloaded `2026-06-23 14:26:39` | 0.38 MB | note: Map marker/UI compatibility downloads deferred until deliberate map marker pass.
+- [skipped] Colored Map Markers Compatibility Patch (SGUI)-8206-1-1-1779984470.zip | downloaded `2026-06-23 14:26:39` | 0.38 MB | note: Skipped: SGUI/RestoredBuffedMonsters CMM compatibility patch is not needed because that target stack is not installed. See logs/install-colored-map-markers-938-2026-06-27.md.
 
 ### Nexus mod 8236
 
