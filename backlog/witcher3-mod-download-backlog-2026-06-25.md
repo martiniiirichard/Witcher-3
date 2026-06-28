@@ -175,7 +175,7 @@ Source: https://www.nexusmods.com/witcher3/mods/1921
 
 Source: https://www.nexusmods.com/witcher3/mods/2019
 
-- [deferred] Instant Tooltips-2019-1-311.7z | downloaded `2026-06-23 13:14:11` | 0.21 MB | note: Instant Tooltips deferred; UI/hot menu behavior needs dedicated pass.
+- [skipped] Instant Tooltips-2019-1-311.7z | downloaded `2026-06-23 13:14:11` | 0.21 MB | note: Skipped: old 1.31-era package modifies shared componentslib.redswf. Current E3 HUD/W3EE/Better Icons UI stack is stable; only revisit for a specific tooltip-speed complaint.
 
 ### Nexus mod 2034
 
@@ -1747,8 +1747,8 @@ Source: https://www.nexusmods.com/witcher3/mods/11651
 
 Source: https://www.nexusmods.com/witcher3/mods/11657
 
-- [deferred] Easier to Read for TW3 - UI Fix.rar | downloaded `2026-06-23 14:20:28` | 0.91 MB | note: Source inferred from paired Belgrano download and Nexus page. Font/readability package deferred; current E3 HUD menu layout already has active text-fit work.
-- [deferred] Easier to Read for TW3 - Belgrano-11657-1-0-1767247130.rar | downloaded `2026-06-23 14:20:43` | 0.11 MB | note: Font/readability package deferred; current E3 HUD menu layout already has active text-fit work.
+- [skipped] Easier to Read for TW3 - UI Fix.rar | downloaded `2026-06-23 14:20:28` | 0.91 MB | note: Skipped with 11657 font package: preference-only UI/font bundle may destabilize current E3 HUD text-fit work. Revisit only for dedicated font screenshot comparison.
+- [skipped] Easier to Read for TW3 - Belgrano-11657-1-0-1767247130.rar | downloaded `2026-06-23 14:20:43` | 0.11 MB | note: Skipped: wider Latin font replacer may worsen E3 HUD/menu text clipping. Revisit only for dedicated font screenshot comparison.
 
 ### Nexus mod 11686
 
