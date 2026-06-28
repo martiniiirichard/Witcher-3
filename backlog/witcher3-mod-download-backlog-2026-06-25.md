@@ -744,7 +744,7 @@ Source: https://www.nexusmods.com/witcher3/mods/6499
 
 Source: https://www.nexusmods.com/witcher3/mods/6568
 
-- [deferred] Progress on the Path - W3EE Redux-6568-6-0-0-7-1731236903.zip | downloaded `2026-06-23 14:02:34` | 2.35 MB | note: Progress on the Path W3EE Redux deferred; potentially interesting progression mod but overlaps W3EE leveling/economy goals.
+- [installed-with-manual-graft] Progress on the Path - W3EE Redux-6568-6-0-0-7-1731236903.zip | downloaded `2026-06-23 14:02:34` | 2.35 MB | note: Completion/progress tracker installed with manual Better Icons crafting-menu graft; raw Progress craftingMenu.ws disabled; see logs/install-progress-on-the-path-6568-2026-06-27.md.
 
 ### Nexus mod 6880
 
