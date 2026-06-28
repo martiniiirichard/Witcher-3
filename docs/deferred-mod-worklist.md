@@ -46,6 +46,8 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Superior Black Blood redesign 10416 | Full `damageManagerProcessor.ws` plus potion effect replacement. Too broad for W3EE/Nobs Reflex/current toxicity and damage stack. |
 | Resistance to bleeding in necrophages and vampires 10416 | Full `baseEffect.ws` replacement. This is a core W3EE effect-system hot file; skip raw install unless we do a targeted manual compatibility pass. |
 | Skellige Ice Breath Compatibility 4138 | Older Ice Breath script. Current Ice Breath Next Gen script already includes Skellige Winter Weather support plus newer dialogue/cutscene handling. |
+| Potions Tab Expanded 7007 | Replaces `gameplay\gui_new\swf\inventory\panel_inventory.redswf`, which is already owned by E3 HUD, the W3EE Redux E3 HUD layer, Hoods, and W3EE. Needs a deliberate UI/SWF compatibility pass. |
+| Unreasonable Plot Redesigned 10014 | Full quest/inventory/tutorial script replacements plus quest phase/scene/world bundle edits. Overlaps W3EE, Expansion Zero, Floren Economy, and Reputation hot paths. Needs a dedicated quest/restoration compatibility pass. |
 
 ## Partial / Special Active States
 
