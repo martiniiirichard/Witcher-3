@@ -11,7 +11,7 @@ Status values are normalized from install, audit, and triage logs where decision
 - `fix-applied`: 1
 - `future-removal-candidate`: 1
 - `installed-partial-or-adjusted`: 20
-- `installed-standard-or-script-merged`: 212
+- `installed-standard-or-script-merged`: 213
 - `installed-with-manual-graft`: 23
 - `quarantined-or-disabled`: 6
 - `reference`: 4
@@ -105,6 +105,12 @@ Source: https://www.nexusmods.com/witcher3/mods/816
 Source: https://www.nexusmods.com/witcher3/mods/938
 
 - [installed-standard-or-script-merged] Colored Map Markers - Next Gen-938-1-50-1779902790.zip | downloaded `2026-06-23 13:10:38` | 1.65 MB | note: Installed main bundle-only modColoredMapMarkers at priority 14; no scripts or menu XML. See logs/install-colored-map-markers-938-2026-06-27.md.
+
+### Nexus mod 8259
+
+Source: https://www.nexusmods.com/witcher3/mods/8259
+
+- [installed-standard-or-script-merged] Full-8259-1-0-2-1780403224.zip | downloaded after the 2026-06-25 backlog snapshot | 1.56 MB | note: Installed Community Patch - World Map Full at priority 7 as the winning world-map compatibility bundle for E3 HUD + Colored Map Markers. See logs/install-community-patch-world-map-8259-2026-06-27.md.
 
 ### Nexus mod 1021
 
