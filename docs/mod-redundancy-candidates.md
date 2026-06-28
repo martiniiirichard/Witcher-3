@@ -163,3 +163,8 @@ Rule going forward: new weather, lighting, cloud, rain, or Toussaint mods need e
 | Candidate | Resolution | Evidence |
 | --- | --- | --- |
 | `mod0BiA_ASL_Compatibility` | Keep with `modAdditionalStashLocations`. | Fresh bundle unpack showed the compatibility patch wins the overlapping `bob.w2em` and `novigrad.w2em` hub files at priority `10`; base ASL stays later at priority `226` and still contributes Skellige hub data plus two stash level files. The two overlapping patch files differ from base ASL by hash and size, so the patch is not a duplicate no-effect folder. |
+| `modLessmusic` | Keep after priority correction. | Audit found it was enabled but losing `engine\sound.ws` to W3EE. Moved to priority `21` so it now wins the sound script while preserving W3EE sound-threat hooks. DX12 launch smoke passed. See `logs/audit-script-shadow-redundancy-pass-2026-06-27.md`. |
+| `modBasicCookingRecipes` | Keep. | Its two alchemy scripts intentionally lose to W3EE, while `dlcBasicCookingRecipes` contributes recipe/vendor/loot data. |
+| `modAllGearEnchantingBasedOnSockets` | Keep for now. | Main behavior was manually grafted into active Better Icons/W3EE enchanting logic; its remaining loose component loses to W3EE. Do not archive without a runewright behavior test. |
+| `modmanticor` | Keep. | Its broad `temp.ws` intentionally loses to W3EE; useful payload is bundled/XML content. |
+| `mod00ReputationSystem_W3EE_REDUX` | Keep. | Scripts lose to `mod00FlorenEconomySystem_W3EE_REDUX` by design; Floren Economy is the high-priority economy/reputation umbrella. |
