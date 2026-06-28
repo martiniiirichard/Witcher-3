@@ -1,0 +1,5 @@
+[Game]
+AllowPhotomodeFreeMovement=true
+
+[Streaming]
+UseCameraForStreamingOverride=true

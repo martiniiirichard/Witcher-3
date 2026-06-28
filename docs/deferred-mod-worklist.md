@@ -50,6 +50,10 @@ Use `docs/mod-install-triage-process.md` before retrying any item here.
 | Unreasonable Plot Redesigned 10014 | Full quest/inventory/tutorial script replacements plus quest phase/scene/world bundle edits. Overlaps W3EE, Expansion Zero, Floren Economy, and Reputation hot paths. Needs a dedicated quest/restoration compatibility pass. |
 | zzjay NPCs 7051 | Broad named-NPC appearance texture pack. It overlaps current Cerys, Yennefer, and nude/body appearance choices, so install only after a deliberate named-NPC appearance decision. |
 | Vegetation Billboards Remastered 8956 | Broad vegetation/LOD pass. Even with no exact overlap in the older bundle index, it belongs in a deliberate foliage/performance/LOD pass because the current stack already has HDRP, HD tree billboards, Better Grass AO, and weather/lighting layers. |
+| NOBs SlowMo 10286 | Replaces `W3EE - Effects.ws`, already owned by W3EE and Nobs Reflex. Needs a manual effect-system compatibility pass. |
+| Community Patch - Besserwisser and Nitpicker 3163 | Ships broad replacements for `actor.ws`, `aardEntity.ws`, `playerWitcher.ws`, and `r4Player.ws`, plus bundled content. Current W3EE/BiA stack already owns most of this bugfix lane. |
+| Shields 2356 | Adds DLC/config but replaces `PlayerAbilityManager.ws`, `guiTooltipComponent.ws`, `playerWitcher.ws`, `r4Player.ws`, and `arrowProjectile.ws`. Too invasive for raw install. |
+| Reasonable Senses Configurable 10463 | Adds many Witcher-sense highlight scripts and a `gameplayEntity.ws` hook. Revisit only if current W3EE exploration readability becomes a real problem. |
 
 ## Partial / Special Active States
 
