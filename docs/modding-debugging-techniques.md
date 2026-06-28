@@ -6,6 +6,10 @@ These are general techniques that have worked well for this W3EE-heavy mod stack
 
 Do not assume a Script Merger prompt means a merged file was actually produced. If the game throws missing member/function errors after a merge, check whether `mod0000_MergedFiles` exists and contains the expected script path.
 
+If Script Merger asks to remove old merges from `mod0000_MergedFiles`, click **No** by default. This stack has manual grafts in the merged folder, and removing old merges can delete working compatibility fixes unless we have made a targeted backup and decided to rebuild the merged folder on purpose.
+
+For this stack, the pinned shortcut should use `tools\sm-fae-0.9.7\WitcherScriptMerger.exe` with its own folder as the working directory. SM-FAE also needs `tools\sm-fae-0.9.7\MergeInventory.xml` to exist; an empty inventory file is enough to avoid the false "old merges" clean-install prompt for the current hand-maintained `mod0000_MergedFiles` folder.
+
 Example failure pattern:
 
 - A helper script compiles from the new mod.

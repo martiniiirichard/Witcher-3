@@ -60,6 +60,7 @@ For every backlog or deferred mod:
 
 - Do not merge `.csv` files in Script Merger. Treat them as data-owner decisions.
 - Do not let old full vanilla scripts override W3EE Redux. Graft small marked blocks into the active winner when justified.
+- If Script Merger asks to remove old merges from `mod0000_MergedFiles`, answer **No** unless we have intentionally backed up that folder and planned a full regeneration. This build contains manual grafts that Script Merger may classify as old/non-automated merges.
 - Do not add standalone Friendly HUD, More Quick Slots, AQOOM, or Immersive Cam copies unless we intentionally replace W3EE-owned integrations.
 - Do not stack broad economy/crafting mods on top of Floren Economy/Reputation/W3EE without a value comparison.
 - Do not add new weather/Toussaint/cloud/rain mods without exact-path inspection against the current visual stack.
@@ -70,7 +71,10 @@ For every backlog or deferred mod:
 - The game is still installed under `C:\Program Files (x86)`, which is less ideal for a very large manual mod setup because permissions and launcher behavior can be noisier.
 - `ModLimitAdjuster.asi` is present under `bin\x64`.
 - `dinput8.dll` is present, so ASI loading is configured.
-- The newer Script Merger FAE toolset exists in `tools\sm-fae-0.9.7`.
+- The taskbar and desktop Script Merger shortcuts should point to `tools\sm-fae-0.9.7\WitcherScriptMerger.exe` with `tools\sm-fae-0.9.7` as the working directory.
+- Keep `tools\sm-fae-0.9.7\MergeInventory.xml` present, even if it is empty. SM-FAE uses this file as its merge inventory marker; without it, it treats the existing manual `mod0000_MergedFiles` folder as old/non-automated and refuses to continue unless the folder is deleted.
+- In `tools\sm-fae-0.9.7\WitcherScriptMerger.dll.config`, keep `AutoDeleteOldMerges=false` and `AutoOverwriteOldMerges=false`. The current stack has intentional manual grafts in `mod0000_MergedFiles`; automatic old-merge cleanup can close the tool or delete working compatibility files.
+- `tools\script-merger-0.6.5\WitcherScriptMerger.exe` remains a fallback conflict viewer if SM-FAE breaks again.
 
 ## Backlog Order
 
