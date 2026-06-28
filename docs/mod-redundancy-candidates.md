@@ -65,6 +65,8 @@ These are active, low-risk flavor/polish additions. User preference is to keep t
 - Brothel/Addicted appearance variants: `modViola`, `modSuzy`, `modNarcissa1`, `modBertha1`, `modTouCourt1`
 - `modBaratheon`
 
+Fresh 2026-06-27 audit confirmed these are not dead shells. Most have active winning bundle/cache/string/script payloads. Keep unless reducing optional flavor content becomes a goal. See `logs/audit-optional-cosmetic-content-redundancy-2026-06-27.md`.
+
 Do not remove these as generic cleanup without another approval pass.
 
 ## Shadowed Bundle Audit - 2026-06-27
