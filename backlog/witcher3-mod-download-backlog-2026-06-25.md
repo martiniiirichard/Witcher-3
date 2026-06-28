@@ -6,62 +6,55 @@ Status values are normalized from install, audit, and triage logs where decision
 
 ## Status Counts
 
-- `deferred`: 8
-- `installed-partial-or-adjusted`: 15
-- `installed-standard-or-script-merged`: 66
-- `installed-with-manual-graft`: 8
-- `quarantined-or-disabled`: 3
-- `reference`: 1
-- `skipped`: 59
-- `triage`: 277
-
-### Nexus mod 
-
-Source: https://github.com/meltdown28/E3-UI-and-HUD-Revamped/releases
-
-- [triage] E3.2014.UI.and.HUD.Revamped.Nudel.Patch.-.All.Quest.Objects.On.Map.Patch.zip | downloaded `2026-06-22 14:25:33` | 1.71 MB | note: Source inferred from GitHub release archives; no Nexus id in filename.
-- [triage] E3-UI-and-HUD-Revamped-E32014UIandHUDRevamped_NudelPatch_AQOOMPatch.zip | downloaded `2026-06-22 14:25:39` | 2.76 MB | note: Source inferred from GitHub release archives; no Nexus id in filename.
-- [triage] E3.2014.UI.and.HUD.Revamped.-.Magic.Spells.Patch.zip | downloaded `2026-06-22 15:04:38` | 0.01 MB | note: Source inferred from GitHub release archives; no Nexus id in filename.
-- [triage] E3-UI-and-HUD-Revamped-E32014UIandHUD_Revamped_MagicSpellsPatch.zip | downloaded `2026-06-22 15:04:43` | 1.05 MB | note: Source inferred from GitHub release archives; no Nexus id in filename.
-- [triage] E3.UI.and.HUD.Revamped.-.Better.Icons.Patch.zip | downloaded `2026-06-22 15:10:35` | 0.02 MB | note: Source inferred from GitHub release archives; no Nexus id in filename.
-- [triage] E3-UI-and-HUD-Revamped-BetterIconsPatch_E3HUD.zip | downloaded `2026-06-22 15:10:38` | 0.93 MB | note: Source inferred from GitHub release archives; no Nexus id in filename.
+- `assessed-or-audited`: 27
+- `deferred`: 59
+- `fix-applied`: 1
+- `future-removal-candidate`: 1
+- `installed-partial-or-adjusted`: 20
+- `installed-standard-or-script-merged`: 212
+- `installed-with-manual-graft`: 23
+- `quarantined-or-disabled`: 6
+- `reference`: 4
+- `skipped`: 81
+- `tooling-reference`: 2
+- `troubleshooting-record`: 1
 
 ### Nexus mod 332
 
 Source: https://www.nexusmods.com/witcher3/mods/332
 
-- [triage] QuickLoad-332-v4-0-4-1767435456.7z | downloaded `2026-06-23 14:03:15` | 0.02 MB
+- [deferred] QuickLoad-332-v4-0-4-1767435456.7z | downloaded `2026-06-23 14:03:15` | 0.02 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 358
 
 Source: https://www.nexusmods.com/witcher3/mods/358
 
-- [triage] SkipMovies-358-4-0-1671032845.zip | downloaded `2026-06-23 14:42:28` | 0.01 MB
+- [skipped] SkipMovies-358-4-0-1671032845.zip | downloaded `2026-06-23 14:42:28` | 0.01 MB | note: Decision synced from ledger: install-skip-movies-2026-06-23.md
 
 ### Nexus mod 445
 
 Source: https://www.nexusmods.com/witcher3/mods/445
 
-- [triage] Ciri's sword 2.0b-445-2-0-1676299398.zip | downloaded `2026-06-23 14:58:32` | 0.38 MB
-- [triage] Lore-friendly Silver Swords 2.1b-445-2-1-1771608670.zip | downloaded `2026-06-23 15:01:34` | 8.59 MB
+- [installed-standard-or-script-merged] Ciri's sword 2.0b-445-2-0-1676299398.zip | downloaded `2026-06-23 14:58:32` | 0.38 MB | note: Decision synced from ledger: install-lore-friendly-silver-swords-2026-06-23.md
+- [installed-standard-or-script-merged] Lore-friendly Silver Swords 2.1b-445-2-1-1771608670.zip | downloaded `2026-06-23 15:01:34` | 8.59 MB | note: Decision synced from ledger: install-lore-friendly-silver-swords-2026-06-23.md
 
 ### Nexus mod 484
 
 Source: https://www.nexusmods.com/witcher3/mods/484
 
-- [triage] Witcher Script Merger v0.6.5-484-0-6-5-1593771408.7z | downloaded `2026-06-21 07:20:27` | 96.06 MB
+- [tooling-reference] Witcher Script Merger v0.6.5-484-0-6-5-1593771408.7z | downloaded `2026-06-21 07:20:27` | 96.06 MB | note: Script Merger tool installed/configured; see logs/setup-script-merger-2026-06-21.md and logs/shortcut-script-merger-sm-fae-2026-06-27.md.
 
 ### Nexus mod 646
 
 Source: https://www.nexusmods.com/witcher3/mods/646
 
-- [triage] Unseen Monsters-646-1-21.7z | downloaded `2026-06-23 13:20:32` | 0 MB
+- [future-removal-candidate] Unseen Monsters-646-1-21.7z | downloaded `2026-06-23 13:20:32` | 0 MB | note: Unseen Monsters kept for now but marked as possible future removal per redundancy review.
 
 ### Nexus mod 659
 
 Source: https://www.nexusmods.com/witcher3/mods/659
 
-- [triage] Jump in Shallow Water 1.3-659-1-3.zip | downloaded `2026-06-23 18:55:18` | 0.1 MB
+- [skipped] Jump in Shallow Water 1.3-659-1-3.zip | downloaded `2026-06-23 18:55:18` | 0.1 MB | note: Jump in Shallow Water skipped in favor of 7221 assessment/current movement stack; see logs/triage-skip-legacy-script-and-redundant-downloads-2026-06-26.md.
 
 ### Nexus mod 662
 
@@ -90,7 +83,7 @@ Source: https://www.nexusmods.com/witcher3/mods/662
 
 Source: https://www.nexusmods.com/witcher3/mods/742
 
-- [triage] Laion and Bear Armor (Color) Concept HD-742-v3-0.rar | downloaded `2026-06-21 09:56:16` | 46.94 MB
+- [installed-standard-or-script-merged] Laion and Bear Armor (Color) Concept HD-742-v3-0.rar | downloaded `2026-06-21 09:56:16` | 46.94 MB | note: Decision synced from ledger: install-laion-bear-armor-2026-06-21.md
 
 ### Nexus mod 780
 
@@ -105,25 +98,25 @@ Source: https://www.nexusmods.com/witcher3/mods/780
 
 Source: https://www.nexusmods.com/witcher3/mods/816
 
-- [triage] Skip storybook-816-1-0.7z | downloaded `2026-06-23 14:32:45` | 0.01 MB
+- [installed-standard-or-script-merged] Skip storybook-816-1-0.7z | downloaded `2026-06-23 14:32:45` | 0.01 MB | note: Testing utility installed to speed smoke tests; see logs/testing-utility-skip-storybook-2026-06-23.md.
 
 ### Nexus mod 938
 
 Source: https://www.nexusmods.com/witcher3/mods/938
 
-- [triage] Colored Map Markers - Next Gen-938-1-50-1779902790.zip | downloaded `2026-06-23 13:10:38` | 1.65 MB
+- [deferred] Colored Map Markers - Next Gen-938-1-50-1779902790.zip | downloaded `2026-06-23 13:10:38` | 1.65 MB | note: Map marker/UI compatibility downloads deferred until deliberate map marker pass.
 
 ### Nexus mod 1021
 
 Source: https://www.nexusmods.com/witcher3/mods/1021
 
-- [triage] The Witcher 3 HD Reworked Project Ultimate-1021-12-0-1600864972.7z | downloaded `2026-06-22 22:46:34` | 0 MB
+- [skipped] The Witcher 3 HD Reworked Project Ultimate-1021-12-0-1600864972.7z | downloaded `2026-06-22 22:46:34` | 0 MB | note: Old HDRP Ultimate archive is zero-byte/obsolete; current owner is HDRP NextGen 9963 + BiA patch 9987.
 
 ### Nexus mod 1134
 
 Source: https://www.nexusmods.com/witcher3/mods/1134
 
-- [triage] Vagina's for Everyone-1134-1-0.zip | downloaded `2026-06-22 20:52:38` | 27.99 MB
+- [installed-standard-or-script-merged] Vagina's for Everyone-1134-1-0.zip | downloaded `2026-06-22 20:52:38` | 27.99 MB | note: Decision synced from ledger: install-appearance-batch-1134-7428-3733-7424-8841-2026-06-22.md
 
 ### Nexus mod 1257
 
@@ -138,109 +131,109 @@ Source: https://www.nexusmods.com/witcher3/mods/1257
 
 Source: https://www.nexusmods.com/witcher3/mods/1302
 
-- [triage] modVolumetricCloudsBootstrap_131-1302-.zip | downloaded `2026-06-22 22:16:10` | 0.01 MB
+- [installed-standard-or-script-merged] modVolumetricCloudsBootstrap_131-1302-.zip | downloaded `2026-06-22 22:16:10` | 0.01 MB | note: Volumetric Clouds Bootstrap installed; see logs/install-volumetric-clouds-bootstrap-2026-06-23.md.
 
 ### Nexus mod 1369
 
 Source: https://www.nexusmods.com/witcher3/mods/1369
 
-- [triage] No Enemy Dots And No Herbs - NGE-1369-1-40-1686918606.zip | downloaded `2026-06-23 13:15:00` | 0.22 MB
+- [installed-standard-or-script-merged] No Enemy Dots And No Herbs - NGE-1369-1-40-1686918606.zip | downloaded `2026-06-23 13:15:00` | 0.22 MB | note: Decision synced from ledger: install-no-enemy-dots-no-herbs-1369-2026-06-23.md
 
 ### Nexus mod 1424
 
 Source: https://www.nexusmods.com/witcher3/mods/1424
 
-- [triage] No Journal Sounds-1424-1-31-0-1.zip | downloaded `2026-06-23 17:54:24` | 0.04 MB
+- [installed-standard-or-script-merged] No Journal Sounds-1424-1-31-0-1.zip | downloaded `2026-06-23 17:54:24` | 0.04 MB | note: Decision synced from ledger: install-no-journal-sounds-1424-2026-06-23.md
 
 ### Nexus mod 1569
 
 Source: https://www.nexusmods.com/witcher3/mods/1569
 
-- [triage] All NPC Scabbards v1.22-1569-1-22.rar | downloaded `2026-06-22 22:43:43` | 0.45 MB
+- [skipped] All NPC Scabbards v1.22-1569-1-22.rar | downloaded `2026-06-22 22:43:43` | 0.45 MB | note: All NPC Scabbards is superseded by current BiA/SOI/scabbard-equipment stack.
 
 ### Nexus mod 1710
 
 Source: https://www.nexusmods.com/witcher3/mods/1710
 
-- [triage] Sort Everything - Next Gen-1710-1-44-1689965693.zip | downloaded `2026-06-23 13:20:16` | 3.8 MB
+- [assessed-or-audited] Sort Everything - Next Gen-1710-1-44-1689965693.zip | downloaded `2026-06-23 13:20:16` | 3.8 MB | note: Sort Everything assessed as minor tweak candidate; see logs/assess-sort-everything-minor-tweaks-2026-06-23.md.
 
 ### Nexus mod 1902
 
 Source: https://www.nexusmods.com/witcher3/mods/1902
 
-- [triage] modEnableMimics_blinking-1902-0-5-3b-1590864461.rar | downloaded `2026-06-22 22:24:06` | 0.16 MB
-- [triage] modEnableMimics_blinking-1902-0-5-3b-1590864461(1).rar | downloaded `2026-06-22 22:24:42` | 0.16 MB
+- [assessed-or-audited] modEnableMimics_blinking-1902-0-5-3b-1590864461.rar | downloaded `2026-06-22 22:24:06` | 0.16 MB | note: Decision synced from ledger: assess-enable-mimics-1902-2026-06-23.md
+- [assessed-or-audited] modEnableMimics_blinking-1902-0-5-3b-1590864461(1).rar | downloaded `2026-06-22 22:24:42` | 0.16 MB | note: Decision synced from ledger: assess-enable-mimics-1902-2026-06-23.md
 
 ### Nexus mod 1921
 
 Source: https://www.nexusmods.com/witcher3/mods/1921
 
-- [triage] Immersive Sound-1921-1-2.zip | downloaded `2026-06-22 22:28:04` | 0.12 MB
-- [triage] Immersive Sound - Bug Fixes Only-1921-1-2.zip | downloaded `2026-06-22 22:28:20` | 0.01 MB
+- [deferred] Immersive Sound-1921-1-2.zip | downloaded `2026-06-22 22:28:04` | 0.12 MB | note: Immersive Sound deferred; current sound stack already includes Less Music, No Journal Sounds, and targeted sound fixes.
+- [deferred] Immersive Sound - Bug Fixes Only-1921-1-2.zip | downloaded `2026-06-22 22:28:20` | 0.01 MB | note: Immersive Sound deferred; current sound stack already includes Less Music, No Journal Sounds, and targeted sound fixes.
 
 ### Nexus mod 2019
 
 Source: https://www.nexusmods.com/witcher3/mods/2019
 
-- [triage] Instant Tooltips-2019-1-311.7z | downloaded `2026-06-23 13:14:11` | 0.21 MB
+- [deferred] Instant Tooltips-2019-1-311.7z | downloaded `2026-06-23 13:14:11` | 0.21 MB | note: Instant Tooltips deferred; UI/hot menu behavior needs dedicated pass.
 
 ### Nexus mod 2034
 
 Source: https://www.nexusmods.com/witcher3/mods/2034
 
-- [triage] Additional Stash Locations - Next Gen-2034-1-404-1689964849.zip | downloaded `2026-06-23 13:07:54` | 0.12 MB
+- [installed-standard-or-script-merged] Additional Stash Locations - Next Gen-2034-1-404-1689964849.zip | downloaded `2026-06-23 13:07:54` | 0.12 MB | note: Additional Stash Locations installed with BiA patch; see logs/install-additional-stash-locations-bia-patch-6033-2026-06-23.md.
 
 ### Nexus mod 2084
 
 Source: https://www.nexusmods.com/witcher3/mods/2084
 
-- [triage] Realistic Weather 4.0-2084-4-0-1673889087.zip | downloaded `2026-06-23 07:31:48` | 0.11 MB
+- [installed-partial-or-adjusted] Realistic Weather 4.0-2084-4-0-1673889087.zip | downloaded `2026-06-23 07:31:48` | 0.11 MB | note: Weather/lighting stack installed/owned by deliberate weather pass; see logs/install-weather-lighting-stack-2026-06-23.md and logs/audit-weather-visual-stack-2026-06-27.md.
 
 ### Nexus mod 2109
 
 Source: https://www.nexusmods.com/witcher3/mods/2109
 
-- [triage] modBootstrap-registry-2109-1-0-1554756443.zip | downloaded `2026-06-22 17:22:57` | 0 MB
-- [triage] modBootstrap-v.0.5-NEXT-GEN-2109-v0-5-NEXT-GEN-1771092575.zip | downloaded `2026-06-22 17:23:10` | 0.16 MB
-- [triage] modBootstrap.en-v0.4.1-usedStrings-2109-0-4-1-1554756612.zip | downloaded `2026-06-22 17:24:50` | 0 MB
+- [installed-standard-or-script-merged] modBootstrap-registry-2109-1-0-1554756443.zip | downloaded `2026-06-22 17:22:57` | 0 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
+- [installed-standard-or-script-merged] modBootstrap-v.0.5-NEXT-GEN-2109-v0-5-NEXT-GEN-1771092575.zip | downloaded `2026-06-22 17:23:10` | 0.16 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
+- [installed-standard-or-script-merged] modBootstrap.en-v0.4.1-usedStrings-2109-0-4-1-1554756612.zip | downloaded `2026-06-22 17:24:50` | 0 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
 
 ### Nexus mod 2110
 
 Source: https://www.nexusmods.com/witcher3/mods/2110
 
-- [triage] modSharedImports-v0.6 - NEXT-GEN.zip-2110-v0-6-1720539533.zip | downloaded `2026-06-20 22:31:05` | 0.02 MB
+- [installed-standard-or-script-merged] modSharedImports-v0.6 - NEXT-GEN.zip-2110-v0-6-1720539533.zip | downloaded `2026-06-20 22:31:05` | 0.02 MB | note: SharedImports prerequisite present/managed by core mod stack; see logs/preinstall-check-2026-06-21.md and later install logs.
 
 ### Nexus mod 2143
 
 Source: https://www.nexusmods.com/witcher3/mods/2143
 
-- [triage] Amm Knight Necklace and Belt-2143-2-1.rar | downloaded `2026-06-22 09:57:22` | 0.18 MB
-- [triage] Remove Witcher Medallion on Knight Armors-2143-2-1.rar | downloaded `2026-06-22 09:57:34` | 0.18 MB
-- [triage] Hip Armor-2143-1.rar | downloaded `2026-06-22 09:57:47` | 0.1 MB
+- [installed-standard-or-script-merged] Amm Knight Necklace and Belt-2143-2-1.rar | downloaded `2026-06-22 09:57:22` | 0.18 MB | note: Decision synced from ledger: install-knight-accessories-2143-2026-06-22.md
+- [installed-standard-or-script-merged] Remove Witcher Medallion on Knight Armors-2143-2-1.rar | downloaded `2026-06-22 09:57:34` | 0.18 MB | note: Decision synced from ledger: install-knight-accessories-2143-2026-06-22.md
+- [installed-standard-or-script-merged] Hip Armor-2143-1.rar | downloaded `2026-06-22 09:57:47` | 0.1 MB | note: Decision synced from ledger: install-knight-accessories-2143-2026-06-22.md
 
 ### Nexus mod 2183
 
 Source: https://www.nexusmods.com/witcher3/mods/2183
 
-- [triage] Naked Geralt - All in One Installer v0.6.7 - for 1.31-2183-0-6-7.zip | downloaded `2026-06-23 19:54:22` | 120.55 MB
+- [installed-standard-or-script-merged] Naked Geralt - All in One Installer v0.6.7 - for 1.31-2183-0-6-7.zip | downloaded `2026-06-23 19:54:22` | 120.55 MB | note: Decision synced from ledger: install-naked-geralt-2183-2026-06-23.md
 
 ### Nexus mod 2283
 
 Source: https://www.nexusmods.com/witcher3/mods/2283
 
-- [triage] 5.1- The Butcher Of Blaviken DV -WE SS- PS-4K-2283-DefinitiveVersion-1703517743.7z | downloaded `2026-06-23 15:15:22` | 473.37 MB
+- [assessed-or-audited] 5.1- The Butcher Of Blaviken DV -WE SS- PS-4K-2283-DefinitiveVersion-1703517743.7z | downloaded `2026-06-23 15:15:22` | 473.37 MB | note: Decision synced from ledger: assess-butcher-of-blaviken-geralt-2026-06-23.md
 
 ### Nexus mod 2348
 
 Source: https://www.nexusmods.com/witcher3/mods/2348
 
-- [triage] Hip Armor Retexture-2348-1.rar | downloaded `2026-06-22 10:17:29` | 0.34 MB
+- [assessed-or-audited] Hip Armor Retexture-2348-1.rar | downloaded `2026-06-22 10:17:29` | 0.34 MB | note: Decision synced from ledger: review-knight-hips-2348-2026-06-22.md
 
 ### Nexus mod 2356
 
 Source: https://www.nexusmods.com/witcher3/mods/2356
 
-- [triage] Shields-2356-1-10a-1554850379.rar | downloaded `2026-06-22 22:43:24` | 146.55 MB
+- [deferred] Shields-2356-1-10a-1554850379.rar | downloaded `2026-06-22 22:43:24` | 146.55 MB | note: Shields is a large equipment/content mod; defer until dedicated equipment/combat compatibility pass.
 
 ### Nexus mod 2366
 
@@ -255,27 +248,27 @@ Source: https://www.nexusmods.com/witcher3/mods/2366
 
 Source: https://www.nexusmods.com/witcher3/mods/2448
 
-- [triage] Stag Helmet Replacer-2448-1.rar | downloaded `2026-06-22 10:31:54` | 0.07 MB
-- [triage] The Griffon Update 2.2-2448-2-2.rar | downloaded `2026-06-22 10:33:25` | 125.68 MB
+- [installed-standard-or-script-merged] Stag Helmet Replacer-2448-1.rar | downloaded `2026-06-22 10:31:54` | 0.07 MB | note: Decision synced from ledger: install-tailory-2448-2026-06-22.md
+- [installed-standard-or-script-merged] The Griffon Update 2.2-2448-2-2.rar | downloaded `2026-06-22 10:33:25` | 125.68 MB | note: Decision synced from ledger: install-tailory-2448-2026-06-22.md
 
 ### Nexus mod 2658
 
 Source: https://www.nexusmods.com/witcher3/mods/2658
 
-- [triage] custom.ini-2658-5-1679771323.7z | downloaded `2026-06-23 08:39:05` | 0 MB
-- [triage] Tweaks (Next Gen version)-2658-5-1-2-1701864515.7z | downloaded `2026-06-23 08:39:21` | 0.04 MB
+- [installed-standard-or-script-merged] custom.ini-2658-5-1679771323.7z | downloaded `2026-06-23 08:39:05` | 0 MB | note: Decision synced from ledger: install-tweaks-2658-2026-06-23.md
+- [installed-standard-or-script-merged] Tweaks (Next Gen version)-2658-5-1-2-1701864515.7z | downloaded `2026-06-23 08:39:21` | 0.04 MB | note: Decision synced from ledger: install-tweaks-2658-2026-06-23.md
 
 ### Nexus mod 2686
 
 Source: https://www.nexusmods.com/witcher3/mods/2686
 
-- [triage] Beautiful Grass V3-2686-3-0.zip | downloaded `2026-06-23 19:28:21` | 129.32 MB
+- [assessed-or-audited] Beautiful Grass V3-2686-3-0.zip | downloaded `2026-06-23 19:28:21` | 129.32 MB | note: Decision synced from ledger: assess-beautiful-grass-2686-2026-06-23.md
 
 ### Nexus mod 2770
 
 Source: https://www.nexusmods.com/witcher3/mods/2770
 
-- [triage] Lamp On Player's Boat - No City Light-2770-2-1-1776701864.7z | downloaded `2026-06-23 14:09:42` | 0.05 MB
+- [deferred] Lamp On Player's Boat - No City Light-2770-2-1-1776701864.7z | downloaded `2026-06-23 14:09:42` | 0.05 MB | note: Boat lamp/city-light tweak deferred to lighting pass.
 
 ### Nexus mod 2853
 
@@ -295,40 +288,40 @@ Source: https://www.nexusmods.com/witcher3/mods/2853
 
 Source: https://www.nexusmods.com/witcher3/mods/2925
 
-- [triage] Natural Torchlight (GUI)-2925-4-31-1.zip | downloaded `2026-06-22 22:22:24` | 0.03 MB
-- [triage] Natural Torchlight (Shared)-2925-4-31-1.zip | downloaded `2026-06-22 22:22:44` | 0.02 MB
+- [installed-standard-or-script-merged] Natural Torchlight (GUI)-2925-4-31-1.zip | downloaded `2026-06-22 22:22:24` | 0.03 MB | note: Decision synced from ledger: install-natural-torchlight-2925-2026-06-23.md
+- [installed-standard-or-script-merged] Natural Torchlight (Shared)-2925-4-31-1.zip | downloaded `2026-06-22 22:22:44` | 0.02 MB | note: Decision synced from ledger: install-natural-torchlight-2925-2026-06-23.md
 
 ### Nexus mod 2937
 
 Source: https://www.nexusmods.com/witcher3/mods/2937
 
-- [triage] LiveBestiary-2937-2.zip | downloaded `2026-06-22 22:23:13` | 0.51 MB
+- [installed-standard-or-script-merged] LiveBestiary-2937-2.zip | downloaded `2026-06-22 22:23:13` | 0.51 MB | note: Decision synced from ledger: install-live-bestiary-2937-2026-06-23.md
 
 ### Nexus mod 2943
 
 Source: https://www.nexusmods.com/witcher3/mods/2943
 
-- [triage] Smart Magic Lamp (Shared)-2943-3-31-1.zip | downloaded `2026-06-22 22:18:53` | 0.05 MB
+- [assessed-or-audited] Smart Magic Lamp (Shared)-2943-3-31-1.zip | downloaded `2026-06-22 22:18:53` | 0.05 MB | note: Decision synced from ledger: assess-smart-magic-lamp-2026-06-23.md
 
 ### Nexus mod 2968
 
 Source: https://www.nexusmods.com/witcher3/mods/2968
 
-- [triage] Additional Armor Stands - Unicorn Edition-2968-0-1-1591599758.7z | downloaded `2026-06-23 13:05:04` | 0 MB
+- [deferred] Additional Armor Stands - Unicorn Edition-2968-0-1-1591599758.7z | downloaded `2026-06-23 13:05:04` | 0 MB | note: Additional Armor Stands deferred; overlaps Corvo Bianco/home display stack.
 
 ### Nexus mod 2985
 
 Source: https://www.nexusmods.com/witcher3/mods/2985
 
-- [triage] New Lightning Effect - Next Gen Version-2985-3-0-1780800527.7z | downloaded `2026-06-22 22:21:24` | 5.31 MB
-- [triage] New Lightning FX - Alternative Script For Weathers-2985-3-0-1780921783.7z | downloaded `2026-06-22 22:21:47` | 0 MB
+- [installed-standard-or-script-merged] New Lightning Effect - Next Gen Version-2985-3-0-1780800527.7z | downloaded `2026-06-22 22:21:24` | 5.31 MB | note: New Lightning FX installed/fixed; see logs/install-yrden-igni-lightsource-2853-2026-06-22.md, logs/inspect-new-lightning-fx-2026-06-23.md, and logs/fix-new-lightning-debug-overlay-2026-06-23.md.
+- [installed-standard-or-script-merged] New Lightning FX - Alternative Script For Weathers-2985-3-0-1780921783.7z | downloaded `2026-06-22 22:21:47` | 0 MB | note: New Lightning FX installed/fixed; see logs/install-yrden-igni-lightsource-2853-2026-06-22.md, logs/inspect-new-lightning-fx-2026-06-23.md, and logs/fix-new-lightning-debug-overlay-2026-06-23.md.
 
 ### Nexus mod 2996
 
 Source: https://www.nexusmods.com/witcher3/mods/2996
 
-- [triage] E3 Hud and UI 1.2-2996-1-2.rar | downloaded `2026-06-22 14:30:56` | 1045.31 MB
-- [triage] E3 Colored Regional Loadingscreen-2996-1-2.rar | downloaded `2026-06-22 15:30:45` | 43.33 MB
+- [installed-standard-or-script-merged] E3 Hud and UI 1.2-2996-1-2.rar | downloaded `2026-06-22 14:30:56` | 1045.31 MB | note: Decision synced from ledger: install-e3-colored-loading-screens-2996-2026-06-22.md
+- [installed-standard-or-script-merged] E3 Colored Regional Loadingscreen-2996-1-2.rar | downloaded `2026-06-22 15:30:45` | 43.33 MB | note: Decision synced from ledger: install-e3-colored-loading-screens-2996-2026-06-22.md
 
 ### Nexus mod 3097
 
@@ -346,7 +339,7 @@ Source: https://www.nexusmods.com/witcher3/mods/3151
 
 Source: https://www.nexusmods.com/witcher3/mods/3163
 
-- [triage] Community Patch - Besserwisser and Nitpicker-3163-2-1-1592429912.rar | downloaded `2026-06-22 22:43:52` | 25.91 MB
+- [skipped] Community Patch - Besserwisser and Nitpicker-3163-2-1-1592429912.rar | downloaded `2026-06-22 22:43:52` | 25.91 MB | note: Community Patch Besserwisser/Nitpicker is superseded by current BiA/W3EE restored-content baseline.
 
 ### Nexus mod 3201
 
@@ -384,7 +377,7 @@ Source: https://www.nexusmods.com/witcher3/mods/3223
 
 Source: https://www.nexusmods.com/witcher3/mods/3272
 
-- [triage] DenseRainfall-3272-1-0.zip | downloaded `2026-06-23 07:44:32` | 0.01 MB
+- [installed-standard-or-script-merged] DenseRainfall-3272-1-0.zip | downloaded `2026-06-23 07:44:32` | 0.01 MB | note: Decision synced from ledger: install-dense-rainfall-3272-2026-06-23.md
 
 ### Nexus mod 3287
 
@@ -401,13 +394,13 @@ Source: https://www.nexusmods.com/witcher3/mods/3287
 
 Source: https://www.nexusmods.com/witcher3/mods/3315
 
-- [triage] New Clouds 3.0-3315-3-0-1680189337.rar | downloaded `2026-06-23 14:52:32` | 18.39 MB
+- [installed-standard-or-script-merged] New Clouds 3.0-3315-3-0-1680189337.rar | downloaded `2026-06-23 14:52:32` | 18.39 MB | note: Decision synced from ledger: install-new-clouds-2026-06-23.md
 
 ### Nexus mod 3537
 
 Source: https://www.nexusmods.com/witcher3/mods/3537
 
-- [triage] VGX Village Cutscene-3537-1-1-1b-1765732804.zip | downloaded `2026-06-23 14:58:05` | 2.73 MB
+- [installed-standard-or-script-merged] VGX Village Cutscene-3537-1-1-1b-1765732804.zip | downloaded `2026-06-23 14:58:05` | 2.73 MB | note: Decision synced from ledger: install-vgx-village-cutscene-2026-06-23.md
 
 ### Nexus mod 3539
 
@@ -419,35 +412,35 @@ Source: https://www.nexusmods.com/witcher3/mods/3539
 
 Source: https://www.nexusmods.com/witcher3/mods/3580
 
-- [triage] HDMR 5 LOD Optimization Next Gen-3580-5-0-1678619941.7z | downloaded `2026-06-23 15:50:00` | 41.33 MB
-- [triage] HD Monsters Reworked 5.0 Next Gen - Part 1-3580-5-0-1679834194.7z | downloaded `2026-06-23 16:40:25` | 4266.08 MB
-- [triage] 1- HD Monsters Reworked 5.0 Next Gen - Part 2-3580-5-0-1679836281.7z | downloaded `2026-06-23 17:52:29` | 2879.18 MB
+- [installed-standard-or-script-merged] HDMR 5 LOD Optimization Next Gen-3580-5-0-1678619941.7z | downloaded `2026-06-23 15:50:00` | 41.33 MB | note: Decision synced from ledger: install-hdmr5-nextgen-3580-2026-06-23.md
+- [installed-standard-or-script-merged] HD Monsters Reworked 5.0 Next Gen - Part 1-3580-5-0-1679834194.7z | downloaded `2026-06-23 16:40:25` | 4266.08 MB | note: Decision synced from ledger: install-hdmr5-nextgen-3580-2026-06-23.md
+- [installed-standard-or-script-merged] 1- HD Monsters Reworked 5.0 Next Gen - Part 2-3580-5-0-1679836281.7z | downloaded `2026-06-23 17:52:29` | 2879.18 MB | note: Decision synced from ledger: install-hdmr5-nextgen-3580-2026-06-23.md
 
 ### Nexus mod 3650
 
 Source: https://www.nexusmods.com/witcher3/mods/3650
 
-- [triage] modMenuStrings-3650-1-0-1556948614.7z | downloaded `2026-06-22 16:53:03` | 0 MB
+- [installed-standard-or-script-merged] modMenuStrings-3650-1-0-1556948614.7z | downloaded `2026-06-22 16:53:03` | 0 MB | note: Installed as NOBs Reflex support files; see logs/install-reflex-nextgen-w3ee-11275-2026-06-22.md.
 
 ### Nexus mod 3684
 
 Source: https://www.nexusmods.com/witcher3/mods/3684
 
-- [triage] Less Is More-3684-1-0-1558204921.zip | downloaded `2026-06-22 22:25:20` | 0.01 MB
-- [triage] Less Is More-3684-1-1-1565119285.zip | downloaded `2026-06-22 22:25:33` | 0.02 MB
-- [triage] Less Is More Next Gen-3684-4-1671742956.zip | downloaded `2026-06-22 22:25:52` | 0.01 MB
+- [installed-standard-or-script-merged] Less Is More-3684-1-0-1558204921.zip | downloaded `2026-06-22 22:25:20` | 0.01 MB | note: Decision synced from ledger: install-less-is-more-3684-2026-06-23.md
+- [installed-standard-or-script-merged] Less Is More-3684-1-1-1565119285.zip | downloaded `2026-06-22 22:25:33` | 0.02 MB | note: Decision synced from ledger: install-less-is-more-3684-2026-06-23.md
+- [installed-standard-or-script-merged] Less Is More Next Gen-3684-4-1671742956.zip | downloaded `2026-06-22 22:25:52` | 0.01 MB | note: Decision synced from ledger: install-less-is-more-3684-2026-06-23.md
 
 ### Nexus mod 3703
 
 Source: https://www.nexusmods.com/witcher3/mods/3703
 
-- [triage] modImprovedFistFightNGE-3703-4-04-00-1689864508.zip | downloaded `2026-06-23 12:13:00` | 0.11 MB
+- [assessed-or-audited] modImprovedFistFightNGE-3703-4-04-00-1689864508.zip | downloaded `2026-06-23 12:13:00` | 0.11 MB | note: Decision synced from ledger: audit-improved-fist-fights-3703-w3ee-risk-2026-06-25.md
 
 ### Nexus mod 3711
 
 Source: https://www.nexusmods.com/witcher3/mods/3711
 
-- [triage] ModLimitAdjuster-3711-1-0-1559564139.zip | downloaded `2026-06-22 17:26:44` | 0 MB
+- [installed-standard-or-script-merged] ModLimitAdjuster-3711-1-0-1559564139.zip | downloaded `2026-06-22 17:26:44` | 0 MB | note: Decision synced from ledger: install-mod-limit-adjuster-3711-2026-06-22.md
 
 ### Nexus mod 3733
 
@@ -461,38 +454,38 @@ Source: https://www.nexusmods.com/witcher3/mods/3733
 
 Source: https://www.nexusmods.com/witcher3/mods/3739
 
-- [triage] HD Tree LOD Billboards for Blood and Wine-3739-0-1-1569567981.zip | downloaded `2026-06-22 23:13:23` | 5.79 MB
-- [triage] HD Tree LOD Billboards-3739-0-3-1562750425.zip | downloaded `2026-06-22 23:41:51` | 31.1 MB
+- [installed-standard-or-script-merged] HD Tree LOD Billboards for Blood and Wine-3739-0-1-1569567981.zip | downloaded `2026-06-22 23:13:23` | 5.79 MB | note: Utility/menu category or tree LOD payload installed; see logs/install-utilities-menu-category-tree-lod-2026-06-23.md.
+- [installed-standard-or-script-merged] HD Tree LOD Billboards-3739-0-3-1562750425.zip | downloaded `2026-06-22 23:41:51` | 31.1 MB | note: Utility/menu category or tree LOD payload installed; see logs/install-utilities-menu-category-tree-lod-2026-06-23.md.
 
 ### Nexus mod 3890
 
 Source: https://www.nexusmods.com/witcher3/mods/3890
 
-- [triage] Modular Eyes - Next Gen 4.04a-3890-3-10b-1740359296.7z | downloaded `2026-06-22 20:07:03` | 2.48 MB
+- [installed-standard-or-script-merged] Modular Eyes - Next Gen 4.04a-3890-3-10b-1740359296.7z | downloaded `2026-06-22 20:07:03` | 2.48 MB | note: Decision synced from ledger: install-modular-eyes-3890-2026-06-22.md
 
 ### Nexus mod 3895
 
 Source: https://www.nexusmods.com/witcher3/mods/3895
 
-- [triage] Icy Ocean (2 percent version)-3895-1-0-9-1626160902.rar | downloaded `2026-06-22 22:29:29` | 0.11 MB
+- [installed-standard-or-script-merged] Icy Ocean (2 percent version)-3895-1-0-9-1626160902.rar | downloaded `2026-06-22 22:29:29` | 0.11 MB | note: Used for Icy Ocean DLC payload while 8997 supplied Next Gen script; see logs/install-icy-ocean-8997-2026-06-23.md.
 
 ### Nexus mod 3952
 
 Source: https://www.nexusmods.com/witcher3/mods/3952
 
-- [triage] Swords on Roach-3952-1-4-ng-1671371791.rar | downloaded `2026-06-21 01:37:16` | 0.03 MB
+- [assessed-or-audited] Swords on Roach-3952-1-4-ng-1671371791.rar | downloaded `2026-06-21 01:37:16` | 0.03 MB | note: Decision synced from ledger: review-swords-on-roach-amm-patch-10830-2026-06-21.md
 
 ### Nexus mod 4046
 
 Source: https://www.nexusmods.com/witcher3/mods/4046
 
-- [triage] modCapeHoodHelmetToggle-4046-1-0-1572664821.7z | downloaded `2026-06-22 10:16:26` | 0.08 MB
+- [installed-standard-or-script-merged] modCapeHoodHelmetToggle-4046-1-0-1572664821.7z | downloaded `2026-06-22 10:16:26` | 0.08 MB | note: Decision synced from ledger: install-cape-hood-helmet-toggle-4046-2026-06-22.md
 
 ### Nexus mod 4064
 
 Source: https://www.nexusmods.com/witcher3/mods/4064
 
-- [triage] Swords and Meditation-4064-2-1-ng-1671611660.rar | downloaded `2026-06-22 22:17:52` | 0.06 MB
+- [installed-standard-or-script-merged] Swords and Meditation-4064-2-1-ng-1671611660.rar | downloaded `2026-06-22 22:17:52` | 0.06 MB | note: Swords and Meditation installed; menu label cleanup documented in logs/menu-label-cleanup-swords-meditation-2026-06-23.md.
 
 ### Nexus mod 4138
 
@@ -505,39 +498,39 @@ Source: https://www.nexusmods.com/witcher3/mods/4138
 
 Source: https://www.nexusmods.com/witcher3/mods/4242
 
-- [triage] Hoods-4242-3-3-1762297143.zip | downloaded `2026-06-22 07:12:07` | 94.2 MB
+- [installed-standard-or-script-merged] Hoods-4242-3-3-1762297143.zip | downloaded `2026-06-22 07:12:07` | 94.2 MB | note: Decision synced from ledger: install-hoods-2026-06-22.md
 
 ### Nexus mod 4287
 
 Source: https://www.nexusmods.com/witcher3/mods/4287
 
-- [triage] Gwent Redux (Next-Gen v4.04)-4287-NEXT-GENv4-04-1691430518.zip | downloaded `2026-06-22 17:11:15` | 122.83 MB
-- [triage] Gwent Redux (Next-Gen v4.04)-4287-NEXT-GENv4-04-1691430518(1).zip | downloaded `2026-06-22 19:18:36` | 122.83 MB
+- [installed-standard-or-script-merged] Gwent Redux (Next-Gen v4.04)-4287-NEXT-GENv4-04-1691430518.zip | downloaded `2026-06-22 17:11:15` | 122.83 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
+- [installed-standard-or-script-merged] Gwent Redux (Next-Gen v4.04)-4287-NEXT-GENv4-04-1691430518(1).zip | downloaded `2026-06-22 19:18:36` | 122.83 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
 
 ### Nexus mod 4341
 
 Source: https://www.nexusmods.com/witcher3/mods/4341
 
-- [triage] Realistic Eyes Fixed - 2K - Full - BiA-4341-1-3-1771847074.zip | downloaded `2026-06-23 15:06:11` | 98.42 MB
-- [triage] Realistic Eyes Fixed - 2K - BiA-4341-1-3-1771846743.zip | downloaded `2026-06-23 15:10:47` | 90.64 MB
+- [assessed-or-audited] Realistic Eyes Fixed - 2K - Full - BiA-4341-1-3-1771847074.zip | downloaded `2026-06-23 15:06:11` | 98.42 MB | note: Decision synced from ledger: assess-realistic-eyes-fixed-2026-06-23.md
+- [assessed-or-audited] Realistic Eyes Fixed - 2K - BiA-4341-1-3-1771846743.zip | downloaded `2026-06-23 15:10:47` | 90.64 MB | note: Decision synced from ledger: assess-realistic-eyes-fixed-2026-06-23.md
 
 ### Nexus mod 4400
 
 Source: https://www.nexusmods.com/witcher3/mods/4400
 
-- [triage] New Hairstyles and - BiA-4400-3-0-2-1771845621.zip | downloaded `2026-06-22 10:03:44` | 4.75 MB
+- [installed-standard-or-script-merged] New Hairstyles and - BiA-4400-3-0-2-1771845621.zip | downloaded `2026-06-22 10:03:44` | 4.75 MB | note: Decision synced from ledger: install-new-hairstyles-4400-2026-06-22.md
 
 ### Nexus mod 4438
 
 Source: https://www.nexusmods.com/witcher3/mods/4438
 
-- [triage] Immersive Rewards-4438-0-1-1582586746.7z | downloaded `2026-06-23 23:12:53` | 0.11 MB
+- [installed-standard-or-script-merged] Immersive Rewards-4438-0-1-1582586746.7z | downloaded `2026-06-23 23:12:53` | 0.11 MB | note: Decision synced from ledger: install-immersive-rewards-4438-2026-06-24.md
 
 ### Nexus mod 4643
 
 Source: https://www.nexusmods.com/witcher3/mods/4643
 
-- [triage] Warmly Dressed Skelligers - Next Gen-4643-3-1-1768434267.rar | downloaded `2026-06-23 15:11:57` | 4.01 MB
+- [installed-standard-or-script-merged] Warmly Dressed Skelligers - Next Gen-4643-3-1-1768434267.rar | downloaded `2026-06-23 15:11:57` | 4.01 MB | note: Decision synced from ledger: install-warmly-dressed-skelligers-4643-2026-06-23.md
 
 ### Nexus mod 4670
 
@@ -549,13 +542,13 @@ Source: https://www.nexusmods.com/witcher3/mods/4670
 
 Source: https://www.nexusmods.com/witcher3/mods/4693
 
-- [triage] TWCG random theme-4693-1-0-1588593744.zip | downloaded `2026-06-24 07:38:27` | 23.65 MB
+- [installed-standard-or-script-merged] TWCG random theme-4693-1-0-1588593744.zip | downloaded `2026-06-24 07:38:27` | 23.65 MB | note: Decision synced from ledger: install-twcg-random-ost-4693-2026-06-24.md
 
 ### Nexus mod 4751
 
 Source: https://www.nexusmods.com/witcher3/mods/4751
 
-- [triage] Killing Monsters Cloak-4751-3-3-1769130189.zip | downloaded `2026-06-22 22:26:55` | 10.82 MB
+- [installed-standard-or-script-merged] Killing Monsters Cloak-4751-3-3-1769130189.zip | downloaded `2026-06-22 22:26:55` | 10.82 MB | note: Killing Monsters Cloak installed in safe batch; see logs/install-safe-batch-dws-ftp-kmc-2026-06-22.md.
 
 ### Nexus mod 4809
 
@@ -567,9 +560,9 @@ Source: https://www.nexusmods.com/witcher3/mods/4809
 
 Source: https://www.nexusmods.com/witcher3/mods/4820
 
-- [triage] Eyes-4820-1-0-1591373128.zip | downloaded `2026-06-23 15:03:04` | 0.08 MB
-- [triage] Face 80 percent of color saturation - Scar-4820-1-1-1740743135.zip | downloaded `2026-06-23 15:05:56` | 33.95 MB
-- [triage] Face 80 percent of color saturation-4820-1-1-1740743077.zip | downloaded `2026-06-23 15:06:47` | 39.65 MB
+- [installed-standard-or-script-merged] Eyes-4820-1-0-1591373128.zip | downloaded `2026-06-23 15:03:04` | 0.08 MB | note: Decision synced from ledger: install-yennefer-face-2026-06-23.md
+- [installed-standard-or-script-merged] Face 80 percent of color saturation - Scar-4820-1-1-1740743135.zip | downloaded `2026-06-23 15:05:56` | 33.95 MB | note: Decision synced from ledger: install-yennefer-face-2026-06-23.md
+- [installed-standard-or-script-merged] Face 80 percent of color saturation-4820-1-1-1740743077.zip | downloaded `2026-06-23 15:06:47` | 39.65 MB | note: Decision synced from ledger: install-yennefer-face-2026-06-23.md
 
 ### Nexus mod 4895
 
@@ -582,26 +575,26 @@ Source: https://www.nexusmods.com/witcher3/mods/4895
 
 Source: https://www.nexusmods.com/witcher3/mods/4987
 
-- [triage] Less Indignant NPCs v1.1-4987-1-1-1595248968.zip | downloaded `2026-06-22 22:44:00` | 0.01 MB
+- [deferred] Less Indignant NPCs v1.1-4987-1-1-1595248968.zip | downloaded `2026-06-22 22:44:00` | 0.01 MB | note: Less Indignant NPCs is a small behavior tweak but needs dedicated NPC reaction review before install.
 
 ### Nexus mod 5018
 
 Source: https://www.nexusmods.com/witcher3/mods/5018
 
-- [triage] install-script 3.1 (NextGen) v.3.1-5018-3-1-1672948754.zip | downloaded `2026-06-22 21:40:25` | 0 MB
+- [installed-standard-or-script-merged] install-script 3.1 (NextGen) v.3.1-5018-3-1-1672948754.zip | downloaded `2026-06-22 21:40:25` | 0 MB | note: Decision synced from ledger: install-random-encounters-reworked-5018-2026-06-22.md
 
 ### Nexus mod 5104
 
 Source: https://www.nexusmods.com/witcher3/mods/5104
 
-- [triage] Life Steal Fix-5104-1-0-1749102829.rar | downloaded `2026-06-23 12:58:40` | 0.07 MB
-- [triage] Essential Weapon Rework - NEXT GEN-5104-4-2-1766071605.rar | downloaded `2026-06-23 12:59:34` | 0.28 MB
+- [deferred] Life Steal Fix-5104-1-0-1749102829.rar | downloaded `2026-06-23 12:58:40` | 0.07 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [deferred] Essential Weapon Rework - NEXT GEN-5104-4-2-1766071605.rar | downloaded `2026-06-23 12:59:34` | 0.28 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 5222
 
 Source: https://www.nexusmods.com/witcher3/mods/5222
 
-- [triage] Music Overhaul Project Redux-5222-1-0-1602885695.zip | downloaded `2026-06-22 22:50:18` | 0 MB
+- [deferred] Music Overhaul Project Redux-5222-1-0-1602885695.zip | downloaded `2026-06-22 22:50:18` | 0 MB | note: Downloaded archive is zero-byte/corrupt; re-download before reassessment. See docs/deferred-mod-worklist.md.
 
 ### Nexus mod 5256
 
@@ -618,13 +611,13 @@ Source: https://www.nexusmods.com/witcher3/mods/5256
 
 Source: https://www.nexusmods.com/witcher3/mods/5384
 
-- [triage] Geralt In Brothel 3.1-5384-3-1-1611256856.7z | downloaded `2026-06-23 23:10:35` | 9.42 MB
+- [installed-standard-or-script-merged] Geralt In Brothel 3.1-5384-3-1-1611256856.7z | downloaded `2026-06-23 23:10:35` | 9.42 MB | note: Decision synced from ledger: install-geralt-in-brothel-5384-2026-06-23.md
 
 ### Nexus mod 5468
 
 Source: https://www.nexusmods.com/witcher3/mods/5468
 
-- [triage] UD-SE-Minor Tweaks-Extras-Patch - Next-Gen-5468-2-6d-1768319756.zip | downloaded `2026-06-23 14:29:03` | 0.09 MB
+- [assessed-or-audited] UD-SE-Minor Tweaks-Extras-Patch - Next-Gen-5468-2-6d-1768319756.zip | downloaded `2026-06-23 14:29:03` | 0.09 MB | note: Decision synced from ledger: assess-sort-everything-minor-tweaks-2026-06-23.md
 
 ### Nexus mod 5503
 
@@ -644,32 +637,32 @@ Source: https://www.nexusmods.com/witcher3/mods/5576
 
 Source: https://www.nexusmods.com/witcher3/mods/5604
 
-- [triage] mods_directory_manifest.txt-5604-1-5-1621633399.zip | downloaded `2026-06-22 17:21:16` | 0.01 MB
-- [triage] W3EE_Aefderaedd_Presets_1.5.1.zip-5604-1-5-1-1622587425.zip | downloaded `2026-06-22 17:21:29` | 0.02 MB
+- [assessed-or-audited] mods_directory_manifest.txt-5604-1-5-1621633399.zip | downloaded `2026-06-22 17:21:16` | 0.01 MB | note: Decision synced from ledger: assess-aefderaedd-5604-2026-06-23.md
+- [assessed-or-audited] W3EE_Aefderaedd_Presets_1.5.1.zip-5604-1-5-1-1622587425.zip | downloaded `2026-06-22 17:21:29` | 0.02 MB | note: Decision synced from ledger: assess-aefderaedd-5604-2026-06-23.md
 
 ### Nexus mod 5631
 
 Source: https://www.nexusmods.com/witcher3/mods/5631
 
-- [triage] Slimmer Griffin Armor-5631-1-4-1625179914.zip | downloaded `2026-06-23 15:01:56` | 20.72 MB
+- [installed-standard-or-script-merged] Slimmer Griffin Armor-5631-1-4-1625179914.zip | downloaded `2026-06-23 15:01:56` | 20.72 MB | note: Decision synced from ledger: install-slimmer-griffin-armor-5631-2026-06-23.md
 
 ### Nexus mod 5669
 
 Source: https://www.nexusmods.com/witcher3/mods/5669
 
-- [triage] Faction Appearance Project-5669-4-02-1744380426.rar | downloaded `2026-06-23 15:18:00` | 226.39 MB
+- [deferred] Faction Appearance Project-5669-4-02-1744380426.rar | downloaded `2026-06-23 15:18:00` | 226.39 MB | note: Large appearance/NPC/vegetation package deferred; needs dedicated visual stack review before install.
 
 ### Nexus mod 5722
 
 Source: https://www.nexusmods.com/witcher3/mods/5722
 
-- [triage] AMM patch - asynchronous loading-5722-1-0-1620645327.zip | downloaded `2026-06-22 10:02:18` | 0.04 MB
+- [installed-standard-or-script-merged] AMM patch - asynchronous loading-5722-1-0-1620645327.zip | downloaded `2026-06-22 10:02:18` | 0.04 MB | note: Decision synced from ledger: install-amm-async-5722-2026-06-22.md
 
 ### Nexus mod 5736
 
 Source: https://www.nexusmods.com/witcher3/mods/5736
 
-- [triage] CCS-5736-1-0-1621602618.rar | downloaded `2026-06-22 22:31:05` | 0.11 MB
+- [deferred] CCS-5736-1-0-1621602618.rar | downloaded `2026-06-22 22:31:05` | 0.11 MB | note: CCS archive deferred; source/role unclear from current logs, requires inspection before install.
 
 ### Nexus mod 5802
 
@@ -690,7 +683,7 @@ Source: https://www.nexusmods.com/witcher3/mods/5813
 
 Source: https://www.nexusmods.com/witcher3/mods/5826
 
-- [triage] Dynamic Witcher Schematics for W3EE Redux-5826-1-32-1657832016.7z | downloaded `2026-06-22 22:32:17` | 0.02 MB
+- [quarantined-or-disabled] Dynamic Witcher Schematics for W3EE Redux-5826-1-32-1657832016.7z | downloaded `2026-06-22 22:32:17` | 0.02 MB | note: Dynamic Witcher Schematics archived/removed as redundant; see logs/archive-dynamic-witcher-schematics-2026-06-27.md.
 
 ### Nexus mod 6033
 
@@ -702,14 +695,14 @@ Source: https://www.nexusmods.com/witcher3/mods/6033
 
 Source: https://www.nexusmods.com/witcher3/mods/6049
 
-- [triage] ModIntegrationAll-6049-1-95-1644927440.rar | downloaded `2026-06-22 21:38:28` | 12.15 MB
-- [triage] ru '- Signs Descriptions for Long Journey Extended -'-6049-1-0-1632410153.rar | downloaded `2026-06-22 21:38:49` | 0 MB
+- [reference] ModIntegrationAll-6049-1-95-1644927440.rar | downloaded `2026-06-22 21:38:28` | 12.15 MB | note: Collection/manifest/reference material; keep as source context rather than install target.
+- [reference] ru '- Signs Descriptions for Long Journey Extended -'-6049-1-0-1632410153.rar | downloaded `2026-06-22 21:38:49` | 0 MB | note: Collection/manifest/reference material; keep as source context rather than install target.
 
 ### Nexus mod 6061
 
 Source: https://www.nexusmods.com/witcher3/mods/6061
 
-- [triage] Witcher 3 Interactive Map-6061-4-0-6-0-1758192798.zip | downloaded `2026-06-23 07:57:36` | 288.19 MB
+- [installed-standard-or-script-merged] Witcher 3 Interactive Map-6061-4-0-6-0-1758192798.zip | downloaded `2026-06-23 07:57:36` | 288.19 MB | note: Decision synced from ledger: install-witcher3-interactive-map-6061-2026-06-23.md
 
 ### Nexus mod 6087
 
@@ -721,25 +714,25 @@ Source: https://www.nexusmods.com/witcher3/mods/6087
 
 Source: https://www.nexusmods.com/witcher3/mods/6204
 
-- [triage] Patch 2.1 - AMM-6204-2-1-1650468267.rar | downloaded `2026-06-22 22:11:41` | 0.77 MB
+- [installed-standard-or-script-merged] Patch 2.1 - AMM-6204-2-1-1650468267.rar | downloaded `2026-06-22 22:11:41` | 0.77 MB | note: AMM/SOI compatibility/config payload handled in AMM, New Hairstyles, and Shades of Iron passes; see logs/install-amm-2026-06-21.md, logs/install-new-hairstyles-4400-2026-06-22.md, and logs/install-shades-of-iron-2026-06-22.md.
 
 ### Nexus mod 6205
 
 Source: https://www.nexusmods.com/witcher3/mods/6205
 
-- [triage] Filterless Toussaint.rar | downloaded `2026-06-23 07:37:22` | 90.75 MB | note: Source inferred from exact archive title and Nexus search result.
+- [installed-partial-or-adjusted] Filterless Toussaint.rar | downloaded `2026-06-23 07:37:22` | 90.75 MB | note: Source inferred from exact archive title and Nexus search result. Weather/lighting stack installed/owned by deliberate weather pass; see logs/install-weather-lighting-stack-2026-06-23.md and logs/audit-weather-visual-stack-2026-06-27.md.
 
 ### Nexus mod 6251
 
 Source: https://www.nexusmods.com/witcher3/mods/6251
 
-- [triage] Active Medallion - Next Gen 4.04-6251-2-23b-1740359718.7z | downloaded `2026-06-22 22:34:21` | 5.09 MB
+- [deferred] Active Medallion - Next Gen 4.04-6251-2-23b-1740359718.7z | downloaded `2026-06-22 22:34:21` | 5.09 MB | note: Active Medallion deferred; overlaps HUD/effects/signaling and needs UI/effect pass.
 
 ### Nexus mod 6421
 
 Source: https://www.nexusmods.com/witcher3/mods/6421
 
-- [triage] Less Is More tweaked-6421-1-1-1645636423.zip | downloaded `2026-06-23 17:41:32` | 0.01 MB
+- [assessed-or-audited] Less Is More tweaked-6421-1-1-1645636423.zip | downloaded `2026-06-23 17:41:32` | 0.01 MB | note: Decision synced from ledger: assess-ui-sound-effects-cleaning-6421-2026-06-23.md
 
 ### Nexus mod 6499
 
@@ -751,7 +744,7 @@ Source: https://www.nexusmods.com/witcher3/mods/6499
 
 Source: https://www.nexusmods.com/witcher3/mods/6568
 
-- [triage] Progress on the Path - W3EE Redux-6568-6-0-0-7-1731236903.zip | downloaded `2026-06-23 14:02:34` | 2.35 MB
+- [deferred] Progress on the Path - W3EE Redux-6568-6-0-0-7-1731236903.zip | downloaded `2026-06-23 14:02:34` | 2.35 MB | note: Progress on the Path W3EE Redux deferred; potentially interesting progression mod but overlaps W3EE leveling/economy goals.
 
 ### Nexus mod 6880
 
@@ -763,38 +756,38 @@ Source: https://www.nexusmods.com/witcher3/mods/6880
 
 Source: https://www.nexusmods.com/witcher3/mods/7007
 
-- [triage] Potions Tab Expanded Adaptations-7007-1-02-1675252766.7z | downloaded `2026-06-23 14:23:49` | 1.17 MB
-- [triage] Potions Tab Expanded-7007-1-01-1674937735.7z | downloaded `2026-06-23 14:24:04` | 0.74 MB
+- [deferred] Potions Tab Expanded Adaptations-7007-1-02-1675252766.7z | downloaded `2026-06-23 14:23:49` | 1.17 MB | note: Alchemy tab/UI mods deferred due current W3EE/E3 HUD/Better Icons menu ownership.
+- [deferred] Potions Tab Expanded-7007-1-01-1674937735.7z | downloaded `2026-06-23 14:24:04` | 0.74 MB | note: Alchemy tab/UI mods deferred due current W3EE/E3 HUD/Better Icons menu ownership.
 
 ### Nexus mod 7037
 
 Source: https://www.nexusmods.com/witcher3/mods/7037
 
-- [triage] AMM and SoI config for NEXT GEN update 1.0.2-7037-1-0-2-1672185866.zip | downloaded `2026-06-22 09:24:41` | 0.06 MB
+- [installed-standard-or-script-merged] AMM and SoI config for NEXT GEN update 1.0.2-7037-1-0-2-1672185866.zip | downloaded `2026-06-22 09:24:41` | 0.06 MB | note: AMM/SOI compatibility/config payload handled in AMM, New Hairstyles, and Shades of Iron passes; see logs/install-amm-2026-06-21.md, logs/install-new-hairstyles-4400-2026-06-22.md, and logs/install-shades-of-iron-2026-06-22.md.
 
 ### Nexus mod 7051
 
 Source: https://www.nexusmods.com/witcher3/mods/7051
 
-- [triage] 00 - zzjay NPCs-7051-1-3-1760829302.zip | downloaded `2026-06-23 15:17:53` | 133.95 MB
+- [deferred] 00 - zzjay NPCs-7051-1-3-1760829302.zip | downloaded `2026-06-23 15:17:53` | 133.95 MB | note: Large appearance/NPC/vegetation package deferred; needs dedicated visual stack review before install.
 
 ### Nexus mod 7072
 
 Source: https://www.nexusmods.com/witcher3/mods/7072
 
-- [triage] 02 - BW NPCS - AIO - Regis NO EYES-7072-1-1-1723999812.zip | downloaded `2026-06-23 15:15:24` | 37.89 MB
+- [deferred] 02 - BW NPCS - AIO - Regis NO EYES-7072-1-1-1723999812.zip | downloaded `2026-06-23 15:15:24` | 37.89 MB | note: Large appearance/NPC/vegetation package deferred; needs dedicated visual stack review before install.
 
 ### Nexus mod 7087
 
 Source: https://www.nexusmods.com/witcher3/mods/7087
 
-- [triage] Concept Ver-7087-1-0a-1667968189.zip | downloaded `2026-06-24 07:59:54` | 7.71 MB
+- [skipped] Concept Ver-7087-1-0a-1667968189.zip | downloaded `2026-06-24 07:59:54` | 7.71 MB | note: Vlad Gwent board concept skipped as redundant/cosmetic; see logs/triage-skip-legacy-script-and-redundant-downloads-2026-06-26.md.
 
 ### Nexus mod 7115
 
 Source: https://www.nexusmods.com/witcher3/mods/7115
 
-- [triage] Dandelion Scarf Fix-7115-1-0-1668901724.zip | downloaded `2026-06-23 11:54:11` | 0.08 MB
+- [skipped] Dandelion Scarf Fix-7115-1-0-1668901724.zip | downloaded `2026-06-23 11:54:11` | 0.08 MB | note: Small visual/fix download skipped or removed during cleanup/redundancy decisions; current BiA/W3EE/HDRP stack owns these areas.
 
 ### Nexus mod 7129
 
@@ -807,61 +800,61 @@ Source: https://www.nexusmods.com/witcher3/mods/7129
 
 Source: https://www.nexusmods.com/witcher3/mods/7155
 
-- [triage] Smooth Camera Motion-7155-1-0-1670978942.rar | downloaded `2026-06-23 14:44:33` | 0.01 MB
+- [deferred] Smooth Camera Motion-7155-1-0-1670978942.rar | downloaded `2026-06-23 14:44:33` | 0.01 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 7172
 
 Source: https://www.nexusmods.com/witcher3/mods/7172
 
-- [triage] Debug Console and Unlocked Photomode-7172-4-02-1679939306.zip | downloaded `2026-06-22 20:18:26` | 0 MB
+- [installed-standard-or-script-merged] Debug Console and Unlocked Photomode-7172-4-02-1679939306.zip | downloaded `2026-06-22 20:18:26` | 0 MB | note: Debug console/testing workflow enabled; see logs/enable-debug-console-testing-workflow-2026-06-23.md.
 
 ### Nexus mod 7173
 
 Source: https://www.nexusmods.com/witcher3/mods/7173
 
-- [triage] Fix Stuck Quest Items-7173-2-0-0-1762796162.zip | downloaded `2026-06-23 12:01:21` | 0.06 MB
+- [installed-standard-or-script-merged] Fix Stuck Quest Items-7173-2-0-0-1762796162.zip | downloaded `2026-06-23 12:01:21` | 0.06 MB | note: Decision synced from ledger: install-fix-stuck-quest-items-7173-2026-06-24.md
 
 ### Nexus mod 7175
 
 Source: https://www.nexusmods.com/witcher3/mods/7175
 
-- [triage] Stack Your Items-7175-1-1-0-1762804043.zip | downloaded `2026-06-23 18:50:20` | 0.14 MB
+- [installed-standard-or-script-merged] Stack Your Items-7175-1-1-0-1762804043.zip | downloaded `2026-06-23 18:50:20` | 0.14 MB | note: Decision synced from ledger: install-stack-your-items-7175-2026-06-23.md
 
 ### Nexus mod 7185
 
 Source: https://www.nexusmods.com/witcher3/mods/7185
 
-- [triage] Grammar of the Path-7185-5-7-1765657633.7z | downloaded `2026-06-23 08:40:31` | 0.59 MB
+- [assessed-or-audited] Grammar of the Path-7185-5-7-1765657633.7z | downloaded `2026-06-23 08:40:31` | 0.59 MB | note: Decision synced from ledger: check-grammar-of-the-path-7185-2026-06-23.md
 
 ### Nexus mod 7186
 
 Source: https://www.nexusmods.com/witcher3/mods/7186
 
-- [triage] Better Torches Next-Gen-7186-4-4-0-1689801474.7z | downloaded `2026-06-23 12:07:41` | 0.1 MB
+- [deferred] Better Torches Next-Gen-7186-4-4-0-1689801474.7z | downloaded `2026-06-23 12:07:41` | 0.1 MB | note: Better Torches deferred; lighting/torch behavior already has Natural Torchlight and weather lighting stack.
 
 ### Nexus mod 7187
 
 Source: https://www.nexusmods.com/witcher3/mods/7187
 
-- [triage] DLC Names From The Path-7187-3-4-1728248931.7z | downloaded `2026-06-23 14:08:07` | 0.02 MB
+- [installed-standard-or-script-merged] DLC Names From The Path-7187-3-4-1728248931.7z | downloaded `2026-06-23 14:08:07` | 0.02 MB | note: Low-risk DLC content installed; see logs/install-low-risk-dlc-content-8119-7187-2026-06-27.md.
 
 ### Nexus mod 7202
 
 Source: https://www.nexusmods.com/witcher3/mods/7202
 
-- [triage] Fast Travel Pack-7202-2-0-1-1764407323.zip | downloaded `2026-06-22 22:30:26` | 0.74 MB
+- [installed-standard-or-script-merged] Fast Travel Pack-7202-2-0-1-1764407323.zip | downloaded `2026-06-22 22:30:26` | 0.74 MB | note: Fast Travel Pack installed in safe batch; see logs/install-safe-batch-dws-ftp-kmc-2026-06-22.md.
 
 ### Nexus mod 7221
 
 Source: https://www.nexusmods.com/witcher3/mods/7221
 
-- [triage] Enable Jumping in Water-7221-1-3-1705444930.rar | downloaded `2026-06-23 18:56:33` | 0.08 MB
+- [assessed-or-audited] Enable Jumping in Water-7221-1-3-1705444930.rar | downloaded `2026-06-23 18:56:33` | 0.08 MB | note: Decision synced from ledger: assess-enable-jumping-in-water-7221-2026-06-23.md
 
 ### Nexus mod 7229
 
 Source: https://www.nexusmods.com/witcher3/mods/7229
 
-- [triage] Improved Horse Controls - W3EE version-7229-4-4a-1749902572.zip | downloaded `2026-06-23 12:19:21` | 0.02 MB
+- [deferred] Improved Horse Controls - W3EE version-7229-4-4a-1749902572.zip | downloaded `2026-06-23 12:19:21` | 0.02 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 7236
 
@@ -879,20 +872,20 @@ Source: https://www.nexusmods.com/witcher3/mods/7240
 
 Source: https://www.nexusmods.com/witcher3/mods/7250
 
-- [triage] Yellow Mutagens-7250-3-01-1718465651.zip | downloaded `2026-06-23 23:56:50` | 0.15 MB
+- [skipped] Yellow Mutagens-7250-3-01-1718465651.zip | downloaded `2026-06-23 23:56:50` | 0.15 MB | note: Yellow Mutagens skipped as redundant with current mutagen/alchemy stack; see logs/triage-skip-legacy-script-and-redundant-downloads-2026-06-26.md.
 
 ### Nexus mod 7269
 
 Source: https://www.nexusmods.com/witcher3/mods/7269
 
-- [triage] Enhanced Herbalism-7269-2-0-0-1762800663.zip | downloaded `2026-06-23 12:10:43` | 0.02 MB
+- [installed-standard-or-script-merged] Enhanced Herbalism-7269-2-0-0-1762800663.zip | downloaded `2026-06-23 12:10:43` | 0.02 MB | note: Decision synced from ledger: install-enhanced-herbalism-7269-2026-06-25.md
 
 ### Nexus mod 7271
 
 Source: https://www.nexusmods.com/witcher3/mods/7271
 
-- [triage] Shades of Iron v2.0 - Game Version 4.04-7271-Final-1732825923.zip | downloaded `2026-06-21 18:31:40` | 3005.61 MB
-- [triage] Shades of Iron v2.0 - Game Version 4.04-7271-Final-1732825923(1).zip | downloaded `2026-06-22 07:51:20` | 3005.61 MB
+- [assessed-or-audited] Shades of Iron v2.0 - Game Version 4.04-7271-Final-1732825923.zip | downloaded `2026-06-21 18:31:40` | 3005.61 MB | note: Decision synced from ledger: review-shades-of-iron-7271-2026-06-22.md
+- [assessed-or-audited] Shades of Iron v2.0 - Game Version 4.04-7271-Final-1732825923(1).zip | downloaded `2026-06-22 07:51:20` | 3005.61 MB | note: Decision synced from ledger: review-shades-of-iron-7271-2026-06-22.md
 
 ### Nexus mod 7302
 
@@ -910,13 +903,13 @@ Source: https://www.nexusmods.com/witcher3/mods/7307
 
 Source: https://www.nexusmods.com/witcher3/mods/7329
 
-- [triage] BIA - TW3 Bug Fix and Restored Content Collection-7329-2-81-1735577327.zip | downloaded `2026-06-22 11:22:14` | 87.4 MB
+- [installed-standard-or-script-merged] BIA - TW3 Bug Fix and Restored Content Collection-7329-2-81-1735577327.zip | downloaded `2026-06-22 11:22:14` | 87.4 MB | note: Brothers in Arms collection installed as core bug-fix/restored-content layer; see logs/install-brothers-in-arms-11260-2026-06-22.md and related BiA logs.
 
 ### Nexus mod 7343
 
 Source: https://www.nexusmods.com/witcher3/mods/7343
 
-- [triage] modFriendlyMeditation-7343-0-9-8NGE-1716371869.zip | downloaded `2026-06-23 19:52:35` | 0.31 MB
+- [installed-standard-or-script-merged] modFriendlyMeditation-7343-0-9-8NGE-1716371869.zip | downloaded `2026-06-23 19:52:35` | 0.31 MB | note: Decision synced from ledger: install-friendly-meditation-7343-2026-06-23.md
 
 ### Nexus mod 7353
 
@@ -931,8 +924,8 @@ Source: https://www.nexusmods.com/witcher3/mods/7353
 
 Source: https://www.nexusmods.com/witcher3/mods/7424
 
-- [triage] Witcher3RFG1.3-7424-1-3-1674088614.zip | downloaded `2026-06-22 20:51:02` | 28.33 MB
-- [triage] Witcher3RFG_Unshaved-7424-1-3-1674088980.zip | downloaded `2026-06-22 20:51:23` | 28.32 MB
+- [installed-standard-or-script-merged] Witcher3RFG1.3-7424-1-3-1674088614.zip | downloaded `2026-06-22 20:51:02` | 28.33 MB | note: Decision synced from ledger: install-appearance-batch-1134-7428-3733-7424-8841-2026-06-22.md
+- [installed-standard-or-script-merged] Witcher3RFG_Unshaved-7424-1-3-1674088980.zip | downloaded `2026-06-22 20:51:23` | 28.32 MB | note: Decision synced from ledger: install-appearance-batch-1134-7428-3733-7424-8841-2026-06-22.md
 
 ### Nexus mod 7426
 
@@ -947,7 +940,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7426
 
 Source: https://www.nexusmods.com/witcher3/mods/7428
 
-- [triage] BASE - ALL v4.2-7428-4-3-1766075698.zip | downloaded `2026-06-22 20:55:14` | 12.08 MB
+- [installed-standard-or-script-merged] BASE - ALL v4.2-7428-4-3-1766075698.zip | downloaded `2026-06-22 20:55:14` | 12.08 MB | note: Decision synced from ledger: install-appearance-batch-1134-7428-3733-7424-8841-2026-06-22.md
 
 ### Nexus mod 7434
 
@@ -959,7 +952,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7434
 
 Source: https://www.nexusmods.com/witcher3/mods/7442
 
-- [triage] Version C-7442-1-0-1672156393.rar | downloaded `2026-06-23 13:02:04` | 0.01 MB
+- [installed-standard-or-script-merged] Version C-7442-1-0-1672156393.rar | downloaded `2026-06-23 13:02:04` | 0.01 MB | note: Viper silver sword schematic restored installed; see logs/install-viper-silver-sword-schematic-restored-7442-2026-06-27.md.
 
 ### Nexus mod 7488
 
@@ -971,7 +964,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7488
 
 Source: https://www.nexusmods.com/witcher3/mods/7523
 
-- [triage] Colored Subtitles (NextGen)-7523-2-0-1725933554.zip | downloaded `2026-06-23 23:28:16` | 0.04 MB
+- [installed-standard-or-script-merged] Colored Subtitles (NextGen)-7523-2-0-1725933554.zip | downloaded `2026-06-23 23:28:16` | 0.04 MB | note: Decision synced from ledger: install-colored-subtitles-7523-2026-06-24.md
 
 ### Nexus mod 7553
 
@@ -989,7 +982,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7592
 
 Source: https://www.nexusmods.com/witcher3/mods/7598
 
-- [triage] DLC2 Improved for AMM-7598-1-0-1673202652.zip | downloaded `2026-06-22 10:03:03` | 0.05 MB
+- [installed-standard-or-script-merged] DLC2 Improved for AMM-7598-1-0-1673202652.zip | downloaded `2026-06-22 10:03:03` | 0.05 MB | note: AMM/SOI compatibility/config payload handled in AMM, New Hairstyles, and Shades of Iron passes; see logs/install-amm-2026-06-21.md, logs/install-new-hairstyles-4400-2026-06-22.md, and logs/install-shades-of-iron-2026-06-22.md.
 
 ### Nexus mod 7732
 
@@ -1002,19 +995,19 @@ Source: https://www.nexusmods.com/witcher3/mods/7732
 
 Source: https://www.nexusmods.com/witcher3/mods/7761
 
-- [triage] Standardised Naming Convention - Bombs-7761-1-0-2-1736499365.zip | downloaded `2026-06-23 14:45:15` | 0.06 MB
+- [deferred] Standardised Naming Convention - Bombs-7761-1-0-2-1736499365.zip | downloaded `2026-06-23 14:45:15` | 0.06 MB | note: Bomb naming convention deferred; bombs already modified by W3EE/lighter-bombs compatibility work.
 
 ### Nexus mod 7774
 
 Source: https://www.nexusmods.com/witcher3/mods/7774
 
-- [triage] No Stair Rolling-7774-1-0-1674652801.zip | downloaded `2026-06-23 12:29:27` | 0.01 MB
+- [deferred] No Stair Rolling-7774-1-0-1674652801.zip | downloaded `2026-06-23 12:29:27` | 0.01 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 7919
 
 Source: https://www.nexusmods.com/witcher3/mods/7919
 
-- [triage] Fix Ciri Invul (Next-Gen 4.04)-7919-0-2-1717914511.zip | downloaded `2026-06-23 11:56:12` | 0 MB
+- [skipped] Fix Ciri Invul (Next-Gen 4.04)-7919-0-2-1717914511.zip | downloaded `2026-06-23 11:56:12` | 0 MB | note: Small visual/fix download skipped or removed during cleanup/redundancy decisions; current BiA/W3EE/HDRP stack owns these areas.
 
 ### Nexus mod 7955
 
@@ -1027,7 +1020,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7955
 
 Source: https://www.nexusmods.com/witcher3/mods/7979
 
-- [triage] AiO RT Tweaks v.3.2 - Ultra Plus Performance-7979-3-2-1739741820.zip | downloaded `2026-06-23 07:48:54` | 0 MB
+- [installed-standard-or-script-merged] AiO RT Tweaks v.3.2 - Ultra Plus Performance-7979-3-2-1739741820.zip | downloaded `2026-06-23 07:48:54` | 0 MB | note: Decision synced from ledger: install-aio-rt-tweaks-7979-2026-06-23.md
 
 ### Nexus mod 8041
 
@@ -1039,41 +1032,41 @@ Source: https://www.nexusmods.com/witcher3/mods/8041
 
 Source: https://www.nexusmods.com/witcher3/mods/8072
 
-- [triage] New Toussaint Clouds-8072-1-3-1704244061.rar | downloaded `2026-06-23 14:54:03` | 7.72 MB
-- [triage] New Toussaint Clouds - H3IST Edit-8072-1-1-3-1699467221.rar | downloaded `2026-06-23 14:54:15` | 5.18 MB
+- [installed-standard-or-script-merged] New Toussaint Clouds-8072-1-3-1704244061.rar | downloaded `2026-06-23 14:54:03` | 7.72 MB | note: Decision synced from ledger: install-new-toussaint-clouds-2026-06-23.md
+- [installed-standard-or-script-merged] New Toussaint Clouds - H3IST Edit-8072-1-1-3-1699467221.rar | downloaded `2026-06-23 14:54:15` | 5.18 MB | note: Decision synced from ledger: install-new-toussaint-clouds-2026-06-23.md
 
 ### Nexus mod 8078
 
 Source: https://www.nexusmods.com/witcher3/mods/8078
 
-- [triage] Crossbow Rework (Witcher School Set Rework)-8078-1-7-1779137574.zip | downloaded `2026-06-23 12:08:50` | 0.04 MB
-- [triage] Crossbow Rework-8078-1-7-1779137594.zip | downloaded `2026-06-23 12:09:16` | 0.04 MB
+- [deferred] Crossbow Rework (Witcher School Set Rework)-8078-1-7-1779137574.zip | downloaded `2026-06-23 12:08:50` | 0.04 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [deferred] Crossbow Rework-8078-1-7-1779137594.zip | downloaded `2026-06-23 12:09:16` | 0.04 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 8081
 
 Source: https://www.nexusmods.com/witcher3/mods/8081
 
-- [triage] Immersion and Balance Addons-8081-1-0-1768345910.zip | downloaded `2026-06-23 23:55:12` | 0.16 MB
-- [triage] Alchemy Primer-8081-1-12-1-1768345333.7z | downloaded `2026-06-23 23:55:45` | 1.01 MB
+- [deferred] Immersion and Balance Addons-8081-1-0-1768345910.zip | downloaded `2026-06-23 23:55:12` | 0.16 MB | note: Decision synced from ledger: defer-alchemy-primer-8081-2026-06-24.md
+- [deferred] Alchemy Primer-8081-1-12-1-1768345333.7z | downloaded `2026-06-23 23:55:45` | 1.01 MB | note: Decision synced from ledger: defer-alchemy-primer-8081-2026-06-24.md
 
 ### Nexus mod 8119
 
 Source: https://www.nexusmods.com/witcher3/mods/8119
 
-- [triage] No Missable Mutagens-8119-2-0-0-1763221728.zip | downloaded `2026-06-23 13:54:22` | 0.02 MB
+- [installed-standard-or-script-merged] No Missable Mutagens-8119-2-0-0-1763221728.zip | downloaded `2026-06-23 13:54:22` | 0.02 MB | note: Low-risk DLC content installed; see logs/install-low-risk-dlc-content-8119-7187-2026-06-27.md.
 
 ### Nexus mod 8128
 
 Source: https://www.nexusmods.com/witcher3/mods/8128
 
-- [triage] PatchGwent Redux_W3EE-8128-0-1-1681556682.7z | downloaded `2026-06-22 19:43:20` | 0.08 MB
-- [triage] PatchGwent Redux-W3EE_REDUX-8128-0-1-1681556759.7z | downloaded `2026-06-22 19:43:50` | 0.09 MB
+- [installed-standard-or-script-merged] PatchGwent Redux_W3EE-8128-0-1-1681556682.7z | downloaded `2026-06-22 19:43:20` | 0.08 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
+- [installed-standard-or-script-merged] PatchGwent Redux-W3EE_REDUX-8128-0-1-1681556759.7z | downloaded `2026-06-22 19:43:50` | 0.09 MB | note: Decision synced from ledger: install-gwent-redux-w3ee-redux-patch-8128-2026-06-22.md
 
 ### Nexus mod 8152
 
 Source: https://www.nexusmods.com/witcher3/mods/8152
 
-- [triage] Ciri's Fate-8152-3-0-1-1764655192.zip | downloaded `2026-06-23 14:45:35` | 311.35 MB
+- [installed-standard-or-script-merged] Ciri's Fate-8152-3-0-1-1764655192.zip | downloaded `2026-06-23 14:45:35` | 311.35 MB | note: Decision synced from ledger: install-ciris-fate-2026-06-23.md
 
 ### Nexus mod 8174
 
@@ -1085,13 +1078,13 @@ Source: https://www.nexusmods.com/witcher3/mods/8174
 
 Source: https://www.nexusmods.com/witcher3/mods/8206
 
-- [triage] Colored Map Markers Compatibility Patch (SGUI)-8206-1-1-1779984470.zip | downloaded `2026-06-23 14:26:39` | 0.38 MB
+- [deferred] Colored Map Markers Compatibility Patch (SGUI)-8206-1-1-1779984470.zip | downloaded `2026-06-23 14:26:39` | 0.38 MB | note: Map marker/UI compatibility downloads deferred until deliberate map marker pass.
 
 ### Nexus mod 8236
 
 Source: https://www.nexusmods.com/witcher3/mods/8236
 
-- [triage] Morgue Lights Fix-8236-1-2-1755112856.rar | downloaded `2026-06-23 12:03:28` | 0.02 MB
+- [skipped] Morgue Lights Fix-8236-1-2-1755112856.rar | downloaded `2026-06-23 12:03:28` | 0.02 MB | note: Small visual/fix download skipped or removed during cleanup/redundancy decisions; current BiA/W3EE/HDRP stack owns these areas.
 
 ### Nexus mod 8258
 
@@ -1104,31 +1097,31 @@ Source: https://www.nexusmods.com/witcher3/mods/8258
 
 Source: https://www.nexusmods.com/witcher3/mods/8285
 
-- [triage] RER_icons 1.01-8285-1-01-1688239387.rar | downloaded `2026-06-22 22:07:13` | 0.91 MB
+- [installed-standard-or-script-merged] RER_icons 1.01-8285-1-01-1688239387.rar | downloaded `2026-06-22 22:07:13` | 0.91 MB | note: Decision synced from ledger: install-rer-icons-8285-2026-06-22.md
 
 ### Nexus mod 8316
 
 Source: https://www.nexusmods.com/witcher3/mods/8316
 
-- [triage] Fix Loot Sound 4.03-8316-0-2-1688671368.zip | downloaded `2026-06-23 11:57:59` | 0.05 MB
+- [installed-with-manual-graft] Fix Loot Sound 4.03-8316-0-2-1688671368.zip | downloaded `2026-06-23 11:57:59` | 0.05 MB | note: Useful behavior manually grafted; raw install not needed. See logs/assess-small-fix-batch-2026-06-27.md and logs/assess-script-hotfix-downloads-2026-06-27.md.
 
 ### Nexus mod 8405
 
 Source: https://www.nexusmods.com/witcher3/mods/8405
 
-- [triage] SM-FAE FULL 0.9.7 release candidate 2-8405-0-9-7-1732762713.7z | downloaded `2026-06-23 07:51:39` | 112.52 MB
+- [tooling-reference] SM-FAE FULL 0.9.7 release candidate 2-8405-0-9-7-1732762713.7z | downloaded `2026-06-23 07:51:39` | 112.52 MB | note: Script Merger FAE utility/reference; not a gameplay mod. See docs/mod-install-triage-process.md and logs/install-utilities-menu-category-tree-lod-2026-06-23.md.
 
 ### Nexus mod 8454
 
 Source: https://www.nexusmods.com/witcher3/mods/8454
 
-- [triage] No Missable Trophies-8454-2-0-0-1763223157.zip | downloaded `2026-06-23 14:01:04` | 0.08 MB
+- [quarantined-or-disabled] No Missable Trophies-8454-2-0-0-1763223157.zip | downloaded `2026-06-23 14:01:04` | 0.08 MB | note: No Missable Trophies removed by user decision; see logs/archive-no-missable-trophies-2026-06-26.md.
 
 ### Nexus mod 8464
 
 Source: https://www.nexusmods.com/witcher3/mods/8464
 
-- [triage] Corvo Bianco Guests Extended-8464-2-0-1-1764411470.zip | downloaded `2026-06-23 14:07:25` | 0.2 MB
+- [deferred] Corvo Bianco Guests Extended-8464-2-0-1-1764411470.zip | downloaded `2026-06-23 14:07:25` | 0.2 MB | note: Corvo Bianco guest extensions deferred; overlaps existing Corvo/home-state decisions.
 
 ### Nexus mod 8548
 
@@ -1147,8 +1140,8 @@ Source: https://www.nexusmods.com/witcher3/mods/8565
 
 Source: https://www.nexusmods.com/witcher3/mods/8627
 
-- [triage] AMM and W3EE Redux NextGen 1.39b-8627-1-0-1699875365.7z | downloaded `2026-06-20 23:52:12` | 0.07 MB
-- [triage] AMM and W3EE 5.03-8627-1-0-1699875414.7z | downloaded `2026-06-20 23:55:07` | 0.07 MB
+- [assessed-or-audited] AMM and W3EE Redux NextGen 1.39b-8627-1-0-1699875365.7z | downloaded `2026-06-20 23:52:12` | 0.07 MB | note: Decision synced from ledger: review-amm-w3ee-8627-2026-06-21.md
+- [assessed-or-audited] AMM and W3EE 5.03-8627-1-0-1699875414.7z | downloaded `2026-06-20 23:55:07` | 0.07 MB | note: Decision synced from ledger: review-amm-w3ee-8627-2026-06-21.md
 
 ### Nexus mod 8658
 
@@ -1187,105 +1180,105 @@ Source: https://www.nexusmods.com/witcher3/mods/8710
 
 Source: https://www.nexusmods.com/witcher3/mods/8715
 
-- [triage] CorvoBiancoCollection-8715-1-9a-1774723670.zip | downloaded `2026-06-23 14:07:12` | 0.2 MB
+- [deferred] CorvoBiancoCollection-8715-1-9a-1774723670.zip | downloaded `2026-06-23 14:07:12` | 0.2 MB | note: Corvo Bianco guest extensions deferred; overlaps existing Corvo/home-state decisions.
 
 ### Nexus mod 8732
 
 Source: https://www.nexusmods.com/witcher3/mods/8732
 
-- [triage] Cat Hood Fix-8732-1-02-1756313767.rar | downloaded `2026-06-23 11:51:53` | 0.07 MB
+- [assessed-or-audited] Cat Hood Fix-8732-1-02-1756313767.rar | downloaded `2026-06-23 11:51:53` | 0.07 MB | note: Decision synced from ledger: audit-cat-hood-fix-8732-2026-06-24.md
 
 ### Nexus mod 8780
 
 Source: https://www.nexusmods.com/witcher3/mods/8780
 
-- [triage] 0. Mutagen Tab Alchemy - Next Gen-8780-4-1-1767028435.zip | downloaded `2026-06-23 14:22:53` | 0 MB
+- [deferred] 0. Mutagen Tab Alchemy - Next Gen-8780-4-1-1767028435.zip | downloaded `2026-06-23 14:22:53` | 0 MB | note: Alchemy tab/UI mods deferred due current W3EE/E3 HUD/Better Icons menu ownership.
 
 ### Nexus mod 8829
 
 Source: https://www.nexusmods.com/witcher3/mods/8829
 
-- [triage] They cant be saved-8829-1-1707043306.zip | downloaded `2026-06-23 15:09:45` | 21.59 MB
+- [assessed-or-audited] They cant be saved-8829-1-1707043306.zip | downloaded `2026-06-23 15:09:45` | 21.59 MB | note: Decision synced from ledger: assess-children-next-gen-2026-06-23.md
 
 ### Nexus mod 8841
 
 Source: https://www.nexusmods.com/witcher3/mods/8841
 
-- [triage] Even more new Companions for Geralt-8841-4-1711613215.7z | downloaded `2026-06-22 21:05:58` | 4.39 MB
+- [installed-standard-or-script-merged] Even more new Companions for Geralt-8841-4-1711613215.7z | downloaded `2026-06-22 21:05:58` | 4.39 MB | note: Decision synced from ledger: install-appearance-batch-1134-7428-3733-7424-8841-2026-06-22.md
 
 ### Nexus mod 8865
 
 Source: https://www.nexusmods.com/witcher3/mods/8865
 
-- [triage] Improved RT Reflections and Shadows Sharp Shadows-8865-1-02-1755022034.rar | downloaded `2026-06-23 14:48:27` | 0 MB
-- [triage] Improved RT Reflections and Shadows-8865-1-03-1755030985.rar | downloaded `2026-06-23 14:48:38` | 0 MB
+- [installed-standard-or-script-merged] Improved RT Reflections and Shadows Sharp Shadows-8865-1-02-1755022034.rar | downloaded `2026-06-23 14:48:27` | 0 MB | note: RT config tweaks installed; see logs/install-rt-config-tweaks-8865-8890-2026-06-27.md.
+- [installed-standard-or-script-merged] Improved RT Reflections and Shadows-8865-1-03-1755030985.rar | downloaded `2026-06-23 14:48:38` | 0 MB | note: RT config tweaks installed; see logs/install-rt-config-tweaks-8865-8890-2026-06-27.md.
 
 ### Nexus mod 8875
 
 Source: https://www.nexusmods.com/witcher3/mods/8875
 
-- [triage] W3EER - BiA Compatibility Patch.zip | downloaded `2026-06-22 11:20:16` | 0.92 MB | note: Source inferred from exact archive title and Nexus search result.
+- [installed-standard-or-script-merged] W3EER - BiA Compatibility Patch.zip | downloaded `2026-06-22 11:20:16` | 0.92 MB | note: Source inferred from exact archive title and Nexus search result. W3EER/BiA compatibility patch installed/merged during Brothers in Arms setup.
 
 ### Nexus mod 8890
 
 Source: https://www.nexusmods.com/witcher3/mods/8890
 
-- [triage] Ray Bleach-8890-1-0-1709182310.zip | downloaded `2026-06-23 14:56:20` | 0 MB
+- [installed-standard-or-script-merged] Ray Bleach-8890-1-0-1709182310.zip | downloaded `2026-06-23 14:56:20` | 0 MB | note: RT config tweaks installed; see logs/install-rt-config-tweaks-8865-8890-2026-06-27.md.
 
 ### Nexus mod 8932
 
 Source: https://www.nexusmods.com/witcher3/mods/8932
 
-- [triage] modShadesOfIron_Tweaks-8932-1-00-1710109609.rar | downloaded `2026-06-22 09:43:16` | 0.02 MB
+- [installed-standard-or-script-merged] modShadesOfIron_Tweaks-8932-1-00-1710109609.rar | downloaded `2026-06-22 09:43:16` | 0.02 MB | note: Decision synced from ledger: install-soi-tweaks-8932-2026-06-22.md
 
 ### Nexus mod 8949
 
 Source: https://www.nexusmods.com/witcher3/mods/8949
 
-- [triage] VladUI - Clear Map Addon Full Version Next-Gen-8949-FullVersion-NextGen-1-1-1733960838.zip | downloaded `2026-06-24 07:58:11` | 13.71 MB
+- [deferred] VladUI - Clear Map Addon Full Version Next-Gen-8949-FullVersion-NextGen-1-1-1733960838.zip | downloaded `2026-06-24 07:58:11` | 13.71 MB | note: Vlad/E3-Vlad UI variants deferred; current UI owner is E3 HUD + W3EE compatibility layer.
 
 ### Nexus mod 8956
 
 Source: https://www.nexusmods.com/witcher3/mods/8956
 
-- [triage] Vegetation Billboards Remastered V3-8956-3-1-1769079568.zip | downloaded `2026-06-23 15:01:28` | 383.76 MB
+- [deferred] Vegetation Billboards Remastered V3-8956-3-1-1769079568.zip | downloaded `2026-06-23 15:01:28` | 383.76 MB | note: Large appearance/NPC/vegetation package deferred; needs dedicated visual stack review before install.
 
 ### Nexus mod 8997
 
 Source: https://www.nexusmods.com/witcher3/mods/8997
 
-- [triage] Icy Ocean - Killer Whale-8997-1-0-1712950349.zip | downloaded `2026-06-23 18:06:52` | 0.13 MB
-- [triage] Icy Ocean - Killer Whale-8997-1-0-1712950349(1).zip | downloaded `2026-06-23 18:07:08` | 0.13 MB
+- [installed-standard-or-script-merged] Icy Ocean - Killer Whale-8997-1-0-1712950349.zip | downloaded `2026-06-23 18:06:52` | 0.13 MB | note: Decision synced from ledger: install-icy-ocean-8997-2026-06-23.md
+- [installed-standard-or-script-merged] Icy Ocean - Killer Whale-8997-1-0-1712950349(1).zip | downloaded `2026-06-23 18:07:08` | 0.13 MB | note: Decision synced from ledger: install-icy-ocean-8997-2026-06-23.md
 
 ### Nexus mod 9017
 
 Source: https://www.nexusmods.com/witcher3/mods/9017
 
-- [triage] modBombAiming_NG-9017-1-00-1713079097.7z | downloaded `2026-06-23 12:28:25` | 0.01 MB
+- [deferred] modBombAiming_NG-9017-1-00-1713079097.7z | downloaded `2026-06-23 12:28:25` | 0.01 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 9022
 
 Source: https://www.nexusmods.com/witcher3/mods/9022
 
-- [triage] Larger White Orchard (1.32)-9022-1-01-1718911610.7z | downloaded `2026-06-23 14:49:23` | 0.25 MB
+- [installed-standard-or-script-merged] Larger White Orchard (1.32)-9022-1-01-1718911610.7z | downloaded `2026-06-23 14:49:23` | 0.25 MB | note: Decision synced from ledger: install-larger-white-orchard-2026-06-23.md
 
 ### Nexus mod 9028
 
 Source: https://www.nexusmods.com/witcher3/mods/9028
 
-- [triage] BGMv3 mixed Ver 2-9028-2-1713517286.zip | downloaded `2026-06-23 19:31:58` | 0.01 MB
+- [quarantined-or-disabled] BGMv3 mixed Ver 2-9028-2-1713517286.zip | downloaded `2026-06-23 19:31:58` | 0.01 MB | note: BGMv3 mixed quarantined as visual/foliage risk; see logs/inspect-visual-risk-bgm-kaer-benis-2026-06-26.md.
 
 ### Nexus mod 9089
 
 Source: https://www.nexusmods.com/witcher3/mods/9089
 
-- [triage] memoryofmakinglove-9089-2-4a-1770653991.zip | downloaded `2026-06-23 23:18:27` | 0.72 MB
+- [installed-standard-or-script-merged] memoryofmakinglove-9089-2-4a-1770653991.zip | downloaded `2026-06-23 23:18:27` | 0.72 MB | note: Memory of Making Love installed in safe batch; see logs/install-safe-batch-mirror-memory-2026-06-26.md.
 
 ### Nexus mod 9149
 
 Source: https://www.nexusmods.com/witcher3/mods/9149
 
-- [triage] Fix Ocean Bottom (Next-Gen 4.04)-9149-0-2-1717843180.zip | downloaded `2026-06-23 11:58:45` | 0 MB
+- [skipped] Fix Ocean Bottom (Next-Gen 4.04)-9149-0-2-1717843180.zip | downloaded `2026-06-23 11:58:45` | 0 MB | note: Small visual/fix download skipped or removed during cleanup/redundancy decisions; current BiA/W3EE/HDRP stack owns these areas.
 
 ### Nexus mod 9157
 
@@ -1297,7 +1290,7 @@ Source: https://www.nexusmods.com/witcher3/mods/9157
 
 Source: https://www.nexusmods.com/witcher3/mods/9173
 
-- [triage] NextgenBetterFX-9173-12-5-1-1771698366.zip | downloaded `2026-06-23 07:56:23` | 252.94 MB
+- [installed-standard-or-script-merged] NextgenBetterFX-9173-12-5-1-1771698366.zip | downloaded `2026-06-23 07:56:23` | 252.94 MB | note: Decision synced from ledger: install-nextgen-better-fx-9173-2026-06-23.md
 
 ### Nexus mod 9206
 
@@ -1309,7 +1302,7 @@ Source: https://www.nexusmods.com/witcher3/mods/9206
 
 Source: https://www.nexusmods.com/witcher3/mods/9221
 
-- [triage] Loot In Water (Next-Gen 4.04)-9221-0-3-1718965649.zip | downloaded `2026-06-23 13:22:31` | 0.02 MB
+- [deferred] Loot In Water (Next-Gen 4.04)-9221-0-3-1718965649.zip | downloaded `2026-06-23 13:22:31` | 0.02 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 9287
 
@@ -1321,7 +1314,7 @@ Source: https://www.nexusmods.com/witcher3/mods/9287
 
 Source: https://www.nexusmods.com/witcher3/mods/9358
 
-- [triage] Less music-9358-4-1721417234.rar | downloaded `2026-06-23 17:52:00` | 0.01 MB
+- [installed-standard-or-script-merged] Less music-9358-4-1721417234.rar | downloaded `2026-06-23 17:52:00` | 0.01 MB | note: Decision synced from ledger: install-less-music-9358-2026-06-23.md
 
 ### Nexus mod 9360
 
@@ -1333,25 +1326,25 @@ Source: https://www.nexusmods.com/witcher3/mods/9360
 
 Source: https://www.nexusmods.com/witcher3/mods/9383
 
-- [triage] Reputation System W3EE_REDUX-9383-W3EER-1-42i-RS-2-5c-1770459724.zip | downloaded `2026-06-23 23:21:36` | 0.31 MB
+- [installed-standard-or-script-merged] Reputation System W3EE_REDUX-9383-W3EER-1-42i-RS-2-5c-1770459724.zip | downloaded `2026-06-23 23:21:36` | 0.31 MB | note: Decision synced from ledger: install-reputation-system-9383-2026-06-24.md
 
 ### Nexus mod 9416
 
 Source: https://www.nexusmods.com/witcher3/mods/9416
 
-- [triage] W3EE Redux - Vigor Regen Tweak-9416-1-1-1722604945.rar | downloaded `2026-06-22 22:57:28` | 0 MB
+- [installed-with-manual-graft] W3EE Redux - Vigor Regen Tweak-9416-1-1-1722604945.rar | downloaded `2026-06-22 22:57:28` | 0 MB | note: Vigor regen tweak manually merged; see logs/install-vigor-regen-tweak-manual-merge-2026-06-23.md.
 
 ### Nexus mod 9458
 
 Source: https://www.nexusmods.com/witcher3/mods/9458
 
-- [triage] E3 Vlad.zip | downloaded `2026-06-24 09:33:42` | 2135.02 MB | note: Source inferred from E3 Vlad Nexus page context.
+- [deferred] E3 Vlad.zip | downloaded `2026-06-24 09:33:42` | 2135.02 MB | note: Source inferred from E3 Vlad Nexus page context. Vlad/E3-Vlad UI variants deferred; current UI owner is E3 HUD + W3EE compatibility layer.
 
 ### Nexus mod 9478
 
 Source: https://www.nexusmods.com/witcher3/mods/9478
 
-- [triage] E3 UI Nudel Update Patch for W3EE Redux NG 1.40-9478-1-0-3-1728405522.7z | downloaded `2026-06-22 14:55:09` | 21.66 MB
+- [installed-standard-or-script-merged] E3 UI Nudel Update Patch for W3EE Redux NG 1.40-9478-1-0-3-1728405522.7z | downloaded `2026-06-22 14:55:09` | 21.66 MB | note: Decision synced from ledger: install-e3-hud-w3ee-redux-ng-9478-2026-06-22.md
 
 ### Nexus mod 9563
 
@@ -1363,7 +1356,7 @@ Source: https://www.nexusmods.com/witcher3/mods/9563
 
 Source: https://www.nexusmods.com/witcher3/mods/9628
 
-- [triage] W3EE Trophies-9628-1-0-1725539831.zip | downloaded `2026-06-22 22:56:39` | 0.01 MB
+- [installed-standard-or-script-merged] W3EE Trophies-9628-1-0-1725539831.zip | downloaded `2026-06-22 22:56:39` | 0.01 MB | note: Installed in final safe download batch; see logs/install-final-safe-download-batch-2026-06-22.md.
 
 ### Nexus mod 9651
 
@@ -1378,13 +1371,13 @@ Source: https://www.nexusmods.com/witcher3/mods/9651
 
 Source: https://www.nexusmods.com/witcher3/mods/9688
 
-- [triage] NPC targeting priority and Axii fixes-9688-1-4-1-1771377437.7z | downloaded `2026-06-23 12:04:54` | 0.05 MB
+- [installed-standard-or-script-merged] NPC targeting priority and Axii fixes-9688-1-4-1-1771377437.7z | downloaded `2026-06-23 12:04:54` | 0.05 MB | note: Decision synced from ledger: install-npc-targeting-priority-axii-fixes-9688-2026-06-25.md
 
 ### Nexus mod 9717
 
 Source: https://www.nexusmods.com/witcher3/mods/9717
 
-- [triage] TW3_Next_Gen_Shadows_Flicker_Fix-9717-v1-2-1727630031.zip | downloaded `2026-06-23 12:03:57` | 2.82 MB
+- [skipped] TW3_Next_Gen_Shadows_Flicker_Fix-9717-v1-2-1727630031.zip | downloaded `2026-06-23 12:03:57` | 2.82 MB | note: Small visual/fix download skipped or removed during cleanup/redundancy decisions; current BiA/W3EE/HDRP stack owns these areas.
 
 ### Nexus mod 9723
 
@@ -1402,13 +1395,13 @@ Source: https://www.nexusmods.com/witcher3/mods/9768
 
 Source: https://www.nexusmods.com/witcher3/mods/9780
 
-- [triage] Beauclair_NPC_Spawn_Fix-9780-v1-3-1729726890.zip | downloaded `2026-06-23 08:48:24` | 0.13 MB
+- [assessed-or-audited] Beauclair_NPC_Spawn_Fix-9780-v1-3-1729726890.zip | downloaded `2026-06-23 08:48:24` | 0.13 MB | note: Decision synced from ledger: check-beauclair-npc-spawn-fix-9780-2026-06-23.md
 
 ### Nexus mod 9955
 
 Source: https://www.nexusmods.com/witcher3/mods/9955
 
-- [triage] Alchemy Recipes Reward-9955-2-0-1767814703.zip | downloaded `2026-06-22 23:00:22` | 0.03 MB
+- [installed-standard-or-script-merged] Alchemy Recipes Reward-9955-2-0-1767814703.zip | downloaded `2026-06-22 23:00:22` | 0.03 MB | note: Installed in final safe download batch; see logs/install-final-safe-download-batch-2026-06-22.md.
 
 ### Nexus mod 9957
 
@@ -1420,115 +1413,115 @@ Source: https://www.nexusmods.com/witcher3/mods/9957
 
 Source: https://www.nexusmods.com/witcher3/mods/9963
 
-- [triage] The Witcher 3 HD Reworked Project NextGen Edition-9963-20-0-fixed-1736185630.7z | downloaded `2026-06-23 19:45:52` | 12034.03 MB
+- [installed-standard-or-script-merged] The Witcher 3 HD Reworked Project NextGen Edition-9963-20-0-fixed-1736185630.7z | downloaded `2026-06-23 19:45:52` | 12034.03 MB | note: Decision synced from ledger: install-hdrp-nextgen-9963-bia-patch-9987-2026-06-23.md
 
 ### Nexus mod 9971
 
 Source: https://www.nexusmods.com/witcher3/mods/9971
 
-- [triage] SOI - EER - Patch-9971-v2-1735365638.zip | downloaded `2026-06-22 09:25:23` | 0.13 MB
+- [installed-standard-or-script-merged] SOI - EER - Patch-9971-v2-1735365638.zip | downloaded `2026-06-22 09:25:23` | 0.13 MB | note: AMM/SOI compatibility/config payload handled in AMM, New Hairstyles, and Shades of Iron passes; see logs/install-amm-2026-06-21.md, logs/install-new-hairstyles-4400-2026-06-22.md, and logs/install-shades-of-iron-2026-06-22.md.
 
 ### Nexus mod 9987
 
 Source: https://www.nexusmods.com/witcher3/mods/9987
 
-- [triage] BiA - HDRP Compatible Patch-9987-1-1-1764609344.zip | downloaded `2026-06-23 08:49:33` | 16.64 MB
+- [installed-standard-or-script-merged] BiA - HDRP Compatible Patch-9987-1-1-1764609344.zip | downloaded `2026-06-23 08:49:33` | 16.64 MB | note: Decision synced from ledger: install-hdrp-nextgen-9963-bia-patch-9987-2026-06-23.md
 
 ### Nexus mod 10014
 
 Source: https://www.nexusmods.com/witcher3/mods/10014
 
-- [triage] mod00UnreasonablePlotRedesigned-10014-2-0b-1770434739.zip | downloaded `2026-06-23 14:16:08` | 0.72 MB
+- [deferred] mod00UnreasonablePlotRedesigned-10014-2-0b-1770434739.zip | downloaded `2026-06-23 14:16:08` | 0.72 MB | note: Plot redesign deferred; quest narrative changes need dedicated compatibility review.
 
 ### Nexus mod 10021
 
 Source: https://www.nexusmods.com/witcher3/mods/10021
 
-- [triage] HDRP Test Apple-10021-1-2-1741795768.zip | downloaded `2026-06-23 07:52:17` | 3.62 MB
+- [installed-standard-or-script-merged] HDRP Test Apple-10021-1-2-1741795768.zip | downloaded `2026-06-23 07:52:17` | 3.62 MB | note: Decision synced from ledger: install-hdrp-test-apple-10021-2026-06-23.md
 
 ### Nexus mod 10024
 
 Source: https://www.nexusmods.com/witcher3/mods/10024
 
-- [triage] Better Sword Sheathing v1.0-10024-v1-0-1733517018.zip | downloaded `2026-06-23 08:48:58` | 0.01 MB
+- [assessed-or-audited] Better Sword Sheathing v1.0-10024-v1-0-1733517018.zip | downloaded `2026-06-23 08:48:58` | 0.01 MB | note: Decision synced from ledger: check-better-sword-sheathing-10024-2026-06-23.md
 
 ### Nexus mod 10161
 
 Source: https://www.nexusmods.com/witcher3/mods/10161
 
-- [triage] TemeriaFactionOverhaul-10161-1-5-1776004218.zip | downloaded `2026-06-23 15:11:36` | 72.12 MB
+- [deferred] TemeriaFactionOverhaul-10161-1-5-1776004218.zip | downloaded `2026-06-23 15:11:36` | 72.12 MB | note: Large appearance/NPC/vegetation package deferred; needs dedicated visual stack review before install.
 
 ### Nexus mod 10256
 
 Source: https://www.nexusmods.com/witcher3/mods/10256
 
-- [triage] Better Icons - Definitive Edition (Next Gen)-10256-1-8-3-1767827017.7z | downloaded `2026-06-22 15:11:38` | 52.38 MB
-- [triage] Better Icons - Definitive Edition (Next Gen) W3EE-10256-W3EE-1-4-2i-1767827107.7z | downloaded `2026-06-22 15:11:43` | 27.86 MB
-- [triage] Vlad UI Compatibility Patch-10256-VLAD-2-1-1-1749842775.7z | downloaded `2026-06-22 15:11:50` | 0.01 MB
-- [triage] Friendly HUD Compatibility Patch-10256-1-0-1739310440.7z | downloaded `2026-06-22 15:12:12` | 0.03 MB
-- [triage] Better Icons - Definitive Edition (Next Gen) W3EE-10256-W3EE-1-4-2i-1767827107(1).7z | downloaded `2026-06-23 14:18:42` | 27.86 MB
+- [installed-standard-or-script-merged] Better Icons - Definitive Edition (Next Gen)-10256-1-8-3-1767827017.7z | downloaded `2026-06-22 15:11:38` | 52.38 MB | note: Decision synced from ledger: install-e3-better-icons-patch-10256-2026-06-22.md
+- [installed-standard-or-script-merged] Better Icons - Definitive Edition (Next Gen) W3EE-10256-W3EE-1-4-2i-1767827107.7z | downloaded `2026-06-22 15:11:43` | 27.86 MB | note: Decision synced from ledger: install-e3-better-icons-patch-10256-2026-06-22.md
+- [installed-standard-or-script-merged] Vlad UI Compatibility Patch-10256-VLAD-2-1-1-1749842775.7z | downloaded `2026-06-22 15:11:50` | 0.01 MB | note: Decision synced from ledger: install-e3-better-icons-patch-10256-2026-06-22.md
+- [installed-standard-or-script-merged] Friendly HUD Compatibility Patch-10256-1-0-1739310440.7z | downloaded `2026-06-22 15:12:12` | 0.03 MB | note: Decision synced from ledger: install-e3-better-icons-patch-10256-2026-06-22.md
+- [installed-standard-or-script-merged] Better Icons - Definitive Edition (Next Gen) W3EE-10256-W3EE-1-4-2i-1767827107(1).7z | downloaded `2026-06-23 14:18:42` | 27.86 MB | note: Decision synced from ledger: install-e3-better-icons-patch-10256-2026-06-22.md
 
 ### Nexus mod 10286
 
 Source: https://www.nexusmods.com/witcher3/mods/10286
 
-- [triage] modNOBsSlowMoNextgen-10286-2-31-1739410104.zip | downloaded `2026-06-22 16:58:31` | 8.61 MB
-- [triage] NOBsSlowMoPatches-10286-2-31-1739410514.zip | downloaded `2026-06-22 16:58:58` | 0.09 MB
+- [deferred] modNOBsSlowMoNextgen-10286-2-31-1739410104.zip | downloaded `2026-06-22 16:58:31` | 8.61 MB | note: NOBs SlowMo deferred; overlaps NOBs Reflex and combat timing behavior.
+- [deferred] NOBsSlowMoPatches-10286-2-31-1739410514.zip | downloaded `2026-06-22 16:58:58` | 0.09 MB | note: NOBs SlowMo deferred; overlaps NOBs Reflex and combat timing behavior.
 
 ### Nexus mod 10295
 
 Source: https://www.nexusmods.com/witcher3/mods/10295
 
-- [triage] Balanced Alcohol Prices-10295-1-0-1-1761992119.zip | downloaded `2026-06-23 12:07:03` | 0.01 MB
+- [skipped] Balanced Alcohol Prices-10295-1-0-1-1761992119.zip | downloaded `2026-06-23 12:07:03` | 0.01 MB | note: Decision synced from ledger: decision-skip-balanced-alcohol-prices-10295-2026-06-25.md
 
 ### Nexus mod 10322
 
 Source: https://www.nexusmods.com/witcher3/mods/10322
 
-- [triage] Promotional Atmosphere Lighting Mod V2-10322-2-0-1767199114.7z | downloaded `2026-06-23 07:38:19` | 186.56 MB
+- [installed-partial-or-adjusted] Promotional Atmosphere Lighting Mod V2-10322-2-0-1767199114.7z | downloaded `2026-06-23 07:38:19` | 186.56 MB | note: Weather/lighting stack installed/owned by deliberate weather pass; see logs/install-weather-lighting-stack-2026-06-23.md and logs/audit-weather-visual-stack-2026-06-27.md.
 
 ### Nexus mod 10389
 
 Source: https://www.nexusmods.com/witcher3/mods/10389
 
-- [triage] Rational Crafting-10389-1-1-1-1761991819.zip | downloaded `2026-06-23 14:24:28` | 0.03 MB
+- [deferred] Rational Crafting-10389-1-1-1-1761991819.zip | downloaded `2026-06-23 14:24:28` | 0.03 MB | note: Deferred after compatibility assessment; see docs/deferred-mod-worklist.md and corresponding assess logs.
 
 ### Nexus mod 10416
 
 Source: https://www.nexusmods.com/witcher3/mods/10416
 
-- [triage] Resistance to bleeding in necrophages and vampires-10416-1-1-1741507347.7z | downloaded `2026-06-23 12:56:14` | 0.01 MB
-- [triage] Superior Black Blood redesign-10416-1-1-1749839573.7z | downloaded `2026-06-23 12:56:37` | 0.02 MB
+- [deferred] Resistance to bleeding in necrophages and vampires-10416-1-1-1741507347.7z | downloaded `2026-06-23 12:56:14` | 0.01 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [deferred] Superior Black Blood redesign-10416-1-1-1749839573.7z | downloaded `2026-06-23 12:56:37` | 0.02 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
 
 ### Nexus mod 10419
 
 Source: https://www.nexusmods.com/witcher3/mods/10419
 
-- [triage] Unread Schematics and Recipes - Next-Gen-10419-1-3-1764868968.7z | downloaded `2026-06-23 14:30:46` | 0.01 MB
+- [installed-standard-or-script-merged] Unread Schematics and Recipes - Next-Gen-10419-1-3-1764868968.7z | downloaded `2026-06-23 14:30:46` | 0.01 MB | note: Decision synced from ledger: install-unread-schematics-recipes-2026-06-23.md
 
 ### Nexus mod 10447
 
 Source: https://www.nexusmods.com/witcher3/mods/10447
 
-- [triage] Better Grass AO-10447-1-0-1743376538.zip | downloaded `2026-06-23 14:47:14` | 0.26 MB
+- [installed-standard-or-script-merged] Better Grass AO-10447-1-0-1743376538.zip | downloaded `2026-06-23 14:47:14` | 0.26 MB | note: Decision synced from ledger: install-better-grass-ao-2026-06-23.md
 
 ### Nexus mod 10449
 
 Source: https://www.nexusmods.com/witcher3/mods/10449
 
-- [triage] modFixNGESwordsBugfix (Next-Gen)-10449-1-0-1-1739536711.zip | downloaded `2026-06-23 11:56:45` | 0 MB
+- [skipped] modFixNGESwordsBugfix (Next-Gen)-10449-1-0-1-1739536711.zip | downloaded `2026-06-23 11:56:45` | 0 MB | note: Skipped: overwrite target absent in this stack; see logs/triage-skip-legacy-script-and-redundant-downloads-2026-06-26.md.
 
 ### Nexus mod 10463
 
 Source: https://www.nexusmods.com/witcher3/mods/10463
 
-- [triage] Main - Menu Strings version-10463-1-0-1-1741608341.7z | downloaded `2026-06-23 14:04:22` | 1.14 MB
+- [reference] Main - Menu Strings version-10463-1-0-1-1741608341.7z | downloaded `2026-06-23 14:04:22` | 1.14 MB | note: Menu strings version/reference; no standalone install decision recorded.
 
 ### Nexus mod 10503
 
 Source: https://www.nexusmods.com/witcher3/mods/10503
 
-- [triage] Counterattack Fixes-10503-1-3-1778274602.7z | downloaded `2026-06-23 11:53:40` | 0.11 MB
+- [installed-partial-or-adjusted] Counterattack Fixes-10503-1-3-1778274602.7z | downloaded `2026-06-23 11:53:40` | 0.11 MB | note: Decision synced from ledger: install-counterattack-fixes-10503-partial-2026-06-24.md
 
 ### Nexus mod 10519
 
@@ -1541,37 +1534,37 @@ Source: https://www.nexusmods.com/witcher3/mods/10519
 
 Source: https://www.nexusmods.com/witcher3/mods/10530
 
-- [triage] Attack Collision Overhaul - Leshens - W3EE-10530-0-2-1741367222.zip | downloaded `2026-06-23 08:42:35` | 1.51 MB
+- [installed-standard-or-script-merged] Attack Collision Overhaul - Leshens - W3EE-10530-0-2-1741367222.zip | downloaded `2026-06-23 08:42:35` | 1.51 MB | note: Decision synced from ledger: install-attack-collision-overhaul-leshens-10530-2026-06-23.md
 
 ### Nexus mod 10551
 
 Source: https://www.nexusmods.com/witcher3/mods/10551
 
-- [triage] RT CHAR DX12-10551-0-03-1742682859.rar | downloaded `2026-06-23 19:05:20` | 10.43 MB
+- [installed-standard-or-script-merged] RT CHAR DX12-10551-0-03-1742682859.rar | downloaded `2026-06-23 19:05:20` | 10.43 MB | note: Decision synced from ledger: install-ssao-tweak-10551-10761-2026-06-23.md
 
 ### Nexus mod 10556
 
 Source: https://www.nexusmods.com/witcher3/mods/10556
 
-- [triage] Ciri Scene Restored-10556-1-1742042608.rar | downloaded `2026-06-23 08:44:59` | 1.19 MB
+- [installed-standard-or-script-merged] Ciri Scene Restored-10556-1-1742042608.rar | downloaded `2026-06-23 08:44:59` | 1.19 MB | note: Decision synced from ledger: install-ciri-scene-restored-10556-2026-06-23.md
 
 ### Nexus mod 10578
 
 Source: https://www.nexusmods.com/witcher3/mods/10578
 
-- [triage] Mods Menu Category-10578-2-1-1745319248.zip | downloaded `2026-06-23 07:49:35` | 0.01 MB
+- [installed-standard-or-script-merged] Mods Menu Category-10578-2-1-1745319248.zip | downloaded `2026-06-23 07:49:35` | 0.01 MB | note: Utility/menu category or tree LOD payload installed; see logs/install-utilities-menu-category-tree-lod-2026-06-23.md.
 
 ### Nexus mod 10593
 
 Source: https://www.nexusmods.com/witcher3/mods/10593
 
-- [triage] Gameplay Mimics Fix-10593-2-1-1772495836.zip | downloaded `2026-06-23 12:01:48` | 0 MB
+- [installed-standard-or-script-merged] Gameplay Mimics Fix-10593-2-1-1772495836.zip | downloaded `2026-06-23 12:01:48` | 0 MB | note: Decision synced from ledger: install-gameplay-mimics-fix-10593-2026-06-24.md
 
 ### Nexus mod 10653
 
 Source: https://www.nexusmods.com/witcher3/mods/10653
 
-- [triage] The Last Wish Final Scene Restoration-10653-1-1-1754997890.zip | downloaded `2026-06-23 08:44:48` | 9.3 MB
+- [installed-standard-or-script-merged] The Last Wish Final Scene Restoration-10653-1-1-1754997890.zip | downloaded `2026-06-23 08:44:48` | 9.3 MB | note: Decision synced from ledger: install-last-wish-final-scene-restoration-10653-2026-06-23.md
 
 ### Nexus mod 10744
 
@@ -1583,37 +1576,37 @@ Source: https://www.nexusmods.com/witcher3/mods/10744
 
 Source: https://www.nexusmods.com/witcher3/mods/10761
 
-- [triage] SSAO Tweak Non-RT Eyes Fix-10761-1-1-1746638131.7z | downloaded `2026-06-23 18:59:43` | 0 MB
+- [installed-standard-or-script-merged] SSAO Tweak Non-RT Eyes Fix-10761-1-1-1746638131.7z | downloaded `2026-06-23 18:59:43` | 0 MB | note: Decision synced from ledger: install-ssao-tweak-10551-10761-2026-06-23.md
 
 ### Nexus mod 10807
 
 Source: https://www.nexusmods.com/witcher3/mods/10807
 
-- [triage] Novigrad Sewers Lighting Improved-10807-1-03-1771804955.rar | downloaded `2026-06-23 14:55:38` | 0.13 MB
+- [installed-standard-or-script-merged] Novigrad Sewers Lighting Improved-10807-1-03-1771804955.rar | downloaded `2026-06-23 14:55:38` | 0.13 MB | note: Decision synced from ledger: install-novigrad-sewers-lighting-2026-06-23.md
 
 ### Nexus mod 10830
 
 Source: https://www.nexusmods.com/witcher3/mods/10830
 
-- [triage] Next-Gen Compatibility Patch-10830-1-0-1747366393.zip | downloaded `2026-06-21 01:22:01` | 0.01 MB
+- [assessed-or-audited] Next-Gen Compatibility Patch-10830-1-0-1747366393.zip | downloaded `2026-06-21 01:22:01` | 0.01 MB | note: Decision synced from ledger: review-swords-on-roach-amm-patch-10830-2026-06-21.md
 
 ### Nexus mod 10939
 
 Source: https://www.nexusmods.com/witcher3/mods/10939
 
-- [triage] Memory of Iris-10939-0-1-1749825659.zip | downloaded `2026-06-23 08:47:53` | 0.23 MB
+- [installed-standard-or-script-merged] Memory of Iris-10939-0-1-1749825659.zip | downloaded `2026-06-23 08:47:53` | 0.23 MB | note: Decision synced from ledger: install-memory-of-iris-10939-2026-06-23.md
 
 ### Nexus mod 10942
 
 Source: https://www.nexusmods.com/witcher3/mods/10942
 
-- [triage] Realistic Rain V3-10942-1-2-1750125428.rar | downloaded `2026-06-23 07:32:32` | 0.51 MB
+- [installed-standard-or-script-merged] Realistic Rain V3-10942-1-2-1750125428.rar | downloaded `2026-06-23 07:32:32` | 0.51 MB | note: Decision synced from ledger: install-realistic-rain-v3-10942-2026-06-23.md
 
 ### Nexus mod 10958
 
 Source: https://www.nexusmods.com/witcher3/mods/10958
 
-- [triage] AMM Polish Translation-10958-1-1-v4-0-4-1752629628.7z | downloaded `2026-06-21 17:54:50` | 0.02 MB
+- [skipped] AMM Polish Translation-10958-1-1-v4-0-4-1752629628.7z | downloaded `2026-06-21 17:54:50` | 0.02 MB | note: AMM Polish translation skipped for English setup; see logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
 
 ### Nexus mod 10978
 
@@ -1625,7 +1618,7 @@ Source: https://www.nexusmods.com/witcher3/mods/10978
 
 Source: https://www.nexusmods.com/witcher3/mods/10998
 
-- [triage] RedanianRoyalShip-10998-1-2-1-1763599170.zip | downloaded `2026-06-23 12:02:33` | 23.67 MB
+- [deferred] RedanianRoyalShip-10998-1-2-1-1763599170.zip | downloaded `2026-06-23 12:02:33` | 23.67 MB | note: Redanian Royal Ship deferred as content/worldspace cosmetic until dedicated worldspace pass.
 
 ### Nexus mod 11004
 
@@ -1637,85 +1630,85 @@ Source: https://www.nexusmods.com/witcher3/mods/11004
 
 Source: https://www.nexusmods.com/witcher3/mods/11091
 
-- [triage] modPriscilla-11091-0-2-1753992235.7z | downloaded `2026-06-22 21:00:05` | 0.83 MB
-- [triage] Priscilla Default Clothes-11091-1-0-1754329667.7z | downloaded `2026-06-22 21:00:22` | 0.18 MB
-- [triage] Orianna Default Clothes-11091-1-01-1755100688.7z | downloaded `2026-06-22 21:00:42` | 0.05 MB
-- [triage] Menu Kingsegg to Even More-11091-1-0-1763559448.zip | downloaded `2026-06-22 21:01:02` | 0 MB
-- [triage] Romance to Priscilla-11091-1-0-0-1753981821.7z | downloaded `2026-06-22 21:01:39` | 0.01 MB
-- [triage] Romance to Orianna-11091-1-0-1754785033.7z | downloaded `2026-06-22 21:01:57` | 0.02 MB
-- [triage] modSpawnCompanions-11091-1-3-1755045903.7z | downloaded `2026-06-22 21:02:26` | 0.02 MB
-- [triage] Amrynn-11091-1-0-1755045981.7z | downloaded `2026-06-22 21:02:41` | 0.35 MB
-- [triage] Dlc Romance Fringilla-11091-1-1780400216.7z | downloaded `2026-06-22 21:02:56` | 0.01 MB
-- [triage] Dlc Romance Margarita-11091-1-1780400233.7z | downloaded `2026-06-22 21:03:08` | 0.01 MB
+- [installed-with-manual-graft] modPriscilla-11091-0-2-1753992235.7z | downloaded `2026-06-22 21:00:05` | 0.83 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Priscilla Default Clothes-11091-1-0-1754329667.7z | downloaded `2026-06-22 21:00:22` | 0.18 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Orianna Default Clothes-11091-1-01-1755100688.7z | downloaded `2026-06-22 21:00:42` | 0.05 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Menu Kingsegg to Even More-11091-1-0-1763559448.zip | downloaded `2026-06-22 21:01:02` | 0 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Romance to Priscilla-11091-1-0-0-1753981821.7z | downloaded `2026-06-22 21:01:39` | 0.01 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Romance to Orianna-11091-1-0-1754785033.7z | downloaded `2026-06-22 21:01:57` | 0.02 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] modSpawnCompanions-11091-1-3-1755045903.7z | downloaded `2026-06-22 21:02:26` | 0.02 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Amrynn-11091-1-0-1755045981.7z | downloaded `2026-06-22 21:02:41` | 0.35 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Dlc Romance Fringilla-11091-1-1780400216.7z | downloaded `2026-06-22 21:02:56` | 0.01 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
+- [installed-with-manual-graft] Dlc Romance Margarita-11091-1-1780400233.7z | downloaded `2026-06-22 21:03:08` | 0.01 MB | note: Companion/romance variants covered by current modSpawnCompanions/MCME grafts; treat future 11091 downloads as mutually exclusive variants. See logs/triage-appearance-backlog-662-780-3287-5576-11091-2026-06-27.md.
 
 ### Nexus mod 11144
 
 Source: https://www.nexusmods.com/witcher3/mods/11144
 
-- [triage] RT Water Reflection Fix-11144-1-05-1767469921.rar | downloaded `2026-06-23 12:05:13` | 0 MB
+- [installed-partial-or-adjusted] RT Water Reflection Fix-11144-1-05-1767469921.rar | downloaded `2026-06-23 12:05:13` | 0 MB | note: Decision synced from ledger: install-rt-water-reflection-fix-11144-partial-2026-06-25.md
 
 ### Nexus mod 11216
 
 Source: https://www.nexusmods.com/witcher3/mods/11216
 
-- [triage] Bald Mountain Oak Tree LOD Fix-11216-0-1-1756305405.rar | downloaded `2026-06-23 08:44:00` | 0.03 MB
+- [assessed-or-audited] Bald Mountain Oak Tree LOD Fix-11216-0-1-1756305405.rar | downloaded `2026-06-23 08:44:00` | 0.03 MB | note: Decision synced from ledger: check-bald-mountain-oak-tree-lod-fix-11216-2026-06-23.md
 
 ### Nexus mod 11260
 
 Source: https://www.nexusmods.com/witcher3/mods/11260
 
-- [triage] Brothers In Arms - LOD Fixes-11260-3-1-0-lod-1770398542.zip | downloaded `2026-06-22 11:10:45` | 150.72 MB
-- [triage] Brothers In Arms - Ultimate Edition-11260-3-1-2-1772472350.zip | downloaded `2026-06-22 11:17:06` | 574.73 MB
+- [installed-standard-or-script-merged] Brothers In Arms - LOD Fixes-11260-3-1-0-lod-1770398542.zip | downloaded `2026-06-22 11:10:45` | 150.72 MB | note: Decision synced from ledger: install-brothers-in-arms-11260-2026-06-22.md
+- [installed-standard-or-script-merged] Brothers In Arms - Ultimate Edition-11260-3-1-2-1772472350.zip | downloaded `2026-06-22 11:17:06` | 574.73 MB | note: Decision synced from ledger: install-brothers-in-arms-11260-2026-06-22.md
 
 ### Nexus mod 11264
 
 Source: https://www.nexusmods.com/witcher3/mods/11264
 
-- [triage] Wild Hunt Warriors Overhauled - BiA Version-11264-1-0-1765404789.zip | downloaded `2026-06-23 15:15:03` | 3.92 MB
+- [installed-standard-or-script-merged] Wild Hunt Warriors Overhauled - BiA Version-11264-1-0-1765404789.zip | downloaded `2026-06-23 15:15:03` | 3.92 MB | note: Decision synced from ledger: install-wild-hunt-warriors-bia-11264-2026-06-23.md
 
 ### Nexus mod 11267
 
 Source: https://www.nexusmods.com/witcher3/mods/11267
 
-- [triage] Fix sound of rotfiend exploding-11267-1-2-6-1771986672.7z | downloaded `2026-06-23 12:00:28` | 0 MB
-- [triage] Fix sounds of sword hits when adding effects-11267-1-2-5-1-1770319556.7z | downloaded `2026-06-23 12:00:39` | 0.04 MB
+- [installed-with-manual-graft] Fix sound of rotfiend exploding-11267-1-2-6-1771986672.7z | downloaded `2026-06-23 12:00:28` | 0 MB | note: Useful behavior manually grafted; raw install not needed. See logs/assess-small-fix-batch-2026-06-27.md and logs/assess-script-hotfix-downloads-2026-06-27.md.
+- [installed-with-manual-graft] Fix sounds of sword hits when adding effects-11267-1-2-5-1-1770319556.7z | downloaded `2026-06-23 12:00:39` | 0.04 MB | note: Useful behavior manually grafted; raw install not needed. See logs/assess-small-fix-batch-2026-06-27.md and logs/assess-script-hotfix-downloads-2026-06-27.md.
 
 ### Nexus mod 11275
 
 Source: https://www.nexusmods.com/witcher3/mods/11275
 
-- [triage] NGNobsReflexes-11275-1-5-7-1765750539.7z | downloaded `2026-06-22 16:47:35` | 0.13 MB
-- [triage] NGNobsReflexesPatch-11275-1-5-7-1765750575.7z | downloaded `2026-06-22 16:47:52` | 0.03 MB
+- [installed-standard-or-script-merged] NGNobsReflexes-11275-1-5-7-1765750539.7z | downloaded `2026-06-22 16:47:35` | 0.13 MB | note: Decision synced from ledger: install-reflex-nextgen-w3ee-11275-2026-06-22.md
+- [installed-standard-or-script-merged] NGNobsReflexesPatch-11275-1-5-7-1765750575.7z | downloaded `2026-06-22 16:47:52` | 0.03 MB | note: Decision synced from ledger: install-reflex-nextgen-w3ee-11275-2026-06-22.md
 
 ### Nexus mod 11300
 
 Source: https://www.nexusmods.com/witcher3/mods/11300
 
-- [triage] Useful Place of Power Map Pin - Next-Gen-11300-1-1-1764868477.7z | downloaded `2026-06-23 14:05:37` | 0 MB
+- [installed-standard-or-script-merged] Useful Place of Power Map Pin - Next-Gen-11300-1-1-1764868477.7z | downloaded `2026-06-23 14:05:37` | 0 MB | note: Useful Place of Power Map Pin installed; see logs/install-useful-place-of-power-map-pin-11300-2026-06-27.md.
 
 ### Nexus mod 11321
 
 Source: https://www.nexusmods.com/witcher3/mods/11321
 
-- [triage] modFoodRebalanceRedux-11321-1-0-1765128047.zip | downloaded `2026-06-22 12:17:34` | 0.01 MB
+- [installed-standard-or-script-merged] modFoodRebalanceRedux-11321-1-0-1765128047.zip | downloaded `2026-06-22 12:17:34` | 0.01 MB | note: Decision synced from ledger: install-food-rebalance-redux-11321-2026-06-22.md
 
 ### Nexus mod 11339
 
 Source: https://www.nexusmods.com/witcher3/mods/11339
 
-- [triage] Advanced Icons for Witcher Gear (version E)-11339-2-3-1763466572.zip | downloaded `2026-06-23 14:17:26` | 0.97 MB
+- [deferred] Advanced Icons for Witcher Gear (version E)-11339-2-3-1763466572.zip | downloaded `2026-06-23 14:17:26` | 0.97 MB | note: Deferred after compatibility assessment; see docs/deferred-mod-worklist.md and corresponding assess logs.
 
 ### Nexus mod 11382
 
 Source: https://www.nexusmods.com/witcher3/mods/11382
 
-- [triage] Auto-Gloves and Mask Off-11382-1-3-1774471492.zip | downloaded `2026-06-23 08:43:08` | 0.01 MB
+- [installed-standard-or-script-merged] Auto-Gloves and Mask Off-11382-1-3-1774471492.zip | downloaded `2026-06-23 08:43:08` | 0.01 MB | note: Decision synced from ledger: install-auto-gloves-mask-off-11382-2026-06-23.md
 
 ### Nexus mod 11426
 
 Source: https://www.nexusmods.com/witcher3/mods/11426
 
-- [triage] NGNobsToolTipGenerator-11426-1-1-0-1765750315.7z | downloaded `2026-06-22 16:48:56` | 0.02 MB
+- [installed-standard-or-script-merged] NGNobsToolTipGenerator-11426-1-1-0-1765750315.7z | downloaded `2026-06-22 16:48:56` | 0.02 MB | note: Installed as NOBs Reflex support files; see logs/install-reflex-nextgen-w3ee-11275-2026-06-22.md.
 
 ### Nexus mod 11556
 
@@ -1730,57 +1723,57 @@ Source: https://www.nexusmods.com/witcher3/mods/11556
 
 Source: https://www.nexusmods.com/witcher3/mods/11599
 
-- [triage] Wearable Pocket Items Redux - Next Gen-11599-1-5-5-1771305577.7z | downloaded `2026-06-22 22:14:28` | 0.18 MB
+- [installed-standard-or-script-merged] Wearable Pocket Items Redux - Next Gen-11599-1-5-5-1771305577.7z | downloaded `2026-06-22 22:14:28` | 0.18 MB | note: Decision synced from ledger: install-wpi-redux-11599-2026-06-22.md
 
 ### Nexus mod 11620
 
 Source: https://www.nexusmods.com/witcher3/mods/11620
 
-- [triage] Lighter bombs W3ee Redux-11620-1-0-1766490924.zip | downloaded `2026-06-22 17:08:21` | 0.05 MB
+- [troubleshooting-record] Lighter bombs W3ee Redux-11620-1-0-1766490924.zip | downloaded `2026-06-22 17:08:21` | 0.05 MB | note: Decision synced from ledger: normalize-backlog-and-settings-audit-2026-06-27.md
 
 ### Nexus mod 11636
 
 Source: https://www.nexusmods.com/witcher3/mods/11636
 
-- [triage] AnariettaOverhaul-11636-1-1-1-1766866072.zip | downloaded `2026-06-23 15:10:15` | 40.04 MB
+- [installed-standard-or-script-merged] AnariettaOverhaul-11636-1-1-1-1766866072.zip | downloaded `2026-06-23 15:10:15` | 40.04 MB | note: Decision synced from ledger: install-anarietta-overhaul-2026-06-23.md
 
 ### Nexus mod 11651
 
 Source: https://www.nexusmods.com/witcher3/mods/11651
 
-- [triage] Full Manticore W3EE Redux Edit-11651-1-0-1767026819.zip | downloaded `2026-06-22 17:04:57` | 14.78 MB
+- [installed-standard-or-script-merged] Full Manticore W3EE Redux Edit-11651-1-0-1767026819.zip | downloaded `2026-06-22 17:04:57` | 14.78 MB | note: Decision synced from ledger: install-full-manticore-w3ee-redux-11651-2026-06-22.md
 
 ### Nexus mod 11657
 
 Source: https://www.nexusmods.com/witcher3/mods/11657
 
-- [triage] Easier to Read for TW3 - UI Fix.rar | downloaded `2026-06-23 14:20:28` | 0.91 MB | note: Source inferred from paired Belgrano download and Nexus page.
-- [triage] Easier to Read for TW3 - Belgrano-11657-1-0-1767247130.rar | downloaded `2026-06-23 14:20:43` | 0.11 MB
+- [deferred] Easier to Read for TW3 - UI Fix.rar | downloaded `2026-06-23 14:20:28` | 0.91 MB | note: Source inferred from paired Belgrano download and Nexus page. Font/readability package deferred; current E3 HUD menu layout already has active text-fit work.
+- [deferred] Easier to Read for TW3 - Belgrano-11657-1-0-1767247130.rar | downloaded `2026-06-23 14:20:43` | 0.11 MB | note: Font/readability package deferred; current E3 HUD menu layout already has active text-fit work.
 
 ### Nexus mod 11686
 
 Source: https://www.nexusmods.com/witcher3/mods/11686
 
-- [triage] Attack Collision Overhaul - Giants-11686-0-1-1767827388.zip | downloaded `2026-06-23 08:42:07` | 3.12 MB
+- [installed-standard-or-script-merged] Attack Collision Overhaul - Giants-11686-0-1-1767827388.zip | downloaded `2026-06-23 08:42:07` | 3.12 MB | note: Decision synced from ledger: install-attack-collision-overhaul-giants-11686-2026-06-23.md
 
 ### Nexus mod 11727
 
 Source: https://www.nexusmods.com/witcher3/mods/11727
 
-- [triage] Horse Riding For Companions-11727-1-0-0-1768583997.rar | downloaded `2026-06-22 20:19:38` | 1.68 MB
+- [installed-standard-or-script-merged] Horse Riding For Companions-11727-1-0-0-1768583997.rar | downloaded `2026-06-22 20:19:38` | 1.68 MB | note: Decision synced from ledger: install-mcme-optionals-horse-11727-2026-06-22.md
 
 ### Nexus mod 11732
 
 Source: https://www.nexusmods.com/witcher3/mods/11732
 
-- [triage] Lead Ore-11732-1-0-1768557826.zip | downloaded `2026-06-22 17:06:16` | 0.05 MB
+- [installed-standard-or-script-merged] Lead Ore-11732-1-0-1768557826.zip | downloaded `2026-06-22 17:06:16` | 0.05 MB | note: Decision synced from ledger: install-lead-ore-w3ee-redux-11732-2026-06-22.md
 
 ### Nexus mod 11743
 
 Source: https://www.nexusmods.com/witcher3/mods/11743
 
-- [triage] AutoLoot Redux for W3EE-11743-2-3-1770600253.zip | downloaded `2026-06-22 11:01:47` | 0.01 MB
-- [triage] Oneliners - REQUIRED FILE-11743-1-1770654764.zip | downloaded `2026-06-22 11:02:22` | 0.01 MB
+- [installed-standard-or-script-merged] AutoLoot Redux for W3EE-11743-2-3-1770600253.zip | downloaded `2026-06-22 11:01:47` | 0.01 MB | note: Decision synced from ledger: install-auto-loot-redux-11743-2026-06-22.md
+- [installed-standard-or-script-merged] Oneliners - REQUIRED FILE-11743-1-1770654764.zip | downloaded `2026-06-22 11:02:22` | 0.01 MB | note: Decision synced from ledger: install-auto-loot-redux-11743-2026-06-22.md
 
 ### Nexus mod 11799
 
@@ -1798,7 +1791,7 @@ Source: https://www.nexusmods.com/witcher3/mods/11820
 
 Source: https://www.nexusmods.com/witcher3/mods/11862
 
-- [triage] Correct burning name-11862-1-0-1770808195.7z | downloaded `2026-06-23 11:52:15` | 0.01 MB
+- [installed-standard-or-script-merged] Correct burning name-11862-1-0-1770808195.7z | downloaded `2026-06-23 11:52:15` | 0.01 MB | note: Decision synced from ledger: install-correct-burning-name-11862-2026-06-24.md
 
 ### Nexus mod 11934
 
@@ -1810,50 +1803,50 @@ Source: https://www.nexusmods.com/witcher3/mods/11934
 
 Source: https://www.nexusmods.com/witcher3/mods/11992
 
-- [triage] Fix animation of critical effects - Next Gen-11992-1-1-1774596124.7z | downloaded `2026-06-23 11:55:26` | 0.38 MB
+- [skipped] Fix animation of critical effects - Next Gen-11992-1-1-1774596124.7z | downloaded `2026-06-23 11:55:26` | 0.38 MB | note: Small visual/fix download skipped or removed during cleanup/redundancy decisions; current BiA/W3EE/HDRP stack owns these areas.
 
 ### Nexus mod 12042
 
 Source: https://www.nexusmods.com/witcher3/mods/12042
 
-- [triage] Cinematic Fast Travel-12042-2-0-1780821571.rar | downloaded `2026-06-23 14:06:49` | 0.02 MB
+- [deferred] Cinematic Fast Travel-12042-2-0-1780821571.rar | downloaded `2026-06-23 14:06:49` | 0.02 MB | note: Cinematic Fast Travel deferred; overlaps Fast Travel Pack/player-camera state. See docs/deferred-mod-worklist.md.
 
 ### Nexus mod 12196
 
 Source: https://www.nexusmods.com/witcher3/mods/12196
 
-- [triage] Removing oil descriptions when charges exhausted-12196-1-0-1778486967.7z | downloaded `2026-06-23 12:05:46` | 0.07 MB
+- [installed-with-manual-graft] Removing oil descriptions when charges exhausted-12196-1-0-1778486967.7z | downloaded `2026-06-23 12:05:46` | 0.07 MB | note: Decision synced from ledger: install-remove-expired-oil-description-12196-graft-2026-06-25.md
 
 ### Nexus mod 12215
 
 Source: https://www.nexusmods.com/witcher3/mods/12215
 
-- [triage] ModVivaldiInvestments-12215-1-08-1780028997.zip | downloaded `2026-06-24 09:44:05` | 0.04 MB
+- [fix-applied] ModVivaldiInvestments-12215-1-08-1780028997.zip | downloaded `2026-06-24 09:44:05` | 0.04 MB | note: Vivaldi Investments DLC payload repaired; see logs/repair-vivaldi-investments-dlc-2026-06-27.md.
 
 ### Nexus mod 12218
 
 Source: https://www.nexusmods.com/witcher3/mods/12218
 
-- [triage] Standarised Naming Convention - W3EE Redux-12218-1-0-1778788363.zip | downloaded `2026-06-20 23:48:39` | 0.14 MB
+- [installed-standard-or-script-merged] Standarised Naming Convention - W3EE Redux-12218-1-0-1778788363.zip | downloaded `2026-06-20 23:48:39` | 0.14 MB | note: Decision synced from ledger: install-snc-w3ee-redux-2026-06-21.md
 
 ### Nexus mod 12221
 
 Source: https://www.nexusmods.com/witcher3/mods/12221
 
-- [triage] W3EER-FRR - BiA Compatibility Patch with My Tweaks-12221-1-0-1778849966.rar | downloaded `2026-06-22 12:12:40` | 0.02 MB
-- [triage] W3EER - Food Rebalance - BiA Compatibility Patch-12221-1-0-1778850191.zip | downloaded `2026-06-22 12:17:55` | 0.02 MB
+- [installed-standard-or-script-merged] W3EER-FRR - BiA Compatibility Patch with My Tweaks-12221-1-0-1778849966.rar | downloaded `2026-06-22 12:12:40` | 0.02 MB | note: Decision synced from ledger: install-food-rebalance-redux-11321-2026-06-22.md
+- [installed-standard-or-script-merged] W3EER - Food Rebalance - BiA Compatibility Patch-12221-1-0-1778850191.zip | downloaded `2026-06-22 12:17:55` | 0.02 MB | note: Decision synced from ledger: install-food-rebalance-redux-11321-2026-06-22.md
 
 ### Nexus mod 12230
 
 Source: https://www.nexusmods.com/witcher3/mods/12230
 
-- [triage] Environment Overhaul-12230-1-2-1780820299.zip | downloaded `2026-06-23 20:18:25` | 3334.45 MB
+- [installed-standard-or-script-merged] Environment Overhaul-12230-1-2-1780820299.zip | downloaded `2026-06-23 20:18:25` | 3334.45 MB | note: Decision synced from ledger: install-environment-overhaul-12230-2026-06-23.md
 
 ### Nexus mod 12249
 
 Source: https://www.nexusmods.com/witcher3/mods/12249
 
-- [triage] Extra Skills Slots Next Gen-12249-1-1779652136.rar | downloaded `2026-06-23 19:55:12` | 2.72 MB
+- [installed-standard-or-script-merged] Extra Skills Slots Next Gen-12249-1-1779652136.rar | downloaded `2026-06-23 19:55:12` | 2.72 MB | note: Decision synced from ledger: install-extra-skill-slots-12249-2026-06-23.md
 
 ### Nexus mod 12293
 
@@ -1865,5 +1858,16 @@ Source: https://www.nexusmods.com/witcher3/mods/12293
 
 Source: https://www.nexusmods.com/witcher3/mods/12308
 
-- [triage] Alchemy-v1.12.1_BIDE-v1.8.3 NG Patch-12308-1-0-0-1780592692.7z | downloaded `2026-06-23 23:51:27` | 0 MB
+- [deferred] Alchemy-v1.12.1_BIDE-v1.8.3 NG Patch-12308-1-0-0-1780592692.7z | downloaded `2026-06-23 23:51:27` | 0 MB | note: Alchemy Primer compatibility patch deferred with Alchemy Primer; see logs/defer-alchemy-primer-8081-2026-06-24.md.
+
+### No Nexus mod id
+
+Source: https://github.com/meltdown28/E3-UI-and-HUD-Revamped/releases
+
+- [skipped] E3.2014.UI.and.HUD.Revamped.Nudel.Patch.-.All.Quest.Objects.On.Map.Patch.zip | downloaded `2026-06-22 14:25:33` | 1.71 MB | note: Source inferred from GitHub release archives; no Nexus id in filename. E3 HUD/Better Icons optional patch skipped unless matching dependency is installed; see logs/triage-e3-hud-better-icons-patches-2026-06-27.md.
+- [skipped] E3-UI-and-HUD-Revamped-E32014UIandHUDRevamped_NudelPatch_AQOOMPatch.zip | downloaded `2026-06-22 14:25:39` | 2.76 MB | note: Source inferred from GitHub release archives; no Nexus id in filename. E3 HUD/Better Icons optional patch skipped unless matching dependency is installed; see logs/triage-e3-hud-better-icons-patches-2026-06-27.md.
+- [skipped] E3.2014.UI.and.HUD.Revamped.-.Magic.Spells.Patch.zip | downloaded `2026-06-22 15:04:38` | 0.01 MB | note: Source inferred from GitHub release archives; no Nexus id in filename. E3 HUD Magic Spells patch skipped because Magic Spells is not installed; see logs/triage-e3-hud-better-icons-patches-2026-06-27.md.
+- [skipped] E3-UI-and-HUD-Revamped-E32014UIandHUD_Revamped_MagicSpellsPatch.zip | downloaded `2026-06-22 15:04:43` | 1.05 MB | note: Source inferred from GitHub release archives; no Nexus id in filename. E3 HUD/Better Icons optional patch skipped unless matching dependency is installed; see logs/triage-e3-hud-better-icons-patches-2026-06-27.md.
+- [skipped] E3.UI.and.HUD.Revamped.-.Better.Icons.Patch.zip | downloaded `2026-06-22 15:10:35` | 0.02 MB | note: Source inferred from GitHub release archives; no Nexus id in filename. E3 HUD/Better Icons optional patch skipped unless matching dependency is installed; see logs/triage-e3-hud-better-icons-patches-2026-06-27.md.
+- [skipped] E3-UI-and-HUD-Revamped-BetterIconsPatch_E3HUD.zip | downloaded `2026-06-22 15:10:38` | 0.93 MB | note: Source inferred from GitHub release archives; no Nexus id in filename. E3 HUD/Better Icons optional patch skipped unless matching dependency is installed; see logs/triage-e3-hud-better-icons-patches-2026-06-27.md.
 
