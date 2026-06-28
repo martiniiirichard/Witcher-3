@@ -99,7 +99,7 @@ These appear to be active but functionally shadowed by other active mods. Do not
 
 ### E3 HUD Ownership Notes
 
-`modE3HUD` and `mod0_E3HUD_W3EER_NG` are not simple duplicates. They are the selected HUD stack:
+`modE3HUD` and `mod0_E3HUD_W3EER_NG` are not simple duplicates. They are the selected HUD stack. See `logs/audit-e3-hud-stack-2026-06-28.md`.
 
 - `modE3HUD` provides the base E3-style HUD assets and wins a few standalone panels.
 - `mod0_E3HUD_W3EER_NG` wins most W3EE-sensitive panels and is the compatibility layer for the current W3EE Redux setup.
