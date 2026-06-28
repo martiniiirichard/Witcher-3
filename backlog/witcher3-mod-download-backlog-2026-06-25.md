@@ -268,7 +268,7 @@ Source: https://www.nexusmods.com/witcher3/mods/2686
 
 Source: https://www.nexusmods.com/witcher3/mods/2770
 
-- [deferred] Lamp On Player's Boat - No City Light-2770-2-1-1776701864.7z | downloaded `2026-06-23 14:09:42` | 0.05 MB | note: Boat lamp/city-light tweak deferred to lighting pass.
+- [installed-standard-or-script-merged] Lamp On Player's Boat - No City Light-2770-2-1-1776701864.7z | downloaded `2026-06-23 14:09:42` | 0.05 MB | note: Already installed as no-script/no-menu visual content in the low-risk batch; active as modLampOnPlayersBoat_NoCityLight. See logs/download-triage-low-risk-batch-2026-06-23.md.
 
 ### Nexus mod 2853
 
@@ -307,7 +307,7 @@ Source: https://www.nexusmods.com/witcher3/mods/2943
 
 Source: https://www.nexusmods.com/witcher3/mods/2968
 
-- [deferred] Additional Armor Stands - Unicorn Edition-2968-0-1-1591599758.7z | downloaded `2026-06-23 13:05:04` | 0 MB | note: Additional Armor Stands deferred; overlaps Corvo Bianco/home display stack.
+- [installed-standard-or-script-merged] Additional Armor Stands - Unicorn Edition-2968-0-1-1591599758.7z | downloaded `2026-06-23 13:05:04` | 0 MB | note: Already installed as content-only modAdditionalArmorStandsNoUni at priority 150; see docs/mod-backlog.md and logs/download-triage-low-risk-batch-2026-06-23.md.
 
 ### Nexus mod 2985
 
@@ -575,7 +575,7 @@ Source: https://www.nexusmods.com/witcher3/mods/4895
 
 Source: https://www.nexusmods.com/witcher3/mods/4987
 
-- [deferred] Less Indignant NPCs v1.1-4987-1-1-1595248968.zip | downloaded `2026-06-22 22:44:00` | 0.01 MB | note: Less Indignant NPCs is a small behavior tweak but needs dedicated NPC reaction review before install.
+- [installed-standard-or-script-merged] Less Indignant NPCs v1.1-4987-1-1-1595248968.zip | downloaded `2026-06-22 22:44:00` | 0.01 MB | note: Already installed and smoke-tested on 2026-06-22; owns explorationCollisionManager.ws as the only active owner. See logs/install-final-safe-download-batch-2026-06-22.md.
 
 ### Nexus mod 5018
 
@@ -662,7 +662,7 @@ Source: https://www.nexusmods.com/witcher3/mods/5722
 
 Source: https://www.nexusmods.com/witcher3/mods/5736
 
-- [deferred] CCS-5736-1-0-1621602618.rar | downloaded `2026-06-22 22:31:05` | 0.11 MB | note: CCS archive deferred; source/role unclear from current logs, requires inspection before install.
+- [skipped] CCS-5736-1-0-1621602618.rar | downloaded `2026-06-22 22:31:05` | 0.11 MB | note: Identified as E3 Combat Cam Shake. Skipped because it edits r4Player.ws and damageManagerProcessor.ws, both hot zones in the W3EE/BiA/Reflex stack; current camera/immersion stack is sufficient.
 
 ### Nexus mod 5802
 
@@ -726,7 +726,7 @@ Source: https://www.nexusmods.com/witcher3/mods/6205
 
 Source: https://www.nexusmods.com/witcher3/mods/6251
 
-- [deferred] Active Medallion - Next Gen 4.04-6251-2-23b-1740359718.7z | downloaded `2026-06-22 22:34:21` | 5.09 MB | note: Active Medallion deferred; overlaps HUD/effects/signaling and needs UI/effect pass.
+- [installed-standard-or-script-merged] Active Medallion - Next Gen 4.04-6251-2-23b-1740359718.7z | downloaded `2026-06-22 22:34:21` | 5.09 MB | note: Already installed and smoke-tested on 2026-06-22 as modactivemedallion plus dlcactivemedallion; sharedutils oneliner duplicate skipped. See logs/install-final-safe-download-batch-2026-06-22.md.
 
 ### Nexus mod 6421
 
@@ -995,13 +995,13 @@ Source: https://www.nexusmods.com/witcher3/mods/7732
 
 Source: https://www.nexusmods.com/witcher3/mods/7761
 
-- [deferred] Standardised Naming Convention - Bombs-7761-1-0-2-1736499365.zip | downloaded `2026-06-23 14:45:15` | 0.06 MB | note: Bomb naming convention deferred; bombs already modified by W3EE/lighter-bombs compatibility work.
+- [skipped] Standardised Naming Convention - Bombs-7761-1-0-2-1736499365.zip | downloaded `2026-06-23 14:45:15` | 0.06 MB | note: Redundant with active mod_SNC_W3EERedux strings package from Nexus 12218, which already covers SNC Bombs; do not install separate Bombs-only strings owner.
 
 ### Nexus mod 7774
 
 Source: https://www.nexusmods.com/witcher3/mods/7774
 
-- [deferred] No Stair Rolling-7774-1-0-1674652801.zip | downloaded `2026-06-23 12:29:27` | 0.01 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [skipped] No Stair Rolling-7774-1-0-1674652801.zip | downloaded `2026-06-23 12:29:27` | 0.01 MB | note: Skipped after assessment: full explorationStateLand.ws replacement with older slope threshold and loss of W3EE falling-damage option gate. W3EE remains owner; see docs/deferred-mod-worklist.md and logs/assess-small-fix-batch-2026-06-27.md.
 
 ### Nexus mod 7919
 
@@ -1618,7 +1618,7 @@ Source: https://www.nexusmods.com/witcher3/mods/10978
 
 Source: https://www.nexusmods.com/witcher3/mods/10998
 
-- [deferred] RedanianRoyalShip-10998-1-2-1-1763599170.zip | downloaded `2026-06-23 12:02:33` | 23.67 MB | note: Redanian Royal Ship deferred as content/worldspace cosmetic until dedicated worldspace pass.
+- [installed-standard-or-script-merged] RedanianRoyalShip-10998-1-2-1-1763599170.zip | downloaded `2026-06-23 12:02:33` | 23.67 MB | note: Already installed as no-script content modredanianroyalship at priority 147; see logs/download-triage-low-risk-batch-2026-06-23.md.
 
 ### Nexus mod 11004
 
