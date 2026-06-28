@@ -26,17 +26,17 @@ Related files:
 
 ## Current Ledger Counts
 
-- Assessed / audited: 32
-- Deferred: 1
+- Assessed / audited: 33
+- Deferred: 2
 - Download triage: 2
 - Fix / restoration applied: 5
-- Installed standard path: 129
-- Installed with adjustments / partial: 2
-- Installed with manual merge/graft: 2
+- Installed standard path: 130
+- Installed with adjustments / partial: 7
+- Installed with manual merge/graft: 3
 - Reference / notes: 10
 - Removed / quarantined: 3
-- Skipped / do not install now: 7
-- Troubleshooting / validation: 11
+- Skipped / do not install now: 8
+- Troubleshooting / validation: 12
 
 ## Important Caveat
 
