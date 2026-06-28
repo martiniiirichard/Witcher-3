@@ -800,7 +800,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7129
 
 Source: https://www.nexusmods.com/witcher3/mods/7155
 
-- [deferred] Smooth Camera Motion-7155-1-0-1670978942.rar | downloaded `2026-06-23 14:44:33` | 0.01 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [skipped] Smooth Camera Motion-7155-1-0-1670978942.rar | downloaded `2026-06-23 14:44:33` | 0.01 MB | note: Skipped: full game/player/player.ws replacement; current camera behavior is owned by W3EE/Immersive Cam settings and should only be revisited for a specific camera complaint.
 
 ### Nexus mod 7172
 
@@ -830,7 +830,7 @@ Source: https://www.nexusmods.com/witcher3/mods/7185
 
 Source: https://www.nexusmods.com/witcher3/mods/7186
 
-- [deferred] Better Torches Next-Gen-7186-4-4-0-1689801474.7z | downloaded `2026-06-23 12:07:41` | 0.1 MB | note: Better Torches deferred; lighting/torch behavior already has Natural Torchlight and weather lighting stack.
+- [skipped] Better Torches Next-Gen-7186-4-4-0-1689801474.7z | downloaded `2026-06-23 12:07:41` | 0.1 MB | note: Skipped: replaces r4Player.ws, playerInput.ws, itemEntity.ws, interaction, horse, and vehicle scripts. Current torch/fire lane is True Fires plus Natural Torchlight merged behavior.
 
 ### Nexus mod 7187
 
