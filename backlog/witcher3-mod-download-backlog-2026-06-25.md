@@ -23,7 +23,7 @@ Status values are normalized from install, audit, and triage logs where decision
 
 Source: https://www.nexusmods.com/witcher3/mods/332
 
-- [deferred] QuickLoad-332-v4-0-4-1767435456.7z | downloaded `2026-06-23 14:03:15` | 0.02 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [skipped] QuickLoad-332-v4-0-4-1767435456.7z | downloaded `2026-06-23 14:03:15` | 0.02 MB | note: Skipped: full playerInput.ws replacement plus input/menu config. Menu Organizer already has quickload-style infrastructure; avoid hot input-file churn.
 
 ### Nexus mod 358
 
@@ -1302,7 +1302,7 @@ Source: https://www.nexusmods.com/witcher3/mods/9206
 
 Source: https://www.nexusmods.com/witcher3/mods/9221
 
-- [deferred] Loot In Water (Next-Gen 4.04)-9221-0-3-1718965649.zip | downloaded `2026-06-23 13:22:31` | 0.02 MB | note: Hot-script or broad behavior replacement deferred; see docs/deferred-mod-worklist.md.
+- [installed-standard-or-script-merged] Loot In Water (Next-Gen 4.04)-9221-0-3-1718965649.zip | downloaded `2026-06-23 13:22:31` | 0.02 MB | note: Installed after confirming no active btTaskDeath.ws owner conflict; DX12 smoke passed. See logs/install-loot-in-water-9221-2026-06-27.md.
 
 ### Nexus mod 9287
 
